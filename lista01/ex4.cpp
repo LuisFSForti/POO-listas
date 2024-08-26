@@ -6,7 +6,7 @@ int main() {
     int nro;
     std::cin >> nro;
 
-    for (int i = 1; i < nro; i++)
+    for (int i = 1; i <= nro; i++)
     {
         if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0 && i % 11 == 0 && i % 17 == 0)
             std::cout << i << std::endl;
