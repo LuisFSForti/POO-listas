@@ -13,7 +13,7 @@ int main() {
 
     int atual = 0;
 
-    int aux = (valor * 100) - (custo * 100); //Transforma em inteiro para nao ocorrerem erros
+    int aux = (valor * 100) - (custo * 100) + 0.5; //Transforma em inteiro para nao ocorrerem erros
 
     while (aux > 0)
     {

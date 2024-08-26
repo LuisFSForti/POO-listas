@@ -12,7 +12,7 @@ std::string raizes(double a, double b, double c)
         return "Nenhuma";
 
     if (a == 0)
-        return std::to_string(-c);
+        return std::to_string(-c/b);
 
     if (pow(b , 2) < 4*a*c)
         return "Nenhuma";
