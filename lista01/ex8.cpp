@@ -11,7 +11,7 @@ std::string conteudo(std::string nome)
 
     while (getline (arquivo, aux))
     {
-        cont += aux;
+        cont += aux + '\n';
     }
 
     arquivo.close();
