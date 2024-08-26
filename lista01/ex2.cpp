@@ -1,3 +1,5 @@
+//Luis Filipe Silva Forti - 14592348
+
 #include <iostream>
 
 int main() {
@@ -11,7 +13,7 @@ int main() {
 
     float total = nroBala * precBala + nroChoco * precChoco;
 
-    //Define a quantidade de casas deciamais à serem imprimidas SEMPRE
+    //Define a quantidade de casas deciamais a serem imprimidas SEMPRE
     std::cout.precision(1);
     std::cout << std::fixed;
 
