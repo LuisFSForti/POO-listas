@@ -1,7 +1,6 @@
 //Luis Filipe Silva Forti - 14592348
 
 #include <iostream>
-#include <cmath>
 
 int seq(int n, int k, int *ini)
 {
@@ -12,7 +11,8 @@ int seq(int n, int k, int *ini)
 
     for (int i = n - k; i <= n-1; i++)
     {
-        an += std::pow(seq(i, k, ini), 2);
+        int ai = seq(i, k, ini);
+        an += ai * ai;
     }
 
     return an;
