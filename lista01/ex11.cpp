@@ -5,13 +5,14 @@
 
 std::string raizes(double a, double b, double c)
 {
+    if (a == 0 && b == 0 && c == 0)
+        return "Infinitas";
+
+    if (a == 0 && b == 0)
+        return "Nenhuma";
+
     if (a == 0)
-    {
-        if (b == 0)
-            return "Infinitas";
-        else
-            return std::to_string(-c);
-    }
+        return std::to_string(-c);
 
     if (pow(b , 2) < 4*a*c)
         return "Nenhuma";
