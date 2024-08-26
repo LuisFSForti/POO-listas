@@ -6,7 +6,12 @@
 std::string raizes(double a, double b, double c)
 {
     if (a == 0)
-        return "Infinitas";
+    {
+        if (b == 0)
+            return "Infinitas";
+        else
+            return std::to_string(-c);
+    }
 
     if (pow(b , 2) < 4*a*c)
         return "Nenhuma";
