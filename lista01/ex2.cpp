@@ -14,7 +14,7 @@ int main() {
     float total = nroBala * precBala + nroChoco * precChoco;
 
     //Define a quantidade de casas deciamais a serem imprimidas SEMPRE
-    std::cout.precision(1);
+    std::cout.precision(2);
     std::cout << std::fixed;
 
     std::cout << total << std::endl;
