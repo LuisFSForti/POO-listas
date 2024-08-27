@@ -4,7 +4,7 @@
 #include <math.h>
 
 int main() {
-    int n1, n2, n3;
+    float n1, n2, n3;
     std::cin >> n1;
     std::cin >> n2;
     std::cin >> n3;
