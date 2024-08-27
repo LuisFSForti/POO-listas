@@ -1,0 +1,169 @@
+tester.py:56: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+g++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+PRAZO MÁXIMO: 2024-09-16T03:00:00-03:00
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1 deu errado!
+93087 1212
+
+Tempo limite (5 s) excedido
+Teste 2: correto!
+Teste 3 deu errado!
+98718 2061
+
+Tempo limite (5 s) excedido
+Teste 4 deu errado!
+93229 1299
+
+Tempo limite (5 s) excedido
+Teste 5 deu errado!
+96240 4888
+
+Tempo limite (5 s) excedido
+Teste 6 deu errado!
+93588 9189
+
+Tempo limite (5 s) excedido
+Teste 7 deu errado!
+98251 6195
+
+Tempo limite (5 s) excedido
+Teste 8 deu errado!
+90381 9807
+
+Tempo limite (5 s) excedido
+Teste 9 deu errado!
+93043 2149
+
+Tempo limite (5 s) excedido
+Teste 10 deu errado!
+98389 2876
+
+Tempo limite (5 s) excedido
+Teste 11 deu errado!
+90454 5856
+
+Tempo limite (5 s) excedido
+Teste 12 deu errado!
+94657 3902
+
+Tempo limite (5 s) excedido
+Teste 13 deu errado!
+96502 9806
+
+Tempo limite (5 s) excedido
+Teste 14 deu errado!
+90538 5840
+
+Tempo limite (5 s) excedido
+Teste 15: correto!
+Teste 16 deu errado!
+91866 8847
+
+Tempo limite (5 s) excedido
+Teste 17 deu errado!
+95223 7863
+
+Tempo limite (5 s) excedido
+Teste 18 deu errado!
+90071 9687
+
+Tempo limite (5 s) excedido
+Teste 19 deu errado!
+94101 6224
+
+Tempo limite (5 s) excedido
+Teste 20 deu errado!
+91531 7837
+
+Tempo limite (5 s) excedido
+Nota exercicio 4: 0.1
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Nota total: 3.10
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 0.1, "ex5": 0, "ex6": 0, "ex7": 0}}
