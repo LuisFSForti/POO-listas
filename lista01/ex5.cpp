@@ -3,7 +3,8 @@
 #include <iostream>
 
 int main() {
-    int val, aux;
+    int val = 0;
+    int aux;
 
     while (std::cin >> aux)
     {
