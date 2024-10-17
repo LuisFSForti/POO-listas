@@ -55,7 +55,7 @@ public:
         else
             out << "desligada";
 
-        out << ", " << tv._canal << ")\n";
+        out << ", " << tv._canal << ")\r";
         return out;
     }
 };
