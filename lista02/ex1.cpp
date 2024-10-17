@@ -55,7 +55,7 @@ public:
         else
             out << "desligada";
 
-        out << ", " << tv._canal << ")" << std::endl;
+        out << ", " << tv._canal << ")\n";
         return out;
     }
 };
