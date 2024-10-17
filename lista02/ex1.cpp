@@ -14,6 +14,12 @@ public:
         this->_ligada = ligada;
     }
 
+    Televisao(bool ligada)
+    {
+        this->_canal = 1;
+        this->_ligada = ligada;
+    }
+
     Televisao(int canal)
     {
         this->_canal = canal;

@@ -1,23 +1,24 @@
 #include <stdio.h>
 #include <iostream>
 
+static long long int mdc(int a, int b)
+{
+    if (a == 0)
+        return b;
+    if (b == 0)
+        return a;
+
+    if (a < b)
+        return mdc(a, b % a);
+    else
+        return mdc(b, a % b);
+}
+
+
 class Fracao
 {
 private:
     long long int _numerador, _denominador;
-
-    long long int mdc(int a, int b)
-    {
-        if (a == 0)
-            return b;
-        if (b == 0)
-            return a;
-
-        if (a < b)
-            return mdc(a, b % a);
-        else
-            return mdc(b, a % b);
-    }
 
     void reduz()
     {
