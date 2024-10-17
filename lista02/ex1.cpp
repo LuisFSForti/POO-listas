@@ -48,7 +48,14 @@ public:
 
     friend std::ostream& operator<<(std::ostream& out, const Televisao& tv)
     {
-        out << "(" << tv._ligada << ", " << tv._canal << ")" << std::endl;
+        out << "(";
+
+        if(tv._ligada)
+            out << "ligada";
+        else
+            out << "desligada";
+
+        out << ", " << tv._canal << ")" << std::endl;
         return out;
     }
 };
