@@ -1,0 +1,193 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-17 10:27:57.900971-03:00
+PRAZO MÁXIMO: 2024-10-30 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1 deu errado! +0.021
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(0LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f+Fracao(1LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f+Fracao(1LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f*Fracao(3LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f/Fracao(3LL, 4LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f-Fracao(1LL, 6LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f*Fracao(0LL, 99999999999999LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+
+deveria ser
+0 0.0
+1/2 0.5
+1 1.0
+3/2 1.5
+2 2.0
+11/6 1.833333
+0 0.0
+mas deu
+0/1 0 0
+1/2 0.5 0.5
+1/1 1 1
+3/2 1.5 1.5
+2/1 2 2
+183333333/100000000 1.83333 1.83333
+0/1 0 0
+
+Teste 2 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 3 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 4 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 5: correto! +0.050
+Teste 6 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 7 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 8 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 9 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 10 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 11 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 12 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 13 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 14 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 15 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 16 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 17 deu errado! +0.021
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f;
+    std::cout << f << " " << double(f) << std::endl;
+    f = f+Fracao(1LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f+Fracao(1LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f*Fracao(3LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f/Fracao(3LL, 4LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f-Fracao(1LL, 6LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f*Fracao(0LL, 99999999999999LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+
+deveria ser
+0 0.0
+1/2 0.5
+1 1.0
+3/2 1.5
+2 2.0
+11/6 1.833333
+0 0.0
+mas deu
+0/1 0 0
+1/2 0.5 0.5
+1/1 1 1
+3/2 1.5 1.5
+2/1 2 2
+183333333/100000000 1.83333 1.83333
+0/1 0 0
+
+Teste 18 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 19 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(2.21875, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(13LL, 49LL);
+    f = f * Fracao(19LL, 37LL);
+    f = f + Fracao(-11LL, 65LL);
+    f = f / Fracao(-38LL, 80LL);
+    f = f * Fracao(-1LL, 6LL);
+    f = f + Fracao(3LL, 65LL);
+    return 0;
+}
+deveria ser
+71/32 2.21875
+
+mas deu
+8/4 2 2
+
+Teste 20 deu errado!
+
+Tempo limite (5 s) excedido
+Nota exercicio 2: 0.0
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 1.00
+{"scores": {"ex1": 1.0, "ex2": 0.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
