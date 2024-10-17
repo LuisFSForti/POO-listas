@@ -1,0 +1,139 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Televisao&)’:
+ex1.cpp:46:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   46 |     }
+      |     ^
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:50:15: error: no matching function for call to ‘Televisao::Televisao()’
+   50 |     Televisao tv;
+      |               ^~
+ex1.cpp:17:5: note: candidate: ‘Televisao::Televisao(int)’
+   17 |     Televisao(int canal)
+      |     ^~~~~~~~~
+ex1.cpp:17:5: note:   candidate expects 1 argument, 0 provided
+ex1.cpp:11:5: note: candidate: ‘Televisao::Televisao(bool, int)’
+   11 |     Televisao(bool ligada, int canal)
+      |     ^~~~~~~~~
+ex1.cpp:11:5: note:   candidate expects 2 arguments, 0 provided
+ex1.cpp:4:7: note: candidate: ‘constexpr Televisao::Televisao(const Televisao&)’
+    4 | class Televisao
+      |       ^~~~~~~~~
+ex1.cpp:4:7: note:   candidate expects 1 argument, 0 provided
+ex1.cpp:4:7: note: candidate: ‘constexpr Televisao::Televisao(Televisao&&)’
+ex1.cpp:4:7: note:   candidate expects 1 argument, 0 provided
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-17 08:47:46.362758-03:00
+PRAZO MÁXIMO: 2024-10-30 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 2 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 3 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 4 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 5 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 6 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 7 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 8 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 9 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 10 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 11 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 12 deu errado!
+
+Tempo limite (5 s) excedido
+Teste 13 deu errado!
+
+Tempo limite (5 s) excedido
+ERRO: Erro de Compilação
+Nota exercicio 1: 0.0
+Nota exercicio 1: 0.0
+Procurando exercício 2...
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 0.00
+{"scores": {"ex1": 0.0, "ex2": 0.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
