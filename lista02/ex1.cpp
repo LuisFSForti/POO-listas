@@ -20,6 +20,12 @@ public:
         this->_ligada = false;
     }
 
+    Televisao()
+    {
+        this->_canal = 1;
+        this->_ligada = false;
+    }
+
     void liga()
     {
         this->_ligada = true;
@@ -42,6 +48,7 @@ public:
 
     friend std::ostream& operator<<(std::ostream& out, const Televisao& tv)
     {
-        std::cout << "(" << tv._ligada << ", " << tv._canal << ")" << std::endl;
+        out << "(" << tv._ligada << ", " << tv._canal << ")" << std::endl;
+        return out;
     }
 };
