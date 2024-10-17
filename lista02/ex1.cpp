@@ -38,12 +38,14 @@ public:
 
     void canal_cima()
     {
-        this->_canal++;
+        if(this->_ligada)
+            this->_canal++;
     }
 
     void canal_baixo()
     {
-        this->_canal--;
+        if(this->_ligada)
+            this->_canal--;
     }
 
     friend std::ostream& operator<<(std::ostream& out, const Televisao& tv)
