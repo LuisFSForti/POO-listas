@@ -113,12 +113,12 @@ public:
 
     friend std::ostream& operator<<(std::ostream &out, const Fracao &a)
     {
-        /*if(a._numerador % a._denominador == 0)
+        if(a._numerador % a._denominador == 0)
             out << a._numerador / a._denominador;
-        elseout << a._numerador << "/" << a._denominador;
-            out << a._numerador << "/" << a._denominador;*/
+        else
+            out << a._numerador << "/" << a._denominador;
 
-        out << a._numerador << "/" << a._denominador << " " << double(a._numerador) / double(a._denominador);
+        out << " " << double(a._numerador) / double(a._denominador);
 
         return out;
     }
