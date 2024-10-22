@@ -77,8 +77,8 @@ public:
 
     Fracao(double x, double eps)
     {
-        this->_numerador = (long long int) (x * eps);
-        this->_denominador = (long long int) (eps);
+        this->_numerador = (long long int) (x / eps);
+        this->_denominador = (long long int) (1/eps);
 
         this->reduz();
     }
@@ -156,3 +156,14 @@ public:
         return out;
     }
 };
+
+int main() {
+    Fracao f(-0.8214285714285714, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-30LL, 87LL);
+    f = f / Fracao(-81LL, 62LL);
+    f = f * Fracao(33LL, 63LL);
+    f = f + Fracao(6LL, 78LL);
+    f = f * Fracao(-9LL, 46LL);
+    return 0;
+}
