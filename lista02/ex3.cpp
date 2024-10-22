@@ -21,12 +21,12 @@ public:
 
     friend Vetor operator+(const Vetor& a, const Vetor& b)
     {
-        return Vetor(a._x + b._x, a._x + b._y);
+        return Vetor(a._x + b._x, a._y + b._y);
     }
 
     friend Vetor operator-(const Vetor& a, const Vetor& b)
     {
-        return Vetor(a._x - b._x, a._x - b._y);
+        return Vetor(a._x - b._x, a._y - b._y);
     }
 
     friend int operator*(const Vetor& a, const Vetor& b)
