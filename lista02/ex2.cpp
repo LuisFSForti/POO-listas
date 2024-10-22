@@ -3,8 +3,6 @@
 
 static long long int mdc(long long int a, long long int b)
 {
-    //std::cout << a << " " << b << std::endl;
-
     if (a == 0)
         return b;
     if (b == 0)
@@ -39,7 +37,6 @@ private:
 
         double valor = double(*this);
 
-        //std::cout << valor << " " << this->_numerador << " " << this->_denominador << std::endl;
         double parteFracionada = valor - (long long int)(valor);
 
         long long int a;
@@ -50,14 +47,10 @@ private:
         else
             a = parteFracionada * this->_denominador + 0.5;
 
-        //std::cout << a << std::endl;
-
         long long int aux = mdc(a, this->_denominador);
 
         this->_denominador = this->_denominador / aux;
         this->_numerador = this->_numerador / aux;
-
-        //std::cout << valor << " " << this->_numerador << " " << this->_denominador << " : " << aux << std::endl;
     }
 
 public:
@@ -90,8 +83,6 @@ public:
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
-        //std::cout << a._numerador << " " << a._denominador << " - " << b._numerador << " " << b._denominador << std::endl;
-
         Fracao aux;
         aux._numerador = a._numerador * b._denominador + b._numerador * a._denominador;
         aux._denominador = a._denominador * b._denominador;
@@ -103,8 +94,6 @@ public:
 
     friend Fracao operator-(const Fracao& a, const Fracao& b)
     {
-        //std::cout << a._numerador << " " << a._denominador << " - " << b._numerador << " " << b._denominador << std::endl;
-
         Fracao aux;
         aux._numerador = a._numerador * b._denominador - b._numerador * a._denominador;
         aux._denominador = a._denominador * b._denominador;
@@ -116,8 +105,6 @@ public:
 
     friend Fracao operator*(const Fracao& a, const Fracao& b)
     {
-        //std::cout << a._numerador << " " << a._denominador << " - " << b._numerador << " " << b._denominador << std::endl;
-
         Fracao aux;
 
         aux._numerador = a._numerador * b._numerador;
@@ -130,8 +117,6 @@ public:
 
     friend Fracao operator/(const Fracao& a, const Fracao& b)
     {
-        //std::cout << a._numerador << " " << a._denominador << " - " << b._numerador << " " << b._denominador << std::endl;
-
         Fracao aux;
         aux._numerador = a._numerador * b._denominador;
         aux._denominador = a._denominador * b._numerador;
@@ -156,14 +141,3 @@ public:
         return out;
     }
 };
-
-int main() {
-    Fracao f(-0.8214285714285714, 1e-10);
-    std::cout << f << " " << double(f) << std::endl;
-    f = f - Fracao(-30LL, 87LL);
-    f = f / Fracao(-81LL, 62LL);
-    f = f * Fracao(33LL, 63LL);
-    f = f + Fracao(6LL, 78LL);
-    f = f * Fracao(-9LL, 46LL);
-    return 0;
-}
