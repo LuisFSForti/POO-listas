@@ -1,0 +1,581 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-22 09:14:07.212666-03:00
+PRAZO MÁXIMO: 2024-10-30 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-53LL, 40LL);
+    f = f / Fracao(-85LL, 1LL);
+    f = f + Fracao(87LL, 44LL);
+    f = f * Fracao(-64LL, 52LL);
+    f = f / Fracao(56LL, 80LL);
+    f = f + Fracao(68LL, 71LL);
+    f = f - Fracao(23LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(4LL, 63LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-78LL, 31LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-31LL, 54LL);
+    f = f / Fracao(-70LL, 16LL);
+    f = f + Fracao(5LL, 23LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-56LL, 50LL);
+    f = f * Fracao(-77LL, 35LL);
+    f = f - Fracao(53LL, 96LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+-723444301/229559330 -3.1514480417763897
+-6642175469/2066033970 -3.214940105268453
+-367058089199/64047053070 -5.731069137526518
+128268283791779/77336816582025 1.6585668955708184
+-1953871647589777/1124899150284000 -1.736930503589134
+
+mas deu
+9689297256/-10000000000 -0.96893 -0.96893
+3543671821/-2500000000 -1.41747 -1.41747
+465892352/-499999999 -0.931785 -0.931785
+43874031/78125000 0.561588 0.561588
+8008102832/-10000000000 -0.80081 -0.80081
+
+Teste 2 deu errado! +0.013
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-0.4634146341463415, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-37LL, 66LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(25LL, 99LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-83LL, 66LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+-38/82 -0.4634146341463415
+1254/1517 0.8266315095583389
+86221/150183 0.5741062570330863
+-7156343/9912078 -0.7219821111173661
+
+mas deu
+4634146341/-10000000000 -0.463415 -0.463415
+1065979682/-1999999999 -0.53299 -0.53299
+3927575468/-5000000000 -0.785515 -0.785515
+9878447383/10000000000 0.987845 0.987845
+
+Teste 3 deu errado! +0.017
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-2.4615384615384617, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(88LL, 53LL);
+    f = f - Fracao(-10LL, 75LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(55LL, 5LL);
+    f = f / Fracao(-89LL, 86LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+-64/26 -2.4615384615384617
+-40862/10335 -3.9537493952588294
+38655452/919815 42.025246381065756
+
+mas deu
+4923076920/-1999999999 -2.46154 -2.46154
+299362017/400000000 0.748405 0.748405
+9575148872/10000000000 0.957515 0.957515
+
+Teste 4 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-61LL, 78LL);
+    f = f * Fracao(-40LL, 59LL);
+    f = f - Fracao(10LL, 2LL);
+    f = f + Fracao(90LL, 33LL);
+    f = f / Fracao(82LL, 16LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(24LL, 87LL);
+    f = f + Fracao(-24LL, 28LL);
+    f = f - Fracao(-30LL, 88LL);
+    f = f / Fracao(-36LL, 50LL);
+    f = f - Fracao(-25LL, 59LL);
+    f = f + Fracao(48LL, 20LL);
+    f = f / Fracao(63LL, 79LL);
+    f = f * Fracao(-59LL, 76LL);
+    f = f / Fracao(59LL, 27LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-9LL, 40LL);
+    f = f * Fracao(-82LL, 67LL);
+    f = f / Fracao(-47LL, 45LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(69LL, 6LL);
+    f = f / Fracao(-75LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(37LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+-352840/1037751 -0.34000449047989356
+-1085152683917/463750166880 -2.339951037037134
+-1189496471465/395758611248 -3.0056110913518657
+5471683768739/5936379168720 0.9217207346812388
+202452299443343/11872758337440 17.051833591602918
+
+mas deu
+139621768/5000000000 0.0279244 0.0279244
+1831804841/-2500000000 -0.732722 -0.732722
+5611295557/-5000000000 -1.12226 -1.12226
+215099663/625000000 0.344159 0.344159
+7958687531/1250000000 6.36695 6.36695
+
+Teste 5 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(34LL, 71LL);
+    f = f - Fracao(-61LL, 69LL);
+    f = f + Fracao(-20LL, 88LL);
+    f = f / Fracao(100LL, 55LL);
+    f = f - Fracao(21LL, 26LL);
+    f = f * Fracao(-10LL, 51LL);
+    f = f - Fracao(-25LL, 62LL);
+    f = f + Fracao(-43LL, 91LL);
+    f = f * Fracao(-76LL, 85LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-71LL, 81LL);
+    f = f - Fracao(-1LL, 21LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-43LL, 96LL);
+    f = f - Fracao(-4LL, 73LL);
+    f = f * Fracao(42LL, 39LL);
+    f = f - Fracao(98LL, 72LL);
+    f = f * Fracao(-42LL, 85LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(86LL, 1LL);
+    return 0;
+}
+deveria ser
+1789318103/59910042465 0.029866747366192173
+1465352212/68348076615 0.021439553014113738
+1827960073435741/2100303847675800 0.8703312501467656
+
+mas deu
+1364967981/5000000000 0.272994 0.272994
+5903828089/5000000000 1.18077 1.18077
+1491552152/10000000000 0.149155 0.149155
+
+Teste 6: correto! +0.050
+Teste 7 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(87LL, 79LL);
+    f = f - Fracao(81LL, 33LL);
+    f = f + Fracao(59LL, 46LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-2LL, 32LL);
+    f = f + Fracao(87LL, 14LL);
+    f = f * Fracao(52LL, 31LL);
+    f = f + Fracao(-51LL, 72LL);
+    f = f - Fracao(61LL, 5LL);
+    f = f * Fracao(-86LL, 79LL);
+    f = f + Fracao(-48LL, 6LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(75LL, 72LL);
+    f = f * Fracao(-46LL, 79LL);
+    f = f / Fracao(35LL, 16LL);
+    f = f * Fracao(-85LL, 40LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(63LL, 54LL);
+    f = f * Fracao(59LL, 18LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-1LL, 53LL);
+    f = f - Fracao(92LL, 70LL);
+    f = f * Fracao(94LL, 66LL);
+    f = f - Fracao(94LL, 9LL);
+    return 0;
+}
+deveria ser
+-2825/39974 -0.0706709361084705
+-4881104357/663168660 -7.360275977154892
+-142470324763/39862203150 -3.5740705105257082
+-8405749161017/837106266150 -10.041436196238894
+
+mas deu
+661684110/999999999 0.661684 0.661684
+2323983651/-312500000 -7.43675 -7.43675
+55673073/-200000000 -0.278365 -0.278365
+827760958/1999999999 0.41388 0.41388
+
+Teste 8: correto! +0.050
+Teste 9 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(91LL, 47LL);
+    f = f + Fracao(7LL, 60LL);
+    f = f / Fracao(44LL, 54LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-64LL, 66LL);
+    f = f + Fracao(70LL, 38LL);
+    f = f / Fracao(-83LL, 80LL);
+    f = f - Fracao(-23LL, 17LL);
+    f = f * Fracao(75LL, 85LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-56LL, 55LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(12LL, 78LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-53LL, 19LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(15LL, 28LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(52LL, 16LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(84LL, 29LL);
+    f = f / Fracao(83LL, 38LL);
+    return 0;
+}
+deveria ser
+52101/20680 2.519390715667311
+4418739015/2591867311 1.7048476965802513
+35288655931/12959336555 2.7230295147620693
+70577311862/168471375215 0.418927617655703
+-3740597528686/3200956129085 -1.1685875650395925
+-152751072739483/89626771614380 -1.7043018507538783
+34633983751813/22406692903595 1.5456981492461217
+
+mas deu
+2205758061/-1999999999 -1.10288 -1.10288
+863112330/10000000000 0.0863112 0.0863112
+2705398/124999999 0.0216432 0.0216432
+16648603/5000000000 0.00332972 0.00332972
+354334093/-10000000000 -0.0354334 -0.0354334
+2284925811/-10000000000 -0.228493 -0.228493
+30215074189/10000000000 3.02151 3.02151
+
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-21LL, 77LL);
+    f = f / Fracao(-28LL, 64LL);
+    f = f + Fracao(-83LL, 66LL);
+    f = f - Fracao(13LL, 29LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-65LL, 10LL);
+    f = f - Fracao(25LL, 81LL);
+    f = f / Fracao(-87LL, 45LL);
+    f = f - Fracao(3LL, 55LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-40LL, 71LL);
+    f = f - Fracao(-59LL, 62LL);
+    f = f + Fracao(-93LL, 48LL);
+    f = f / Fracao(33LL, 23LL);
+    f = f + Fracao(21LL, 32LL);
+    f = f / Fracao(-28LL, 94LL);
+    f = f + Fracao(-2LL, 46LL);
+    return 0;
+}
+deveria ser
+-14503/13398 -1.0824749962680997
+-123588713/34968780 -3.5342586444251127
+
+mas deu
+6878679183/-5000000000 -1.37574 -1.37574
+26907623/-25000000 -1.0763 -1.0763
+
+Teste 13 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-40LL, 76LL);
+    f = f * Fracao(7LL, 86LL);
+    f = f + Fracao(46LL, 12LL);
+    f = f / Fracao(-74LL, 75LL);
+    f = f + Fracao(3LL, 58LL);
+    f = f / Fracao(16LL, 56LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-6LL, 65LL);
+    f = f + Fracao(39LL, 53LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-93LL, 33LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(28LL, 45LL);
+    f = f / Fracao(-16LL, 6LL);
+    f = f - Fracao(-29LL, 46LL);
+    f = f + Fracao(72LL, 46LL);
+    f = f * Fracao(92LL, 19LL);
+    f = f / Fracao(66LL, 23LL);
+    f = f - Fracao(21LL, 44LL);
+    return 0;
+}
+deveria ser
+-93028957/7013128 -13.26497348971814
+-300476302681/24160225960 -12.436816740806675
+-4054206334251/265762485560 -15.254998558988492
+
+mas deu
+9468849952/-5000000000 -1.89377 -1.89377
+3527561491/10000000000 0.352756 0.352756
+10965674952/-10000000000 -1.09657 -1.09657
+
+Teste 14 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(57LL, 40LL);
+    f = f * Fracao(-3LL, 46LL);
+    f = f + Fracao(90LL, 26LL);
+    f = f - Fracao(-61LL, 84LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(66LL, 89LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-8LL, 62LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-85LL, 31LL);
+    f = f * Fracao(-68LL, 4LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-77LL, 1LL);
+    f = f * Fracao(-81LL, 54LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(67LL, 97LL);
+    f = f / Fracao(10LL, 8LL);
+    f = f + Fracao(-64LL, 60LL);
+    f = f * Fracao(62LL, 64LL);
+    f = f / Fracao(19LL, 57LL);
+    f = f * Fracao(-1LL, 100LL);
+    f = f - Fracao(-6LL, 9LL);
+    f = f / Fracao(-39LL, 45LL);
+    f = f + Fracao(-72LL, 25LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-38LL, 85LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-69LL, 14LL);
+    f = f - Fracao(6LL, 48LL);
+    f = f + Fracao(-82LL, 18LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+2056897/502320 4.094794155120242
+22625867/7451080 3.0365889240217525
+-22625867/57745870 -0.3918179256802261
+3076342389/57745870 53.2738079623703
+4110268803/115491740 35.58928805644456
+-11370934622911/3758324752000 -3.0255327501594786
+193305888589487/28563268115200 6.76763904640936
+-730459636300217/257069413036800 -2.8414879377176243
+
+mas deu
+7020309381/5000000000 1.40406 1.40406
+6141139249/10000000000 0.614114 0.614114
+10203148760/-10000000000 -1.02031 -1.02031
+79788928851/5000000000 15.9578 15.9578
+915633213447/10000000000 91.5633 91.5633
+6063310623/-2500000000 -2.42532 -2.42532
+7068558440/-2500000000 -2.82742 -2.82742
+1214837641/-312500000 -3.88748 -3.88748
+
+Teste 15 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(2LL, 49LL);
+    f = f / Fracao(-70LL, 29LL);
+    f = f - Fracao(-54LL, 34LL);
+    f = f * Fracao(-100LL, 55LL);
+    f = f - Fracao(-76LL, 72LL);
+    f = f / Fracao(-100LL, 11LL);
+    f = f + Fracao(-42LL, 80LL);
+    f = f * Fracao(69LL, 49LL);
+    f = f / Fracao(6LL, 52LL);
+    f = f - Fracao(19LL, 9LL);
+    f = f + Fracao(8LL, 4LL);
+    f = f * Fracao(84LL, 85LL);
+    f = f / Fracao(-58LL, 31LL);
+    f = f + Fracao(-39LL, 49LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(51LL, 27LL);
+    f = f - Fracao(-55LL, 59LL);
+    f = f + Fracao(94LL, 68LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(56LL, 99LL);
+    f = f + Fracao(-38LL, 12LL);
+    f = f * Fracao(-44LL, 84LL);
+    f = f / Fracao(-84LL, 13LL);
+    return 0;
+}
+deveria ser
+2067105784/1509208575 1.3696620985604988
+3067507252111/1009157467150 3.039671559656655
+
+mas deu
+4289241301/-5000000000 -0.857848 -0.857848
+8258036281/10000000000 0.825804 0.825804
+
+Teste 16 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-27LL, 3LL);
+    f = f + Fracao(1LL, 62LL);
+    f = f - Fracao(-80LL, 69LL);
+    f = f * Fracao(-17LL, 98LL);
+    f = f + Fracao(-50LL, 88LL);
+    f = f / Fracao(-1LL, 78LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-98LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(88LL, 43LL);
+    f = f / Fracao(11LL, 60LL);
+    f = f + Fracao(88LL, 57LL);
+    f = f / Fracao(87LL, 20LL);
+    f = f + Fracao(-62LL, 69LL);
+    f = f * Fracao(77LL, 1LL);
+    f = f - Fracao(-10LL, 52LL);
+    f = f * Fracao(13LL, 60LL);
+    f = f - Fracao(-99LL, 37LL);
+    return 0;
+}
+deveria ser
+-23654644/384307 -61.55142633363431
+449438236/18831043 23.86687959875616
+
+mas deu
+277024935383/5000000000 55.405 55.405
+18068662008/-10000000000 -1.80687 -1.80687
+
+Teste 17 deu errado! +0.025
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-0.33, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-56LL, 5LL);
+    f = f / Fracao(-70LL, 67LL);
+    f = f - Fracao(-13LL, 78LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(51LL, 92LL);
+    return 0;
+}
+deveria ser
+-33/100 -0.33
+-214987/21000 -10.23747619047619
+
+mas deu
+33/-100 -0.33 -0.33
+1768214383/5000000000 0.353643 0.353643
+
+Teste 18 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(73LL, 7LL);
+    f = f + Fracao(-16LL, 88LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-10LL, 61LL);
+    f = f - Fracao(7LL, 77LL);
+    f = f * Fracao(85LL, 68LL);
+    f = f / Fracao(79LL, 82LL);
+    f = f + Fracao(77LL, 50LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(56LL, 24LL);
+    f = f * Fracao(-4LL, 67LL);
+    f = f / Fracao(77LL, 89LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+deveria ser
+789/77 10.246753246753247
+269098351/18553150 14.504186674500017
+-143698519434/335004952975 -0.42894446233672134
+
+mas deu
+397814821/-1250000000 -0.318252 -0.318252
+3856243969/5000000000 0.771249 0.771249
+52301397/-400000000 -0.130753 -0.130753
+
+Teste 19 deu errado! +0.033
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(0.5476190476190477, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(42LL, 96LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(5LL, 33LL);
+    f = f * Fracao(-18LL, 28LL);
+    f = f / Fracao(-38LL, 39LL);
+    f = f + Fracao(26LL, 63LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-14LL, 49LL);
+    f = f / Fracao(31LL, 47LL);
+    return 0;
+}
+deveria ser
+46/84 0.5476190476190477
+23/96 0.23958333333333334
+159341/109440 1.4559667397660818
+
+mas deu
+1369047619/2500000000 0.547619 0.547619
+2395833333/10000000000 0.239583 0.239583
+112452820/312500000 0.359849 0.359849
+
+Teste 20: correto! +0.050
+Nota exercicio 2: 0.2
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 1.20
+{"scores": {"ex1": 1.0, "ex2": 0.2, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
