@@ -24,6 +24,13 @@ private:
 
     void reduz()
     {
+        if(this->_numerador == 0)
+        {
+            this->_numerador = 0;
+            this->_denominador = 1;
+            return;
+        }
+
         if(this->_denominador < 0)
         {
             this->_denominador *= -1;
@@ -31,6 +38,7 @@ private:
         }
 
         double valor = double(*this);
+
         //std::cout << valor << " " << this->_numerador << " " << this->_denominador << std::endl;
         double parteFracionada = valor - (long long int)(valor);
 
@@ -148,32 +156,3 @@ public:
         return out;
     }
 };
-
-int main() {
-    Fracao f(-61LL, 78LL);
-    f = f * Fracao(-40LL, 59LL);
-    f = f - Fracao(10LL, 2LL);
-    f = f + Fracao(90LL, 33LL);
-    f = f / Fracao(82LL, 16LL);
-    std::cout << f << " " << double(f) << std::endl;
-    f = f / Fracao(24LL, 87LL);
-    f = f + Fracao(-24LL, 28LL);
-    f = f - Fracao(-30LL, 88LL);
-    f = f / Fracao(-36LL, 50LL);
-    f = f - Fracao(-25LL, 59LL);
-    f = f + Fracao(48LL, 20LL);
-    f = f / Fracao(63LL, 79LL);
-    f = f * Fracao(-59LL, 76LL);
-    f = f / Fracao(59LL, 27LL);
-    std::cout << f << " " << double(f) << std::endl;
-    f = f + Fracao(-9LL, 40LL);
-    f = f * Fracao(-82LL, 67LL);
-    f = f / Fracao(-47LL, 45LL);
-    std::cout << f << " " << double(f) << std::endl;
-    f = f * Fracao(69LL, 6LL);
-    f = f / Fracao(-75LL, 2LL);
-    std::cout << f << " " << double(f) << std::endl;
-    f = f * Fracao(37LL, 2LL);
-    std::cout << f << " " << double(f) << std::endl;
-    return 0;
-}
