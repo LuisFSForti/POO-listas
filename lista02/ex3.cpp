@@ -55,5 +55,6 @@ public:
     friend std::ostream& operator<<(std::ostream &out, const Vetor &a)
     {
         out << "(" << a._x << ", " << a._y << ")" << std::endl;
+        return out;
     }
 };
