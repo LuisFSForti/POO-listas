@@ -1,0 +1,10 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-22 16:43:08.454798-03:00
+PRAZO MÁXIMO: 2024-10-06 23:59:59-03:06
+Prazo finalizado (2024-10-06 23:59:59-03:06): 2024-10-22 16:43:08.454798-03:00
