@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int fib(unsigned long long int n, int m)
+/*int fib(unsigned long long int n, int m)
 {
     if(n <= 2)
         return 1;
@@ -21,3 +21,4 @@ int main() {
 
     return 0;
 }
+*/
