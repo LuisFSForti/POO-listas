@@ -1,0 +1,2743 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-23 16:12:41.845821-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(79,160)'
+Traceback completo:
+Teste 1 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(71, -66);
+    std::cout << (v < Vetor(-4,77)) << std::endl;
+    v = v - Vetor(93, -26);
+    v = v + Vetor(-26, -68);
+    v = v - Vetor(56, -79);
+    std::cout << (v ^ Vetor(-58,95)) << std::endl;
+    std::cout << (v * Vetor(-20,94)) << std::endl;
+    v = v + Vetor(-13, 9);
+    std::cout << (v * Vetor(100,-20)) << std::endl;
+    v = v + Vetor(37, 12);
+    std::cout << (v * Vetor(97,-35)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(17,-9)) << std::endl;
+    v = v - Vetor(-77, -23);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-76,81)) << std::endl;
+    std::cout << (v < Vetor(0,27)) << std::endl;
+    v = v + Vetor(18, 50);
+    std::cout << v << std::endl;
+    v = v - Vetor(-93, -1);
+    std::cout << (v * Vetor(69,-55)) << std::endl;
+    v = v + Vetor(-29, 94);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(9,11)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(45,-27)) << std::endl;
+    std::cout << (v ^ Vetor(67,-67)) << std::endl;
+    v = v + Vetor(36, -32);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(81, -57);
+    std::cout << (v ^ Vetor(56,-9)) << std::endl;
+    std::cout << (v * Vetor(-35,44)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-40, -99);
+    std::cout << (v ^ Vetor(-53,5)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(64,-95)) << std::endl;
+    std::cout << (v ^ Vetor(82,46)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(61,8)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-9, 79);
+    std::cout << (v * Vetor(77,47)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(17, 73);
+    return 0;
+}
+deveria ser
+135.88357192876944
+-11562
+-646
+-11300
+-7480
+(-80,-8)
+-1288
+15.297058540778355
+897
+11.309932474020227
+(15,65)
+3822
+(79,160)
+2471
+178.44046626256053
+94.68589983950271
+-16013
+172.07265907168403
+-10666
+6950
+188.09837851507388
+15422
+293.48253781102545
+(74,284)
+131.42802579410758
+-19884
+(74,284)
+-16732
+(74,284)
+22066
+(65,363)
+
+mas deu
+135.884
+-11562
+-646
+-11300
+-7480
+(-80,-8)
+
+-1288
+15.2971
+897
+11.3099
+(15,65)
+
+3822
+(79,160)
+
+2471
+178.44
+94.6859
+-16013
+172.073
+-10666
+6950
+188.098
+15422
+293.483
+(74,284)
+
+131.428
+-19884
+(74,284)
+
+-16732
+(74,284)
+
+22066
+(65,363)
+
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 2 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(82, 10);
+    std::cout << (v ^ Vetor(-49,89)) << std::endl;
+    v = v - Vetor(-87, -93);
+    std::cout << (v * Vetor(-45,9)) << std::endl;
+    v = v + Vetor(28, -60);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-83,29)) << std::endl;
+    std::cout << (v * Vetor(22,-24)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-12, 94);
+    std::cout << (v < Vetor(63,-89)) << std::endl;
+    std::cout << (v * Vetor(76,87)) << std::endl;
+    std::cout << (v ^ Vetor(-37,72)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(85, 61);
+    v = v + Vetor(11, -19);
+    std::cout << v << std::endl;
+    v = v + Vetor(-40, -34);
+    std::cout << (v ^ Vetor(-67,70)) << std::endl;
+    v = v + Vetor(2, -96);
+    std::cout << (v * Vetor(-86,-86)) << std::endl;
+    std::cout << (v ^ Vetor(5,19)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(23,-75)) << std::endl;
+    std::cout << (v * Vetor(-23,64)) << std::endl;
+    std::cout << (v < Vetor(-27,-93)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(94,-47)) << std::endl;
+    v = v + Vetor(-65, -3);
+    std::cout << (v * Vetor(-23,-38)) << std::endl;
+    v = v + Vetor(87, 31);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-88,93)) << std::endl;
+    v = v + Vetor(83, 63);
+    v = v - Vetor(78, -89);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-63,-18)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-94, -60);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(22,79)) << std::endl;
+    std::cout << (v ^ Vetor(-86,-43)) << std::endl;
+    std::cout << (v * Vetor(-26,98)) << std::endl;
+    v = v - Vetor(30, 50);
+    v = v + Vetor(14, -29);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-1, 47);
+    std::cout << (v ^ Vetor(-68,-26)) << std::endl;
+    v = v + Vetor(-66, -62);
+    v = v - Vetor(-41, -6);
+    std::cout << (v * Vetor(66,80)) << std::endl;
+    v = v + Vetor(-50, 65);
+    std::cout << v << std::endl;
+    v = v + Vetor(-66, 77);
+    return 0;
+}
+deveria ser
+7788
+-6678
+201.6382900145704
+(197,43)
+148.4276448972434
+3302
+(197,43)
+201.6382900145704
+91.22810043576976
+25979
+18389
+230.20425712831639
+(185,137)
+(111,57)
+6511
+0
+1752
+103.23759005323593
+(73,-73)
+27.950969027890164
+-6351
+61.18920625702693
+(73,-73)
+3431
+2704
+105.11898020814318
+158.7638220193281
+146.4547711752676
+4941
+(100,107)
+(194,167)
+33.715805847916286
+6020
+11322
+198.56485086741813
+4578
+16352
+(102,144)
+
+mas deu
+7788
+-6678
+201.638
+(197,43)
+
+148.428
+3302
+(197,43)
+
+201.638
+91.2281
+25979
+18389
+230.204
+(185,137)
+
+(111,57)
+
+6511
+0
+1752
+103.238
+(73,-73)
+
+27.951
+-6351
+61.1892
+(73,-73)
+
+3431
+2704
+105.119
+158.764
+146.455
+4941
+(100,107)
+
+(194,167)
+
+33.7158
+6020
+11322
+198.565
+4578
+16352
+(102,144)
+
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 3 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-36, -46);
+    std::cout << (v * Vetor(29,-3)) << std::endl;
+    std::cout << (v ^ Vetor(64,-37)) << std::endl;
+    std::cout << (v * Vetor(-8,62)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(34, 20);
+    std::cout << (v < Vetor(1,79)) << std::endl;
+    std::cout << (v * Vetor(-74,-38)) << std::endl;
+    v = v + Vetor(-35, 51);
+    std::cout << (v < Vetor(12,-28)) << std::endl;
+    std::cout << (v * Vetor(-52,41)) << std::endl;
+    v = v - Vetor(-40, 45);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(91,-89)) << std::endl;
+    v = v + Vetor(78, 53);
+    std::cout << (v < Vetor(-19,81)) << std::endl;
+    v = v - Vetor(-22, 58);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-21,-36)) << std::endl;
+    std::cout << (v ^ Vetor(-39,-83)) << std::endl;
+    v = v + Vetor(-46, -46);
+    v = v - Vetor(75, 85);
+    v = v + Vetor(13, 38);
+    return 0;
+}
+deveria ser
+-906
+4276
+-2564
+(-36,-46)
+134.04053998116294
+7688
+105.06848815949222
+4845
+(-65,-60)
+88.45903006477066
+11245
+131.50184294171197
+73.824115301167
+58.557192929535645
+-5440
+
+mas deu
+-906
+4276
+-2564
+(-36,-46)
+
+134.041
+7688
+105.068
+4845
+(-65,-60)
+
+88.459
+11245
+131.502
+73.8241
+58.5572
+-5440
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 4 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(41, -90);
+    std::cout << (v < Vetor(83,52)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-13, 15);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-13,39)) << std::endl;
+    std::cout << (v * Vetor(77,-92)) << std::endl;
+    v = v - Vetor(89, 14);
+    v = v + Vetor(67, 59);
+    v = v - Vetor(72, -66);
+    std::cout << (v ^ Vetor(-7,93)) << std::endl;
+    std::cout << (v * Vetor(50,53)) << std::endl;
+    v = v - Vetor(-96, -82);
+    std::cout << (v * Vetor(-10,-1)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-56,29)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(59,-50)) << std::endl;
+    std::cout << (v ^ Vetor(-28,-12)) << std::endl;
+    std::cout << (v < Vetor(42,72)) << std::endl;
+    v = v - Vetor(25, 21);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-42, -12);
+    v = v + Vetor(36, 57);
+    std::cout << (v * Vetor(-82,-98)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(12, 80);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-31,76)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-56, 16);
+    std::cout << (v < Vetor(-63,86)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-22,-20)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(8,-25)) << std::endl;
+    std::cout << (v < Vetor(0,-10)) << std::endl;
+    std::cout << (v * Vetor(-51,-21)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-39, 43);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(89,-61)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(70, 59);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(22,74)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(66, -87);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-50,-36)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(71,68)) << std::endl;
+    std::cout << (v ^ Vetor(15,5)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(65, 13);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(45,-1)) << std::endl;
+    return 0;
+}
+deveria ser
+97.57549057502892
+98.89893831583835
+(28,-75)
+80.05623023850174
+(28,-75)
+177.96266930318
+9056
+-5886
+-1392
+-418
+(30,118)
+1742
+(30,118)
+-4130
+2944
+15.991924865449358
+97.12878049270464
+-23074
+(83,166)
+263.7062759966095
+15751
+263.7062759966095
+44.6915369079685
+264.8867682614592
+140.7402816585419
+264.8867682614592
+-6238
+171.53340734755184
+-7491
+(39,262)
+(78,219)
+-24249
+(78,219)
+(148,278)
+4836
+314.94126436527813
+286.83967647450726
+(214,191)
+1846
+(214,191)
+286.83967647450726
+28182
+-1795
+(214,191)
+232.13142829009604
+-8159
+
+mas deu
+97.5755
+98.8989
+(28,-75)
+
+80.0562
+(28,-75)
+
+177.963
+9056
+-5886
+-1392
+-418
+(30,118)
+
+1742
+(30,118)
+
+-4130
+2944
+15.9919
+97.1288
+-23074
+(83,166)
+
+263.706
+15751
+263.706
+44.6915
+264.887
+140.74
+264.887
+-6238
+171.533
+-7491
+(39,262)
+
+(78,219)
+
+-24249
+(78,219)
+
+(148,278)
+
+4836
+314.941
+286.84
+(214,191)
+
+1846
+(214,191)
+
+286.84
+28182
+-1795
+(214,191)
+
+232.131
+-8159
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 5 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-61, -83);
+    std::cout << (v < Vetor(95,76)) << std::endl;
+    std::cout << (v ^ Vetor(53,-68)) << std::endl;
+    v = v - Vetor(69, 90);
+    v = v + Vetor(63, 24);
+    std::cout << (v < Vetor(74,63)) << std::endl;
+    std::cout << (v ^ Vetor(-78,-70)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(60, 54);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-80, -35);
+    std::cout << (v ^ Vetor(-75,3)) << std::endl;
+    v = v + Vetor(-12, 9);
+    std::cout << (v * Vetor(68,-60)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(22,80)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-8, 88);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(35,-36)) << std::endl;
+    v = v + Vetor(-63, -97);
+    v = v - Vetor(-95, 93);
+    std::cout << (v ^ Vetor(75,-98)) << std::endl;
+    v = v + Vetor(74, -33);
+    std::cout << (v < Vetor(-79,-10)) << std::endl;
+    v = v + Vetor(-35, 31);
+    v = v - Vetor(-2, 21);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-43,8)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(38, 86);
+    std::cout << v << std::endl;
+    v = v + Vetor(-11, -37);
+    std::cout << (v ^ Vetor(-15,-41)) << std::endl;
+    v = v + Vetor(50, 16);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(43, 61);
+    v = v - Vetor(-72, 35);
+    std::cout << (v ^ Vetor(63,85)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-59,-51)) << std::endl;
+    std::cout << (v < Vetor(-88,-92)) << std::endl;
+    std::cout << (v ^ Vetor(54,-71)) << std::endl;
+    v = v + Vetor(-43, 28);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(63,66)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(67,-63)) << std::endl;
+    v = v + Vetor(-41, 71);
+    std::cout << (v ^ Vetor(-20,43)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-44,74)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-74,-100)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-65,100)) << std::endl;
+    std::cout << (v < Vetor(82,69)) << std::endl;
+    std::cout << (v ^ Vetor(-35,64)) << std::endl;
+    std::cout << (v * Vetor(41,-33)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(0, -98);
+    std::cout << (v ^ Vetor(31,15)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-54, 1);
+    std::cout << (v < Vetor(57,32)) << std::endl;
+    v = v - Vetor(98, 18);
+    std::cout << (v < Vetor(65,-40)) << std::endl;
+    v = v + Vetor(-75, 100);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-29,3)) << std::endl;
+    std::cout << (v < Vetor(47,-26)) << std::endl;
+    v = v + Vetor(-45, -18);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(20, -2);
+    std::cout << (v * Vetor(39,-7)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-100,99)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-80,93)) << std::endl;
+    v = v - Vetor(-4, 49);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(38,-91)) << std::endl;
+    std::cout << (v ^ Vetor(-73,41)) << std::endl;
+    v = v - Vetor(81, 16);
+    std::cout << v << std::endl;
+    v = v + Vetor(21, 14);
+    std::cout << (v ^ Vetor(31,6)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(69,19)) << std::endl;
+    v = v - Vetor(-96, -19);
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+164.97345367285342
+8547
+154.62121112536366
+-6932
+(-67,-149)
+95.25754563287887
+-4281
+7208
+(61,-51)
+114.52158349881563
+(61,-51)
+79.51100552753688
+155.18376203714098
+(69,-139)
+2381
+14777
+108.5860410576001
+379.5629065122144
+-8922
+(142,-352)
+(180,-266)
+-11474
+(219,-287)
+361.01246515875323
+44833
+(334,-261)
+-32433
+95.72158026918147
+-9620
+372.7868023414992
+(291,-233)
+2955
+(291,-233)
+34176
+7510
+297.89931184881914
+-22988
+297.89931184881914
+-36988
+297.89931184881914
+14470
+73.02262142980338
+10330
+15596
+(250,-162)
+5734
+(250,-64)
+47.12889598543891
+7.967271385330706
+29.832867780352597
+-610
+68.51066317646129
+22.02271554554524
+-71
+2.23606797749979
+-298
+2.23606797749979
+75.8624378410197
+(2,-50)
+4626
+-3568
+(-79,-66)
+1264
+(-58,-52)
+77.89736837660179
+153.5176797161108
+50.32891812864648
+
+mas deu
+164.973
+8547
+154.621
+-6932
+(-67,-149)
+
+95.2575
+-4281
+7208
+(61,-51)
+
+114.522
+(61,-51)
+
+79.511
+155.184
+(69,-139)
+
+2381
+14777
+108.586
+379.563
+-8922
+(142,-352)
+
+(180,-266)
+
+-11474
+(219,-287)
+
+361.012
+44833
+(334,-261)
+
+-32433
+95.7216
+-9620
+372.787
+(291,-233)
+
+2955
+(291,-233)
+
+34176
+7510
+297.899
+-22988
+297.899
+-36988
+297.899
+14470
+73.0226
+10330
+15596
+(250,-162)
+
+5734
+(250,-64)
+
+47.1289
+7.96727
+29.8329
+-610
+68.5107
+22.0227
+-71
+2.23607
+-298
+2.23607
+75.8624
+(2,-50)
+
+4626
+-3568
+(-79,-66)
+
+1264
+(-58,-52)
+
+77.8974
+153.518
+50.3289
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(-21,-78)'
+Traceback completo:
+Teste 6 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-13, -77);
+    v = v - Vetor(-2, -98);
+    std::cout << (v ^ Vetor(67,44)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(46, 91);
+    std::cout << (v ^ Vetor(54,25)) << std::endl;
+    v = v - Vetor(-36, 8);
+    std::cout << (v * Vetor(-91,-97)) << std::endl;
+    std::cout << (v < Vetor(39,-58)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-28, -89);
+    std::cout << (v < Vetor(-66,-28)) << std::endl;
+    v = v + Vetor(-30, 87);
+    v = v - Vetor(-18, -49);
+    v = v + Vetor(-94, -84);
+    std::cout << (v ^ Vetor(9,18)) << std::endl;
+    v = v + Vetor(95, 25);
+    std::cout << v << std::endl;
+    v = v - Vetor(-14, 85);
+    std::cout << (v * Vetor(-12,-24)) << std::endl;
+    v = v - Vetor(72, -69);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(50, -41);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-61, -86);
+    v = v - Vetor(-12, -5);
+    std::cout << (v ^ Vetor(-84,-61)) << std::endl;
+    std::cout << (v * Vetor(24,42)) << std::endl;
+    v = v - Vetor(50, -1);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(69,-94)) << std::endl;
+    v = v - Vetor(-36, 56);
+    v = v + Vetor(-26, 12);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-97, 26);
+    std::cout << (v < Vetor(34,88)) << std::endl;
+    v = v - Vetor(69, 36);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(99, 78);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-40,-67)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-21, 28);
+    std::cout << (v * Vetor(-64,-58)) << std::endl;
+    v = v + Vetor(46, 34);
+    std::cout << (v ^ Vetor(10,-39)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-24,70)) << std::endl;
+    v = v - Vetor(19, 75);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(52,-87)) << std::endl;
+    std::cout << (v ^ Vetor(-45,-43)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-32,-99)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(91,-66)) << std::endl;
+    v = v - Vetor(34, 98);
+    v = v + Vetor(-51, 93);
+    std::cout << (v < Vetor(-79,6)) << std::endl;
+    v = v + Vetor(92, 92);
+    std::cout << (v < Vetor(-60,-45)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-68,-78)) << std::endl;
+    v = v + Vetor(-31, -28);
+    std::cout << (v ^ Vetor(55,-57)) << std::endl;
+    std::cout << (v * Vetor(68,-53)) << std::endl;
+    return 0;
+}
+deveria ser
+-1891
+(-11,21)
+2355
+9477
+48.98591869646256
+(-21,-78)
+80.77747210701756
+50.65889965472823
+-1755
+(-60,-90)
+4752
+158.61904047118682
+(-118,-106)
+180.13605968822566
+(-168,-65)
+180.13605968822566
+973
+-11340
+303.8321905262838
+-4793
+319.0141062711804
+135.8485194244219
+467.4719242906466
+(-324,-121)
+345.8569068270865
+38.683680527124345
+345.8569068270865
+28034
+11173
+281.55638866841576
+95.18247838639599
+335.0761107569443
+2178
+3318
+335.0761107569443
+37.54374120626762
+(-276,-190)
+35506
+32.71965863774474
+15.918073165982497
+288.0451353520833
+26326
+24305
+-13457
+
+mas deu
+-1891
+(-11,21)
+
+2355
+9477
+48.9859
+(-21,-78)
+
+80.7775
+50.6589
+-1755
+(-60,-90)
+
+4752
+158.619
+(-118,-106)
+
+180.136
+(-168,-65)
+
+180.136
+973
+-11340
+303.832
+-4793
+319.014
+135.849
+467.472
+(-324,-121)
+
+345.857
+38.6837
+345.857
+28034
+11173
+281.556
+95.1825
+335.076
+2178
+3318
+335.076
+37.5437
+(-276,-190)
+
+35506
+32.7197
+15.9181
+288.045
+26326
+24305
+-13457
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 7 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-62, -3);
+    std::cout << (v ^ Vetor(-57,98)) << std::endl;
+    std::cout << (v < Vetor(54,31)) << std::endl;
+    std::cout << (v ^ Vetor(-2,-9)) << std::endl;
+    v = v + Vetor(-19, -23);
+    std::cout << v << std::endl;
+    v = v + Vetor(-94, 63);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(100,-52)) << std::endl;
+    v = v + Vetor(92, -56);
+    std::cout << (v ^ Vetor(46,100)) << std::endl;
+    std::cout << (v < Vetor(-80,-5)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(63,35)) << std::endl;
+    return 0;
+}
+deveria ser
+-6247
+152.91119963227712
+552
+(-81,-26)
+178.86866690396056
+-19424
+-7426
+9.317409669884846
+85.14693182963201
+163.83913994580502
+
+mas deu
+-6247
+152.911
+552
+(-81,-26)
+
+178.869
+-19424
+-7426
+9.31741
+85.1469
+163.839
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 8 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(84, 69);
+    std::cout << (v ^ Vetor(-8,-76)) << std::endl;
+    std::cout << (v < Vetor(-33,-68)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(47,60)) << std::endl;
+    std::cout << (v ^ Vetor(-50,90)) << std::endl;
+    v = v - Vetor(-41, -34);
+    v = v + Vetor(-55, -61);
+    std::cout << (v ^ Vetor(80,51)) << std::endl;
+    v = v - Vetor(91, -65);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-92, -86);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(85,27)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-15,84)) << std::endl;
+    v = v - Vetor(44, 20);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-18,-45)) << std::endl;
+    std::cout << (v ^ Vetor(84,83)) << std::endl;
+    std::cout << (v * Vetor(0,-40)) << std::endl;
+    std::cout << (v ^ Vetor(-73,-62)) << std::endl;
+    std::cout << (v * Vetor(-34,68)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-81, 40);
+    v = v + Vetor(27, 24);
+    v = v - Vetor(-8, 8);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-67, 74);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(91,56)) << std::endl;
+    return 0;
+}
+deveria ser
+-5832
+155.2876869298061
+(84,69)
+12.526557462529757
+11010
+210
+109.04127658827184
+(-113,21)
+114.93476410555685
+-4836
+(-113,21)
+-9177
+(-157,1)
+68.56352684937885
+-13115
+-40
+9807
+5406
+(-157,1)
+47.01063709417264
+100.42410069301094
+(26,-97)
+-3066
+
+mas deu
+-5832
+155.288
+(84,69)
+
+12.5266
+11010
+210
+109.041
+(-113,21)
+
+114.935
+-4836
+(-113,21)
+
+-9177
+(-157,1)
+
+68.5635
+-13115
+-40
+9807
+5406
+(-157,1)
+
+47.0106
+100.424
+(26,-97)
+
+-3066
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 9 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(85, -50);
+    v = v + Vetor(-51, -90);
+    std::cout << (v < Vetor(86,-88)) << std::endl;
+    v = v - Vetor(-17, -43);
+    v = v + Vetor(67, 92);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(0,-4)) << std::endl;
+    v = v + Vetor(72, 59);
+    std::cout << (v < Vetor(65,-98)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-5, -19);
+    std::cout << (v < Vetor(-21,97)) << std::endl;
+    std::cout << (v * Vetor(-71,-64)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-60,41)) << std::endl;
+    v = v + Vetor(-53, -56);
+    std::cout << (v < Vetor(53,-24)) << std::endl;
+    v = v + Vetor(-96, 3);
+    v = v - Vetor(-13, 82);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(92,-19)) << std::endl;
+    v = v + Vetor(31, -44);
+    std::cout << (v * Vetor(38,-33)) << std::endl;
+    std::cout << (v ^ Vetor(79,-62)) << std::endl;
+    std::cout << (v < Vetor(-39,60)) << std::endl;
+    v = v - Vetor(-69, -25);
+    v = v + Vetor(50, -99);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(4, 15);
+    std::cout << (v < Vetor(-89,66)) << std::endl;
+    v = v + Vetor(74, -38);
+    std::cout << (v < Vetor(-95,-86)) << std::endl;
+    std::cout << v << std::endl;
+    return 0;
+}
+deveria ser
+30.691037687679408
+(118,-5)
+118.10588469674151
+-472
+72.31077158169484
+197.52468200202222
+81.69188064500186
+-18517
+208.21623375712088
+-8707
+31.18931535378586
+85.58621384311844
+34.751491546030074
+6918
+2794
+172.69072592723558
+275.8278448597966
+172.991730908658
+97.9805008166609
+(279,-233)
+
+mas deu
+30.691
+(118,-5)
+
+118.106
+-472
+72.3108
+197.525
+81.6919
+-18517
+208.216
+-8707
+31.1893
+85.5862
+34.7515
+6918
+2794
+172.691
+275.828
+172.992
+97.9805
+(279,-233)
+
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 10 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(16, -66);
+    std::cout << (v ^ Vetor(-89,100)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(37, 92);
+    std::cout << (v < Vetor(77,-81)) << std::endl;
+    std::cout << (v ^ Vetor(-72,-21)) << std::endl;
+    v = v - Vetor(-23, 8);
+    std::cout << (v ^ Vetor(24,10)) << std::endl;
+    v = v + Vetor(64, 0);
+    v = v - Vetor(100, -95);
+    std::cout << (v ^ Vetor(-41,-83)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(84,82)) << std::endl;
+    std::cout << (v < Vetor(-48,82)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(80,84)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(73, 22);
+    v = v - Vetor(-30, -35);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(86,-47)) << std::endl;
+    std::cout << (v * Vetor(-81,-8)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(40,-22)) << std::endl;
+    std::cout << (v * Vetor(63,100)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+-4274
+(16,-66)
+72.58121683587201
+759
+328
+1313
+119.87076374162301
+12626
+49.83631079539058
+(40,113)
+119.87076374162301
+24.109757061552635
+119.87076374162301
+222.1463481581455
+-21341
+-12943
+(143,170)
+222.1463481581455
+-9946
+26009
+222.1463481581455
+
+mas deu
+-4274
+(16,-66)
+
+72.5812
+759
+328
+1313
+119.871
+12626
+49.8363
+(40,113)
+
+119.871
+24.1098
+119.871
+222.146
+-21341
+-12943
+(143,170)
+
+222.146
+-9946
+26009
+222.146
+
+Teste 11 deu errado! +0.033
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(6, 48);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(70,1)) << std::endl;
+    std::cout << (v < Vetor(-41,77)) << std::endl;
+    v = v - Vetor(-12, -70);
+    std::cout << (v * Vetor(-31,98)) << std::endl;
+    v = v + Vetor(61, 30);
+    std::cout << (v < Vetor(-70,-12)) << std::endl;
+    v = v - Vetor(28, 95);
+    std::cout << v << std::endl;
+    v = v - Vetor(47, -39);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(45,-9)) << std::endl;
+    v = v - Vetor(-37, -53);
+    std::cout << v << std::endl;
+    return 0;
+}
+deveria ser
+48.373546489791295
+-3354
+35.158868240365614
+11006
+127.82015517069253
+(51,53)
+(4,92)
+-4176
+(41,145)
+
+mas deu
+48.3735
+-3354
+35.1589
+11006
+127.82
+(51,53)
+
+(4,92)
+
+-4176
+(41,145)
+
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(1,-2)'
+Traceback completo:
+Teste 12 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v;
+    std::cout << v << std::endl;
+    v = v+Vetor(1, 2);
+    std::cout << v << std::endl;
+    v = v+Vetor(1, 2);
+    std::cout << v << std::endl;
+    v = v-Vetor(1, 6);
+    std::cout << v << std::endl;
+    int a = v*Vetor(3, 2);
+    std::cout << a << std::endl;
+    int b = v^Vetor(-4501, 9002);
+    std::cout << b << std::endl;
+    double c = v.abs();
+    std::cout << c << std::endl;
+    return 0;
+}
+
+deveria ser
+(0, 0)
+(1, 2)
+(2, 4)
+(1, -2)
+-1
+0
+2.236068
+mas deu
+(0,0)
+
+(1,2)
+
+(2,4)
+
+(1,-2)
+
+-1
+0
+2.23607
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 13 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(78, -98);
+    std::cout << (v * Vetor(-91,95)) << std::endl;
+    v = v - Vetor(-42, 13);
+    std::cout << v << std::endl;
+    v = v + Vetor(82, 81);
+    v = v - Vetor(97, 29);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-99, -40);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(52, -22);
+    v = v + Vetor(82, 14);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(28,-24)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(23, -19);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-12,-43)) << std::endl;
+    v = v - Vetor(51, 22);
+    v = v + Vetor(35, 96);
+    std::cout << (v ^ Vetor(-55,43)) << std::endl;
+    std::cout << (v * Vetor(30,-57)) << std::endl;
+    v = v - Vetor(100, 8);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-54,71)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(100, -54);
+    std::cout << (v ^ Vetor(41,75)) << std::endl;
+    std::cout << (v * Vetor(-65,79)) << std::endl;
+    std::cout << (v < Vetor(38,68)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(15, 94);
+    std::cout << v << std::endl;
+    v = v - Vetor(-32, -15);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(97,-89)) << std::endl;
+    std::cout << (v < Vetor(-66,18)) << std::endl;
+    v = v + Vetor(-33, -56);
+    std::cout << (v ^ Vetor(-38,-5)) << std::endl;
+    std::cout << (v * Vetor(-82,-73)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-33, -45);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(37,12)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-42,-95)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(56,68)) << std::endl;
+    std::cout << (v * Vetor(71,89)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(31, -26);
+    std::cout << (v * Vetor(-47,-29)) << std::endl;
+    v = v + Vetor(19, 18);
+    std::cout << (v ^ Vetor(-73,-11)) << std::endl;
+    std::cout << (v * Vetor(71,53)) << std::endl;
+    v = v + Vetor(65, -68);
+    std::cout << (v ^ Vetor(80,-80)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-31,-21)) << std::endl;
+    std::cout << (v ^ Vetor(45,-16)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(31,26)) << std::endl;
+    v = v - Vetor(-63, -77);
+    std::cout << (v ^ Vetor(-83,63)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-54,-70)) << std::endl;
+    std::cout << (v < Vetor(-57,15)) << std::endl;
+    std::cout << (v ^ Vetor(-96,-31)) << std::endl;
+    std::cout << (v * Vetor(44,-43)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(95,-11)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-15, -83);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(51, 7);
+    std::cout << (v < Vetor(94,53)) << std::endl;
+    std::cout << (v * Vetor(83,-93)) << std::endl;
+    std::cout << (v ^ Vetor(-84,24)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+-16408
+(120,-111)
+120.44085685513866
+99.18165152889924
+72.56031973468694
+19.653824058053292
+72.56031973468694
+45.880278987817846
+1736
+1521
+-1800
+(-103,22)
+7124
+(-103,22)
+1087
+-2333
+156.15833899679072
+(-3,-32)
+(-18,-126)
+111.87939935484101
+(14,-111)
+111.87939935484101
+11237
+112.44365584579442
+-6251
+13749
+168.0773631397161
+(-19,-167)
+(14,-122)
+101.42284895686298
+122.80065146407001
+30.396764691370972
+(14,-122)
+133.98124936836214
+-9864
+(14,-122)
+3583
+-5716
+-3992
+6320
+160.63934760823702
+989
+5498
+(67,-146)
+6268
+2463
+(130,-69)
+-12826
+166.78557570725445
+-10654
+8687
+147.1767644704829
+21.353151632462335
+(130,-69)
+147.1767644704829
+145.67429423202984
+23.300095266810143
+14315
+6468
+197.12178976460214
+
+mas deu
+-16408
+(120,-111)
+
+120.441
+99.1817
+72.5603
+19.6538
+72.5603
+45.8803
+1736
+1521
+-1800
+(-103,22)
+
+7124
+(-103,22)
+
+1087
+-2333
+156.158
+(-3,-32)
+
+(-18,-126)
+
+111.879
+(14,-111)
+
+111.879
+11237
+112.444
+-6251
+13749
+168.077
+(-19,-167)
+
+(14,-122)
+
+101.423
+122.801
+30.3968
+(14,-122)
+
+133.981
+-9864
+(14,-122)
+
+3583
+-5716
+-3992
+6320
+160.639
+989
+5498
+(67,-146)
+
+6268
+2463
+(130,-69)
+
+-12826
+166.786
+-10654
+8687
+147.177
+21.3532
+(130,-69)
+
+147.177
+145.674
+23.3001
+14315
+6468
+197.122
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 14 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-83, -34);
+    v = v + Vetor(-19, -51);
+    v = v - Vetor(-5, -6);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-3,52)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(26,40)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(35, -18);
+    std::cout << v << std::endl;
+    v = v + Vetor(34, -10);
+    std::cout << (v * Vetor(42,-58)) << std::endl;
+    std::cout << (v ^ Vetor(-25,-86)) << std::endl;
+    std::cout << (v * Vetor(-22,11)) << std::endl;
+    std::cout << (v ^ Vetor(38,31)) << std::endl;
+    v = v + Vetor(-93, -62);
+    std::cout << (v < Vetor(-76,96)) << std::endl;
+    v = v + Vetor(84, 47);
+    std::cout << (v * Vetor(-78,53)) << std::endl;
+    v = v + Vetor(-25, -12);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-96, 84);
+    std::cout << (v ^ Vetor(63,80)) << std::endl;
+    v = v + Vetor(55, -21);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-80,-55)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-41,-33)) << std::endl;
+    v = v + Vetor(-27, 6);
+    std::cout << (v < Vetor(90,22)) << std::endl;
+    std::cout << (v * Vetor(56,38)) << std::endl;
+    std::cout << (v ^ Vetor(1,-40)) << std::endl;
+    std::cout << (v * Vetor(-63,26)) << std::endl;
+    v = v - Vetor(14, -78);
+    v = v + Vetor(21, 48);
+    std::cout << (v ^ Vetor(-91,-61)) << std::endl;
+    std::cout << (v * Vetor(54,21)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(79,95)) << std::endl;
+    std::cout << (v ^ Vetor(-24,27)) << std::endl;
+    v = v - Vetor(55, 35);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-15,80)) << std::endl;
+    v = v + Vetor(91, -90);
+    std::cout << (v < Vetor(-96,-85)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(84,-29)) << std::endl;
+    v = v - Vetor(-97, 61);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-33,-1)) << std::endl;
+    std::cout << (v * Vetor(3,29)) << std::endl;
+    v = v - Vetor(-19, 6);
+    std::cout << (v < Vetor(-9,-93)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(10, -39);
+    v = v - Vetor(-7, -41);
+    std::cout << (v ^ Vetor(20,45)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+(-97,-79)
+125.85864201404755
+(-97,-79)
+-1826
+125.09996003196804
+(-62,-97)
+5030
+-267
+-561
+3198
+106.03074761106448
+-3580
+147.648230602334
+-9490
+125.09996003196804
+(-103,-71)
+-15
+125.09996003196804
+(-103,-71)
+125.09996003196804
+4.2505373017649
+167.1712171285446
+-9750
+5265
+6500
+13054
+-5361
+137.2953021774598
+103.36777661522532
+-1857
+(-178,26)
+-13850
+5.18281715103166
+(-87,-64)
+124.613979373194
+125.39936203984452
+(10,-125)
+92.83821667097247
+-3595
+18.010029536610652
+(29,-131)
+4650
+136.95619737711763
+
+mas deu
+(-97,-79)
+
+125.859
+(-97,-79)
+
+-1826
+125.1
+(-62,-97)
+
+5030
+-267
+-561
+3198
+106.031
+-3580
+147.648
+-9490
+125.1
+(-103,-71)
+
+-15
+125.1
+(-103,-71)
+
+125.1
+4.25054
+167.171
+-9750
+5265
+6500
+13054
+-5361
+137.295
+103.368
+-1857
+(-178,26)
+
+-13850
+5.18282
+(-87,-64)
+
+124.614
+125.399
+(10,-125)
+
+92.8382
+-3595
+18.01
+(29,-131)
+
+4650
+136.956
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(55,-148)'
+Traceback completo:
+Teste 15 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(81, -52);
+    v = v - Vetor(-11, 18);
+    std::cout << (v < Vetor(-74,39)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(63, 82);
+    std::cout << (v ^ Vetor(76,-43)) << std::endl;
+    std::cout << (v * Vetor(44,-38)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-17,-19)) << std::endl;
+    v = v - Vetor(10, 18);
+    v = v + Vetor(36, 22);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-16,-64)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(21,41)) << std::endl;
+    v = v - Vetor(48, -75);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-34, -85);
+    std::cout << (v < Vetor(46,92)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(10, -39);
+    std::cout << (v ^ Vetor(-87,-30)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(79, 73);
+    std::cout << (v * Vetor(-34,73)) << std::endl;
+    v = v - Vetor(21, -50);
+    std::cout << (v * Vetor(24,-71)) << std::endl;
+    std::cout << (v < Vetor(-94,36)) << std::endl;
+    std::cout << (v * Vetor(-24,-2)) << std::endl;
+    v = v + Vetor(-45, 2);
+    v = v - Vetor(23, 68);
+    v = v + Vetor(-72, -94);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(73,69)) << std::endl;
+    std::cout << (v ^ Vetor(-22,83)) << std::endl;
+    std::cout << (v * Vetor(-45,33)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-36, 97);
+    v = v - Vetor(-65, 37);
+    std::cout << (v ^ Vetor(89,23)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-31,-56)) << std::endl;
+    v = v + Vetor(86, 19);
+    v = v - Vetor(84, 82);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(24,46)) << std::endl;
+    std::cout << (v * Vetor(58,11)) << std::endl;
+    v = v + Vetor(46, 74);
+    std::cout << (v * Vetor(6,-29)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(100, -7);
+    std::cout << (v < Vetor(80,-2)) << std::endl;
+    v = v + Vetor(-68, 98);
+    v = v - Vetor(-51, 49);
+    std::cout << v << std::endl;
+    v = v + Vetor(-98, 14);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-11,-44)) << std::endl;
+    std::cout << (v ^ Vetor(-100,-25)) << std::endl;
+    std::cout << (v * Vetor(-7,84)) << std::endl;
+    return 0;
+}
+deveria ser
+170.52404057847494
+115.6027681329474
+10305
+7052
+(29,-152)
+2395
+(55,-148)
+34.42239806750731
+157.88920165736477
+(55,-148)
+132.4925419962605
+73.33484846919642
+(7,-73)
+163.13232932045443
+(-27,-158)
+-16629
+197.7321420508057
+-16446
+12812
+82.95091934258855
+3248
+(-257,-380)
+-44981
+-29691
+-975
+458.74720707596686
+(-257,-380)
+458.74720707596686
+23236
+(-228,-320)
+6.50221152133596
+444.7077692147957
+-1204
+-17321
+7881
+357.60453017264757
+131.40311466238185
+(-297,-253)
+461.67737653040786
+14861
+-14025
+-17311
+
+mas deu
+170.524
+115.603
+10305
+7052
+(29,-152)
+
+2395
+(55,-148)
+
+34.4224
+157.889
+(55,-148)
+
+132.493
+73.3348
+(7,-73)
+
+163.132
+(-27,-158)
+
+-16629
+197.732
+-16446
+12812
+82.9509
+3248
+(-257,-380)
+
+-44981
+-29691
+-975
+458.747
+(-257,-380)
+
+458.747
+23236
+(-228,-320)
+
+6.50221
+444.708
+-1204
+-17321
+7881
+357.605
+131.403
+(-297,-253)
+
+461.677
+14861
+-14025
+-17311
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(0,1)'
+Traceback completo:
+Teste 16 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-1, 3);
+    std::cout << v << std::endl;
+    v = v + Vetor(1,2);
+    std::cout << v << std::endl;
+    v = v + Vetor(1,2);
+    std::cout << v << std::endl;
+    v = v - Vetor(1,6);
+    std::cout << v << std::endl;
+    std::cout << v * Vetor(3, 2) << std::endl; 
+    std::cout << (v ^ Vetor(-4501,9002)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+
+deveria ser
+(-1,3)
+(0,5)
+(1,7)
+(0,1)
+2
+4501
+1.0
+mas deu
+(-1,3)
+
+(0,5)
+
+(1,7)
+
+(0,1)
+
+2
+4501
+1
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 17 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(80, -31);
+    std::cout << (v ^ Vetor(-98,-62)) << std::endl;
+    std::cout << (v * Vetor(24,34)) << std::endl;
+    std::cout << (v ^ Vetor(87,-44)) << std::endl;
+    std::cout << (v * Vetor(-69,-14)) << std::endl;
+    v = v + Vetor(-72, 77);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(24,-14)) << std::endl;
+    std::cout << (v * Vetor(-26,-69)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(98,34)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-83, -84);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-99, -95);
+    std::cout << (v * Vetor(45,36)) << std::endl;
+    v = v - Vetor(0, -3);
+    std::cout << (v * Vetor(-86,83)) << std::endl;
+    std::cout << (v < Vetor(-14,-44)) << std::endl;
+    v = v + Vetor(94, 63);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-38,68)) << std::endl;
+    v = v + Vetor(-68, 64);
+    v = v - Vetor(96, 56);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-6, -8);
+    std::cout << (v * Vetor(67,21)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(78,-87)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-24,7)) << std::endl;
+    std::cout << (v ^ Vetor(-40,51)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-76, 81);
+    v = v - Vetor(-25, -13);
+    std::cout << (v < Vetor(-98,-75)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(56,26)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(99, 73);
+    std::cout << (v ^ Vetor(-29,-24)) << std::endl;
+    v = v + Vetor(-11, 36);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-76,20)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(85,-1)) << std::endl;
+    v = v + Vetor(-77, 33);
+    std::cout << (v ^ Vetor(89,-2)) << std::endl;
+    v = v - Vetor(17, -10);
+    std::cout << (v * Vetor(-61,39)) << std::endl;
+    v = v - Vetor(-28, -50);
+    std::cout << (v ^ Vetor(-85,38)) << std::endl;
+    v = v - Vetor(-8, 63);
+    std::cout << v << std::endl;
+    v = v - Vetor(15, -13);
+    std::cout << (v < Vetor(21,-29)) << std::endl;
+    v = v + Vetor(-18, 55);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(94,-7)) << std::endl;
+    std::cout << (v < Vetor(-29,-61)) << std::endl;
+    v = v + Vetor(-55, -44);
+    std::cout << (v * Vetor(81,68)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(84,85)) << std::endl;
+    std::cout << (v ^ Vetor(86,-86)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(14,-57)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-67, 26);
+    std::cout << (v ^ Vetor(10,72)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(11, -83);
+    v = v + Vetor(-66, 4);
+    std::cout << (v * Vetor(26,-12)) << std::endl;
+    v = v + Vetor(52, 73);
+    std::cout << (v ^ Vetor(-33,-95)) << std::endl;
+    std::cout << (v * Vetor(-43,47)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(88, 15);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-53,31)) << std::endl;
+    std::cout << (v * Vetor(-21,-9)) << std::endl;
+    return 0;
+}
+deveria ser
+-7998
+866
+-823
+-5086
+(8,46)
+110.39063022044489
+-3382
+(8,46)
+2348
+(8,46)
+158.68522300453813
+16650
+2584
+157.84455312766494
+(284,291)
+30370
+322.1816257951406
+13749
+312.5331982366033
+116.72924011013427
+(114,291)
+95.13268564366949
+17454
+312.5331982366033
+(114,291)
+136.72035995885372
+390.12049420659764
+-19922
+(63,385)
+9394
+(151,494)
+-1596
+(151,494)
+-42141
+-47051
+17466
+53125
+(93,524)
+135.82578283616374
+(60,592)
+-56068
+160.3603687944417
+37669
+(5,548)
+44.13821847067445
+-47558
+548.022809744266
+165.6777573991065
+548.022809744266
+-36
+526.9421220589601
+-7438
+18041
+30033
+(47,682)
+(135,697)
+70.63812350344786
+-9108
+
+mas deu
+-7998
+866
+-823
+-5086
+(8,46)
+
+110.391
+-3382
+(8,46)
+
+2348
+(8,46)
+
+158.685
+16650
+2584
+157.845
+(284,291)
+
+30370
+322.182
+13749
+312.533
+116.729
+(114,291)
+
+95.1327
+17454
+312.533
+(114,291)
+
+136.72
+390.12
+-19922
+(63,385)
+
+9394
+(151,494)
+
+-1596
+(151,494)
+
+-42141
+-47051
+17466
+53125
+(93,524)
+
+135.826
+(60,592)
+
+-56068
+160.36
+37669
+(5,548)
+
+44.1382
+-47558
+548.023
+165.678
+548.023
+-36
+526.942
+-7438
+18041
+30033
+(47,682)
+
+(135,697)
+
+70.6381
+-9108
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+  File "tester.py", line 274, in <module>
+  File "gen.py", line 571, in score
+  File "gen.py", line 573, in <genexpr>
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(-108,-144)'
+Traceback completo:
+Teste 18 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-16, -80);
+    v = v - Vetor(92, 64);
+    std::cout << (v * Vetor(-47,-44)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(22,86)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(31,43)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-84,44)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(76,-23)) << std::endl;
+    std::cout << (v < Vetor(-74,54)) << std::endl;
+    std::cout << (v ^ Vetor(-94,-56)) << std::endl;
+    std::cout << (v < Vetor(-62,46)) << std::endl;
+    v = v - Vetor(20, 75);
+    std::cout << (v ^ Vetor(95,-87)) << std::endl;
+    v = v + Vetor(-55, -48);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-93,58)) << std::endl;
+    std::cout << (v ^ Vetor(86,44)) << std::endl;
+    v = v - Vetor(-81, 4);
+    v = v + Vetor(-35, 55);
+    std::cout << (v < Vetor(-57,-60)) << std::endl;
+    std::cout << (v * Vetor(-48,-1)) << std::endl;
+    std::cout << (v ^ Vetor(-54,-6)) << std::endl;
+    v = v - Vetor(89, 25);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-82,53)) << std::endl;
+    v = v + Vetor(75, -39);
+    std::cout << (v < Vetor(-45,50)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(69,33)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(7,68)) << std::endl;
+    v = v + Vetor(30, 32);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-1,-10)) << std::endl;
+    v = v - Vetor(38, 18);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-83, 3);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-99, -17);
+    std::cout << (v < Vetor(-51,-56)) << std::endl;
+    v = v - Vetor(70, -98);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-70,-29)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(53, -96);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(21, -88);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(1, -72);
+    std::cout << (v ^ Vetor(72,79)) << std::endl;
+    std::cout << (v * Vetor(-48,0)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(54, 67);
+    std::cout << (v ^ Vetor(-75,-93)) << std::endl;
+    std::cout << (v < Vetor(13,69)) << std::endl;
+    v = v + Vetor(81, -53);
+    std::cout << v << std::endl;
+    v = v + Vetor(-20, -22);
+    v = v - Vetor(-21, 98);
+    std::cout << v << std::endl;
+    v = v + Vetor(-54, 24);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-57,-76)) << std::endl;
+    return 0;
+}
+deveria ser
+11412
+(-108,-144)
+-6120
+180.0
+178.91907581333945
+(-108,-144)
+2736
+(-108,-144)
+13428
+89.24944320363574
+-7488
+89.7031333326753
+31941
+323.6943002278539
+(-183,-267)
+87.52349486489406
+14910
+11.145907649314791
+6792
+-10842
+330.3891644712338
+(-226,-241)
+79.71596478950671
+109.67543661040058
+318.12104614438823
+-19659
+(-151,-280)
+-20097
+275.94383486499567
+20.29730432596576
+309.8983704377937
+357.39753776432207
+(-242,-263)
+357.39753776432207
+8.285517014348715
+449.4941601400401
+(-411,-182)
+-821
+449.4941601400401
+453.26372014534763
+(-358,-278)
+(-379,-190)
+423.95872440604404
+-10998
+18144
+(-378,-262)
+459.92173247195007
+15501
+137.96174117343782
+(-351,-382)
+(-350,-502)
+625.8594091327541
+59356
+
+mas deu
+11412
+(-108,-144)
+
+-6120
+180
+178.919
+(-108,-144)
+
+2736
+(-108,-144)
+
+13428
+89.2494
+-7488
+89.7031
+31941
+323.694
+(-183,-267)
+
+87.5235
+14910
+11.1459
+6792
+-10842
+330.389
+(-226,-241)
+
+79.716
+109.675
+318.121
+-19659
+(-151,-280)
+
+-20097
+275.944
+20.2973
+309.898
+357.398
+(-242,-263)
+
+357.398
+8.28552
+449.494
+(-411,-182)
+
+-821
+449.494
+453.264
+(-358,-278)
+
+(-379,-190)
+
+423.959
+-10998
+18144
+(-378,-262)
+
+459.922
+15501
+137.962
+(-351,-382)
+
+(-350,-502)
+
+625.859
+59356
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: '(335,-83)'
+Traceback completo:
+Teste 19 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-1, -7);
+    v = v - Vetor(-73, 58);
+    std::cout << (v < Vetor(-38,-38)) << std::endl;
+    v = v - Vetor(-50, 60);
+    v = v + Vetor(-42, 8);
+    v = v - Vetor(-76, -20);
+    std::cout << (v * Vetor(29,86)) << std::endl;
+    std::cout << (v < Vetor(-26,6)) << std::endl;
+    v = v - Vetor(-40, 87);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(85,-60)) << std::endl;
+    v = v - Vetor(-85, -85);
+    std::cout << (v < Vetor(-2,98)) << std::endl;
+    v = v - Vetor(-54, -16);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-83,-1)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-47,-46)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-58, 58);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(57,-99)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-65,48)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(28,25)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-41, 46);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-59, 15);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(66,-49)) << std::endl;
+    v = v + Vetor(46, 32);
+    std::cout << (v * Vetor(-100,0)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(63, -99);
+    std::cout << (v < Vetor(-95,56)) << std::endl;
+    std::cout << (v ^ Vetor(19,-65)) << std::endl;
+    std::cout << (v * Vetor(12,-96)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-11, -94);
+    std::cout << (v < Vetor(-80,84)) << std::endl;
+    v = v + Vetor(-42, -31);
+    std::cout << (v ^ Vetor(-93,51)) << std::endl;
+    v = v - Vetor(76, 5);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(19,-25)) << std::endl;
+    return 0;
+}
+deveria ser
+92.92497794915639
+-3818
+161.12147981064385
+268.83452159274486
+7.973667709315253
+110.57717130360479
+(335,-83)
+-7224
+(335,-83)
+121.70060848817694
+345.1289614042844
+(335,-83)
+(393,-141)
+40.331586663991324
+417.5284421449633
+9699
+417.5284421449633
+(393,-141)
+61.497201199398766
+(393,-141)
+472.5727457228146
+532.7785656349174
+42436
+-53900
+(539,-170)
+173.5589555760709
+-34019
+33048
+(602,-269)
+149.5358693061569
+9963
+(495,-211)
+-8366
+
+mas deu
+92.925
+-3818
+161.121
+268.835
+7.97367
+110.577
+(335,-83)
+
+-7224
+(335,-83)
+
+121.701
+345.129
+(335,-83)
+
+(393,-141)
+
+40.3316
+417.528
+9699
+417.528
+(393,-141)
+
+61.4972
+(393,-141)
+
+472.573
+532.779
+42436
+-53900
+(539,-170)
+
+173.559
+-34019
+33048
+(602,-269)
+
+149.536
+9963
+(495,-211)
+
+-8366
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 274: ValueError - could not convert string to float: ''
+Traceback completo:
+Teste 20 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(5, -98);
+    std::cout << (v ^ Vetor(-39,-72)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(50, 75);
+    std::cout << (v < Vetor(-22,-92)) << std::endl;
+    v = v + Vetor(38, -88);
+    v = v - Vetor(-37, -86);
+    std::cout << (v ^ Vetor(-81,57)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-8,2)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-71,57)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(58, -69);
+    std::cout << (v < Vetor(-45,-100)) << std::endl;
+    std::cout << (v * Vetor(-61,-26)) << std::endl;
+    v = v - Vetor(79, -51);
+    return 0;
+}
+deveria ser
+-4182
+(5,-98)
+80.75482010659415
+5385
+(130,-25)
+-1090
+132.38202294873727
+-10655
+(130,-25)
+145.65731093279268
+-5536
+
+mas deu
+-4182
+(5,-98)
+
+80.7548
+5385
+(130,-25)
+
+-1090
+132.382
+-10655
+(130,-25)
+
+145.657
+-5536
+
+Nota exercicio 3: 0.0
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 2.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
