@@ -51,14 +51,14 @@ public:
         else
         {
             res[0] = 2;
-            res[1] = (-_b + sqrt(delta)) / (2 * _a);
-            res[2] = (-_b - sqrt(delta)) / (2 * _a);
+            res[1] = (-_b - sqrt(delta)) / (2 * _a);
+            res[2] = (-_b + sqrt(delta)) / (2 * _a);
         }
         return res;
     }
 
     double operator()(double x)
     {
-        return _a * _a * x + _b * x + _c;
+        return _a * x * x + _b * x + _c;
     }
 };
