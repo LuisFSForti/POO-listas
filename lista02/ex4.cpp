@@ -15,22 +15,30 @@ public:
     {
         if (a == 0)
         {
-            _a = 1;
-            _b = rand();
-            _c = rand();
+            this->_a = 1;
+            this->_b = rand();
+            this->_c = rand();
             return;
         }
 
-        _a = a;
-        _b = b;
-        _c = c;
+        this->_a = a;
+        this->_b = b;
+        this->_c = c;
+    }
+
+    Polinomio2(int a, int b)
+    {
+        Polinomio2(a, b, 0);
+    }
+
+    Polinomio2(int a)
+    {
+        Polinomio2(a, 0, 0);
     }
 
     Polinomio2()
     {
-        _a = 0;
-        _b = 0;
-        _c = 0;
+        Polinomio2(0, 0, 0);
     }
 
     double *raizes()

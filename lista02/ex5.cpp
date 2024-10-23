@@ -13,18 +13,18 @@ private:
 public:
     Arquivo(std::string arquivo)
     {
-        _conteudo.open(arquivo, std::fstream::in);
+        this->_conteudo.open(arquivo, std::fstream::in);
     }
 
     std::string proxima_linha()
     {
         std::string aux;
-        std::getline(_conteudo, aux);
+        std::getline(this->_conteudo, aux);
         return aux;
     }
 
     ~Arquivo()
     {
-        _conteudo.close();
+        this->_conteudo.close();
     }
 };
