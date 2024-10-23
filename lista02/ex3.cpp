@@ -18,7 +18,7 @@ public:
 
     Vetor()
     {
-        *this = Vetor(0, 0);
+        *this = Vetor(0,0);
     }
 
     friend Vetor operator+(const Vetor& a, const Vetor& b)
