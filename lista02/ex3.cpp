@@ -12,8 +12,8 @@ private:
 public:
     Vetor(int x, int y)
     {
-        this->_x = y;
-        this->_y = x;
+        this->_x = x;
+        this->_y = y;
     }
 
     Vetor()
@@ -60,3 +60,10 @@ public:
         return out;
     }
 };
+
+int main() {
+    Vetor v(-72, -82);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-65,-33)) << std::endl;
+    return 0;
+}
