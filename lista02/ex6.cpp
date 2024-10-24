@@ -39,7 +39,7 @@ public:
         }
     }
 
-    BigInt(int num, bool eh_num)
+    BigInt(int num = 9, bool eh_num = false)
     {
         std::string numero;
         if(eh_num)
@@ -53,8 +53,6 @@ public:
         }
         new (this) BigInt(numero);
     }
-
-    BigInt() : BigInt(9, false) {};
 
     BigInt(BigInt&& b)
     {
@@ -99,6 +97,117 @@ public:
         return aux;
     }
 
+    friend bool operator==(const BigInt& a, const BigInt& b)
+    {
+        if(&a == &b)
+            return true;
+
+        if(a._positivo != b._positivo)
+            return false;
+
+        if(a._npartes != b._npartes)
+            return false;
+
+        if(a._partes == b._partes)
+            return true;
+
+        if(a._partes == nullptr || b._partes == nullptr)
+            return false;
+
+        for(int i = 0; i < a._npartes; i++)
+        {
+            if(a._partes[i] != b._partes[i])
+                return false;
+        }
+
+        return true;
+    }
+    friend bool operator>(const BigInt& a, const BigInt& b)
+    {
+        if(a._positivo && !b._positivo)
+            return true;
+
+        if(!a._positivo && b._positivo)
+            return false;
+
+        bool saoNegativos = (!a._positivo && !b._positivo);
+
+        int diff1 = 0, diff2 = 0, menorTam = a._npartes;
+
+        if(a._npartes < b._npartes)
+        {
+            diff2 = b._npartes - a._npartes;
+            for(int i = 0; i < diff2; i++)
+            {
+                if(b._partes[i] > 0)
+                    return saoNegativos;
+            }
+        }
+        else
+        {
+            diff1 = a._npartes - b._npartes;
+            for(int i = 0; i < diff1; i++)
+            {
+                if(a._partes[i] > 0)
+                    return !saoNegativos;
+            }
+        }
+
+        for(int i = 0; i < menorTam; i++)
+        {
+            if(a._partes[i + diff1] < b._partes[i + diff2])
+                return saoNegativos;
+            if(a._partes[i + diff1] > b._partes[i + diff2])
+                return !saoNegativos;
+        }
+        return false;
+    }
+
+    friend BigInt operator+(const BigInt& a, const BigInt& b)
+    {
+        int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 2;
+        BigInt aux;
+
+        if(!a._positivo)
+            neg1 = -1;
+        if(!b._positivo)
+            neg2 = -1;
+
+        if(a._npartes > b._npartes)
+        {
+            maior = a._npartes;
+            menor = b._npartes;
+            diff1 = maior - menor;
+
+            aux = BigInt(maior + 1);
+
+            for(int i = 0; i < diff1; i++)
+            {
+                aux._partes[i] = neg1 * a._partes[i];
+            }
+        }
+        else
+        {
+            maior = b._npartes;
+            menor = a._npartes;
+            diff2 = maior - menor;
+
+            aux = BigInt(maior + 1);
+
+            for(int i = 0; i < diff2; i++)
+            {
+                aux._partes[i] = neg2 * b._partes[i];
+            }
+        }
+        for(int i = 0; i < menor; i++)
+        {
+            aux._partes[i + diff1 + diff2] = neg1 * a._partes[i + diff1] + neg2 * b._partes[i + diff2];
+        }
+
+        //Organizar vetor
+
+    }
+
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
     {
         if(a._partes == nullptr)
@@ -118,13 +227,12 @@ public:
 
 int main()
 {
-    BigInt teste1("-234586");
-    BigInt teste2(333, true);
-    BigInt teste3(3, false);
-    BigInt teste4;
-    BigInt teste5(std::move(teste1));
+    BigInt teste1("00001");
+    BigInt teste2("0010");
+    BigInt teste3("-0100");
+    BigInt teste4("1000");
+    BigInt teste5("-1");
     std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << std::endl;
-    teste1 = teste5.abs();
-    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << std::endl;
+    std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
     return 0;
 }
