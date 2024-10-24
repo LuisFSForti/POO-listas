@@ -11,7 +11,7 @@ private:
     int _a, _b, _c;
 
 public:
-    Polinomio2(int a, int b, int c)
+    Polinomio2(int a = 0, int b = 0, int c = 0)
     {
         if (a == 0)
         {
@@ -25,12 +25,6 @@ public:
         this->_b = b;
         this->_c = c;
     }
-
-    Polinomio2(int a, int b) : Polinomio2(a, b, 0) {};
-
-    Polinomio2(int a) : Polinomio2(a, 0, 0) {};
-
-    Polinomio2() : Polinomio2(0, 0, 0) {};
 
     double *raizes()
     {

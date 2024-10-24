@@ -10,13 +10,11 @@ private:
     int _x, _y;
 
 public:
-    Vetor(int x, int y)
+    Vetor(int x = 0, int y = 0)
     {
         this->_x = x;
         this->_y = y;
     }
-
-    Vetor() : Vetor(0, 0) {};
 
     friend Vetor operator+(const Vetor& a, const Vetor& b)
     {
