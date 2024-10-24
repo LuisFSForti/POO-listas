@@ -16,10 +16,7 @@ public:
         this->_y = y;
     }
 
-    Vetor()
-    {
-        *this = Vetor(0,0);
-    }
+    Vetor() : Vetor(0, 0) {};
 
     friend Vetor operator+(const Vetor& a, const Vetor& b)
     {

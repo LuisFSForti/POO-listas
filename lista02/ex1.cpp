@@ -16,23 +16,11 @@ public:
         this->_ligada = ligada;
     }
 
-    Televisao(bool ligada)
-    {
-        this->_canal = 1;
-        this->_ligada = ligada;
-    }
+    Televisao(bool ligada) : Televisao(ligada, 1) {};
 
-    Televisao(int canal)
-    {
-        this->_canal = canal;
-        this->_ligada = false;
-    }
+    Televisao(int canal) : Televisao(false, canal) {};
 
-    Televisao()
-    {
-        this->_canal = 1;
-        this->_ligada = false;
-    }
+    Televisao() : Televisao(false, 1) {};
 
     void liga()
     {

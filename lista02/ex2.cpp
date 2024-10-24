@@ -64,11 +64,7 @@ public:
         this->reduz();
     }
 
-    Fracao()
-    {
-        this->_numerador = 0;
-        this->_denominador = 1;
-    }
+    Fracao() : _numerador(0), _denominador(1) {};
 
     Fracao(double x, double eps)
     {
@@ -78,10 +74,7 @@ public:
         this->reduz();
     }
 
-    Fracao(double x)
-    {
-        *this = Fracao(x, 1e-10);
-    }
+    Fracao(double x) : Fracao(x, 1e-10) {};
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
