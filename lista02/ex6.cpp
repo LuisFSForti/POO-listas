@@ -86,7 +86,7 @@ public:
 
 int main()
 {
-    BigInt teste(20, false);
+    BigInt teste(3, false);
     std::cout << teste << std::endl;
     BigInt teste2(std::move(teste));
     std::cout << teste << std::endl;

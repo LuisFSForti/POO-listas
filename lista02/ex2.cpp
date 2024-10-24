@@ -136,3 +136,34 @@ public:
         return out;
     }
 };
+
+int main() {
+    Fracao f(96LL, 100LL);
+    f = f + Fracao(80LL, 30LL);
+    f = f / Fracao(4LL, 9LL);
+    f = f + Fracao(-62LL, 20LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-34LL, 47LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-23LL, 75LL);
+    f = f * Fracao(93LL, 61LL);
+    f = f + Fracao(47LL, 3LL);
+    f = f - Fracao(-74LL, 76LL);
+    f = f / Fracao(-31LL, 44LL);
+    f = f + Fracao(-8LL, 66LL);
+    f = f - Fracao(51LL, 85LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-64LL, 5LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(86LL, 26LL);
+    f = f + Fracao(23LL, 53LL);
+    f = f - Fracao(-72LL, 95LL);
+    f = f + Fracao(60LL, 86LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(94LL, 7LL);
+    f = f / Fracao(-18LL, 56LL);
+    f = f * Fracao(-10LL, 67LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-50LL, 74LL);
+    return 0;
+}
