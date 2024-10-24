@@ -26,7 +26,7 @@ public:
         this->_c = c;
     }
 
-    Polinomio2(int a, int b) : Polinomio2(a, b, 9) {};
+    Polinomio2(int a, int b) : Polinomio2(a, b, 0) {};
 
     Polinomio2(int a) : Polinomio2(a, 0, 0) {};
 
