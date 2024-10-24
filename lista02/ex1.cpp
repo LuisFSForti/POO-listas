@@ -10,17 +10,11 @@ private:
     int _canal;
 
 public:
-    Televisao(bool ligada, int canal)
+    Televisao(bool ligada = false, int canal = true)
     {
         this->_canal = canal;
         this->_ligada = ligada;
     }
-
-    Televisao(bool ligada) : Televisao(ligada, 1) {};
-
-    Televisao(int canal) : Televisao(false, canal) {};
-
-    Televisao() : Televisao(false, 1) {};
 
     void liga()
     {

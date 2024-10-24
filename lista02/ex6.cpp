@@ -54,10 +54,7 @@ public:
         new (this) BigInt(numero);
     }
 
-    BigInt()
-    {
-        BigInt(9, false);
-    }
+    BigInt() : BigInt(9, false) {};
 
     BigInt(BigInt&& b)
     {
@@ -65,6 +62,41 @@ public:
         this->_positivo = std::move(b._positivo);
         this->_partes = b._partes;
         b._partes = nullptr;
+    }
+
+    ~BigInt()
+    {
+        delete this->_partes;
+    }
+
+    bool positivo()
+    {
+        return this->_positivo;
+    }
+
+    BigInt& operator=(const BigInt& b)
+    {
+        if(this == &b)
+            return *this;
+
+        this->_positivo = b._positivo;
+        this->_npartes = b._npartes;
+
+        if(this->_partes != nullptr)
+            delete this->_partes;
+
+        this->_partes = (int*)malloc(this->_npartes * sizeof(int));
+        std::copy(b._partes, b._partes + this->_npartes, this->_partes);
+
+        return *this;
+    }
+
+    BigInt abs()
+    {
+        BigInt aux;
+        aux = *this;
+        aux._positivo = true;
+        return aux;
     }
 
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
@@ -86,10 +118,13 @@ public:
 
 int main()
 {
-    BigInt teste(3, false);
-    std::cout << teste << std::endl;
-    BigInt teste2(std::move(teste));
-    std::cout << teste << std::endl;
-    std::cout << teste2 << std::endl;
+    BigInt teste1("-234586");
+    BigInt teste2(333, true);
+    BigInt teste3(3, false);
+    BigInt teste4;
+    BigInt teste5(std::move(teste1));
+    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << std::endl;
+    teste1 = teste5.abs();
+    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << std::endl;
     return 0;
 }
