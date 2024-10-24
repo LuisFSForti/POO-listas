@@ -74,47 +74,38 @@ public:
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
-        Fracao aux;
-        aux._numerador = a._numerador * b._denominador + b._numerador * a._denominador;
-        aux._denominador = a._denominador * b._denominador;
+        long long int numerador, denominador;
+        numerador = a._numerador * b._denominador + b._numerador * a._denominador;
+        denominador = a._denominador * b._denominador;
 
-        aux.reduz();
-
-        return aux;
+        return Fracao(numerador, denominador);
     }
 
     friend Fracao operator-(const Fracao& a, const Fracao& b)
     {
-        Fracao aux;
-        aux._numerador = a._numerador * b._denominador - b._numerador * a._denominador;
-        aux._denominador = a._denominador * b._denominador;
+        long long int numerador, denominador;
+        numerador = a._numerador * b._denominador - b._numerador * a._denominador;
+        denominador = a._denominador * b._denominador;
 
-        aux.reduz();
-
-        return aux;
+        return Fracao(numerador, denominador);
     }
 
     friend Fracao operator*(const Fracao& a, const Fracao& b)
     {
-        Fracao aux;
+        long long int numerador, denominador;
+        numerador = a._numerador * b._numerador;
+        denominador = a._denominador * b._denominador;
 
-        aux._numerador = a._numerador * b._numerador;
-        aux._denominador = a._denominador * b._denominador;
-
-        aux.reduz();
-
-        return aux;
+        return Fracao(numerador, denominador);
     }
 
     friend Fracao operator/(const Fracao& a, const Fracao& b)
     {
-        Fracao aux;
-        aux._numerador = a._numerador * b._denominador;
-        aux._denominador = a._denominador * b._numerador;
+        long long int numerador, denominador;
+        numerador = a._numerador * b._denominador;
+        denominador = a._denominador * b._numerador;
 
-        aux.reduz();
-
-        return aux;
+        return Fracao(numerador, denominador);
     }
 
     operator double()
