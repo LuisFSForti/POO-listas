@@ -1,0 +1,150 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-25 07:11:59.278676-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Televisao CursorKind.CLASS_DECL
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Fracao CursorKind.CLASS_DECL
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Vetor CursorKind.CLASS_DECL
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Polinomio2 CursorKind.CLASS_DECL
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.051
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Arquivo CursorKind.CLASS_DECL
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+BigInt CursorKind.CLASS_DECL
+['class', 'BigInt', '{', 'private', ':', 'int', '*', '_partes', ';', 'int', '_npartes', ';', 'bool', '_positivo', ';', 'public', ':', 'BigInt', '(', 'std', '::', 'string', 'numero', ')', '{', '_npartes', '=', 'numero', '.', 'size', '(', ')', ';', 'if', '(', 'numero', '[', '0', ']', '==', "'-'", ')', '{', 'this', '->', '_positivo', '=', 'false', ';', 'this', '->', '_npartes', '--', ';', '}', 'else', 'this', '->', '_positivo', '=', 'true', ';', 'this', '->', '_partes', '=', '(', 'int', '*', ')', '(', 'calloc', '(', 'this', '->', '_npartes', ',', 'sizeof', '(', 'int', ')', ')', ')', ';', 'if', '(', 'this', '->', '_positivo', ')', '{', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'this', '->', '_npartes', ';', 'i', '++', ')', 'this', '->', '_partes', '[', 'i', ']', '=', 'numero', '[', 'i', ']', '-', "'0'", ';', '}', 'else', '{', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'this', '->', '_npartes', ';', 'i', '++', ')', 'this', '->', '_partes', '[', 'i', ']', '=', 'numero', '[', 'i', '+', '1', ']', '-', "'0'", ';', '}', '}', 'BigInt', '(', 'int', 'num', '=', '9', ',', 'bool', 'eh_num', '=', 'false', ')', '{', 'std', '::', 'string', 'numero', ';', 'if', '(', 'eh_num', ')', '{', 'numero', '=', 'std', '::', 'to_string', '(', 'num', ')', ';', '}', 'else', '{', 'this', '->', '_npartes', '=', 'num', ';', 'numero', '.', 'insert', '(', '0', ',', '_npartes', ',', "'0'", ')', ';', '}', 'new', '(', 'this', ')', 'BigInt', '(', 'numero', ')', ';', '}', 'BigInt', '(', 'BigInt', '&&', 'b', ')', '{', 'this', '->', '_npartes', '=', 'std', '::', 'move', '(', 'b', '.', '_npartes', ')', ';', 'this', '->', '_positivo', '=', 'std', '::', 'move', '(', 'b', '.', '_positivo', ')', ';', 'this', '->', '_partes', '=', 'b', '.', '_partes', ';', 'b', '.', '_partes', '=', 'nullptr', ';', '}', '~', 'BigInt', '(', ')', '{', 'delete', 'this', '->', '_partes', ';', '}', 'bool', 'positivo', '(', ')', '{', 'return', 'this', '->', '_positivo', ';', '}', 'BigInt', '&', 'operator', '=', '(', 'const', 'BigInt', '&', 'b', ')', '{', 'if', '(', 'this', '==', '&', 'b', ')', 'return', '*', 'this', ';', 'this', '->', '_positivo', '=', 'b', '.', '_positivo', ';', 'this', '->', '_npartes', '=', 'b', '.', '_npartes', ';', 'if', '(', 'this', '->', '_partes', '!=', 'nullptr', ')', 'delete', 'this', '->', '_partes', ';', 'this', '->', '_partes', '=', '(', 'int', '*', ')', 'malloc', '(', 'this', '->', '_npartes', '*', 'sizeof', '(', 'int', ')', ')', ';', 'std', '::', 'copy', '(', 'b', '.', '_partes', ',', 'b', '.', '_partes', '+', 'this', '->', '_npartes', ',', 'this', '->', '_partes', ')', ';', 'return', '*', 'this', ';', '}', 'BigInt', 'abs', '(', ')', '{', 'BigInt', 'aux', ';', 'aux', '=', '*', 'this', ';', 'aux', '.', '_positivo', '=', 'true', ';', 'return', 'aux', ';', '}', 'friend', 'bool', 'operator', '==', '(', 'const', 'BigInt', '&', 'a', ',', 'const', 'BigInt', '&', 'b', ')', '{', 'if', '(', '&', 'a', '==', '&', 'b', ')', 'return', 'true', ';', 'if', '(', 'a', '.', '_positivo', '!=', 'b', '.', '_positivo', ')', 'return', 'false', ';', 'if', '(', 'a', '.', '_npartes', '!=', 'b', '.', '_npartes', ')', 'return', 'false', ';', 'if', '(', 'a', '.', '_partes', '==', 'b', '.', '_partes', ')', 'return', 'true', ';', 'if', '(', 'a', '.', '_partes', '==', 'nullptr', '||', 'b', '.', '_partes', '==', 'nullptr', ')', 'return', 'false', ';', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'a', '.', '_npartes', ';', 'i', '++', ')', '{', 'if', '(', 'a', '.', '_partes', '[', 'i', ']', '!=', 'b', '.', '_partes', '[', 'i', ']', ')', 'return', 'false', ';', '}', 'return', 'true', ';', '}', 'friend', 'bool', 'operator', '>', '(', 'const', 'BigInt', '&', 'a', ',', 'const', 'BigInt', '&', 'b', ')', '{', 'if', '(', 'a', '.', '_positivo', '&&', '!', 'b', '.', '_positivo', ')', 'return', 'true', ';', 'if', '(', '!', 'a', '.', '_positivo', '&&', 'b', '.', '_positivo', ')', 'return', 'false', ';', 'bool', 'saoNegativos', '=', '(', '!', 'a', '.', '_positivo', '&&', '!', 'b', '.', '_positivo', ')', ';', 'int', 'diff1', '=', '0', ',', 'diff2', '=', '0', ',', 'menorTam', '=', 'a', '.', '_npartes', ';', 'if', '(', 'a', '.', '_npartes', '<', 'b', '.', '_npartes', ')', '{', 'diff2', '=', 'b', '.', '_npartes', '-', 'a', '.', '_npartes', ';', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'diff2', ';', 'i', '++', ')', '{', 'if', '(', 'b', '.', '_partes', '[', 'i', ']', '>', '0', ')', 'return', 'saoNegativos', ';', '}', '}', 'else', '{', 'diff1', '=', 'a', '.', '_npartes', '-', 'b', '.', '_npartes', ';', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'diff1', ';', 'i', '++', ')', '{', 'if', '(', 'a', '.', '_partes', '[', 'i', ']', '>', '0', ')', 'return', '!', 'saoNegativos', ';', '}', '}', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'menorTam', ';', 'i', '++', ')', '{', 'if', '(', 'a', '.', '_partes', '[', 'i', '+', 'diff1', ']', '<', 'b', '.', '_partes', '[', 'i', '+', 'diff2', ']', ')', 'return', 'saoNegativos', ';', 'if', '(', 'a', '.', '_partes', '[', 'i', '+', 'diff1', ']', '>', 'b', '.', '_partes', '[', 'i', '+', 'diff2', ']', ')', 'return', '!', 'saoNegativos', ';', '}', 'return', 'false', ';', '}', 'friend', 'BigInt', 'operator', '+', '(', 'const', 'BigInt', '&', 'a', ',', 'const', 'BigInt', '&', 'b', ')', '{', 'int', 'maior', ',', 'menor', ',', 'diff1', '=', '0', ',', 'diff2', '=', '0', ',', 'neg1', '=', '1', ',', 'neg2', '=', '2', ';', 'BigInt', 'aux', ',', 'A', ',', 'B', ';', 'A', '=', 'a', ';', 'B', '=', 'b', ';', 'if', '(', '!', 'a', '.', '_positivo', ')', 'neg1', '=', '-', '1', ';', 'if', '(', '!', 'b', '.', '_positivo', ')', 'neg2', '=', '-', '1', ';', 'if', '(', 'A', '.', 'abs', '(', ')', '==', 'B', '.', 'abs', '(', ')', ')', '{', 'if', '(', 'neg1', '!=', 'neg2', ')', 'aux', '.', '_positivo', '=', 'true', ';', 'else', 'aux', '.', '_positivo', '=', 'a', '.', '_positivo', ';', '}', 'if', '(', 'A', '.', 'abs', '(', ')', '>', 'B', '.', 'abs', '(', ')', ')', 'aux', '.', '_positivo', '=', 'a', '.', '_positivo', ';', 'else', 'aux', '.', '_positivo', '=', 'b', '.', '_positivo', ';', 'if', '(', 'a', '.', '_npartes', '>', 'b', '.', '_npartes', ')', '{', 'maior', '=', 'a', '.', '_npartes', ';', 'menor', '=', 'b', '.', '_npartes', ';', 'diff1', '=', 'maior', '-', 'menor', ';', 'aux', '=', 'BigInt', '(', 'maior', '+', '1', ')', ';', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'diff1', ';', 'i', '++', ')', '{', 'aux', '.', '_partes', '[', 'i', ']', '=', 'neg1', '*', 'a', '.', '_partes', '[', 'i', ']', ';', '}', '}', 'else', '{', 'maior', '=', 'b', '.', '_npartes', ';', 'menor', '=', 'a', '.', '_npartes', ';', 'diff2', '=', 'maior', '-', 'menor', ';', 'aux', '=', 'BigInt', '(', 'maior', '+', '1', ')', ';', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'diff2', ';', 'i', '++', ')', '{', 'aux', '.', '_partes', '[', 'i', ']', '=', 'neg2', '*', 'b', '.', '_partes', '[', 'i', ']', ';', '}', '}', 'for', '(', 'int', 'i', '=', '0', ';', 'i', '<', 'menor', ';', 'i', '++', ')', '{', 'aux', '.', '_partes', '[', 'i', '+', 'diff1', '+', 'diff2', ']', '=', 'neg1', '*', 'a', '.', '_partes', '[', 'i', '+', 'diff1', ']', '+', 'neg2', '*', 'b', '.', '_partes', '[', 'i', '+', 'diff2', ']', ';', '}', 'for', '(', 'int', 'i', '=', 'maior', '-', '1', ';', 'i', '>', '0', ';', 'i', '--', ')', '{', 'std', '::', 'cout', '<<', 'aux', '.', '_partes', '[', 'i', ']', '<<', '":"', ';', 'aux', '.', '_partes', '[', 'i', ']', '*=', 'aux', '.', '_positivo', ';', 'while', '(', 'aux', '.', '_partes', '[', 'i', ']', '<', '0', ')', '{', 'aux', '.', '_partes', '[', 'i', ']', '+=', '10', ';', 'aux', '.', '_partes', '[', 'i', '-', '1', ']', '--', ';', '}', 'while', '(', 'aux', '.', '_partes', '[', 'i', ']', '>', '9', ')', '{', 'aux', '.', '_partes', '[', 'i', ']', '-=', '10', ';', 'aux', '.', '_partes', '[', 'i', '-', '1', ']', '++', ';', '}', 'std', '::', 'cout', '<<', 'aux', '.', '_partes', '[', 'i', ']', '<<', 'std', '::', 'endl', ';', '}', 'maior', '++', ';', 'menor', '=', 'maior', ';', 'int', 'i', '=', '0', ';', 'while', '(', 'aux', '.', '_partes', '[', 'i', ']', '==', '0', '&&', 'i', '<', 'maior', '-', '1', ')', '{', 'i', '++', ';', 'menor', '--', ';', '}', 'BigInt', 'res', '(', 'menor', ')', ';', 'res', '.', '_positivo', '=', 'aux', '.', '_positivo', ';', 'for', '(', 'int', 'j', '=', '0', ';', 'j', '<', 'maior', ';', 'j', '++', ')', '{', 'res', '.', '_partes', '[', 'j', ']', '=', 'aux', '.', '_partes', '[', 'j', '+', 'i', ']', ';', '}', 'return', 'res', ';', '}', 'friend', 'std', '::', 'ostream', '&', 'operator', '<<', '(', 'std', '::', 'ostream', '&', 'out', ',', 'const', 'BigInt', '&', 'a', ')', '{', 'if', '(', 'a', '.', '_partes', '==', 'nullptr', ')', 'return', 'out', ';', 'if', '(', '!', 'a', '.', '_positivo', ')', 'out', '<<', '"-"', ';', 'int', 'i', ';', 'while', '(', 'a', '.', '_partes', '[', 'i', ']', '==', '0', '&&', 'i', '<', 'a', '.', '_npartes', '-', '1', ')', 'i', '++', ';', 'for', '(', ';', 'i', '<', 'a', '.', '_npartes', ';', 'i', '++', ')', '{', 'out', '<<', 'a', '.', '_partes', '[', 'i', ']', ';', '}', 'return', 'out', ';', '}', '}', 'classBigInt', 'BigInt{', '{private', 'private:', ':int', 'int*', '*_partes', '_partes;', ';int', 'int_npartes', '_npartes;', ';bool', 'bool_positivo', '_positivo;', ';public', 'public:', ':BigInt', 'BigInt(', '(std', 'std::', '::string', 'stringnumero', 'numero)', '){', '{_npartes', '_npartes=', '=numero', 'numero.', '.size', 'size(', '()', ');', ';if', 'if(', '(numero', 'numero[', '[0', '0]', ']==', "=='-'", "'-')", '){', '{this', 'this->', '->_positivo', '_positivo=', '=false', 'false;', ';this', 'this->', '->_npartes', '_npartes--', '--;', ';}', '}else', 'elsethis', 'this->', '->_positivo', '_positivo=', '=true', 'true;', ';this', 'this->', '->_partes', '_partes=', '=(', '(int', 'int*', '*)', ')(', '(calloc', 'calloc(', '(this', 'this->', '->_npartes', '_npartes,', ',sizeof', 'sizeof(', '(int', 'int)', '))', '))', ');', ';if', 'if(', '(this', 'this->', '->_positivo', '_positivo)', '){', '{for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<this', 'this->', '->_npartes', '_npartes;', ';i', 'i++', '++)', ')this', 'this->', '->_partes', '_partes[', '[i', 'i]', ']=', '=numero', 'numero[', '[i', 'i]', ']-', "-'0'", "'0';", ';}', '}else', 'else{', '{for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<this', 'this->', '->_npartes', '_npartes;', ';i', 'i++', '++)', ')this', 'this->', '->_partes', '_partes[', '[i', 'i]', ']=', '=numero', 'numero[', '[i', 'i+', '+1', '1]', ']-', "-'0'", "'0';", ';}', '}}', '}BigInt', 'BigInt(', '(int', 'intnum', 'num=', '=9', '9,', ',bool', 'booleh_num', 'eh_num=', '=false', 'false)', '){', '{std', 'std::', '::string', 'stringnumero', 'numero;', ';if', 'if(', '(eh_num', 'eh_num)', '){', '{numero', 'numero=', '=std', 'std::', '::to_string', 'to_string(', '(num', 'num)', ');', ';}', '}else', 'else{', '{this', 'this->', '->_npartes', '_npartes=', '=num', 'num;', ';numero', 'numero.', '.insert', 'insert(', '(0', '0,', ',_npartes', '_npartes,', ",'0'", "'0')", ');', ';}', '}new', 'new(', '(this', 'this)', ')BigInt', 'BigInt(', '(numero', 'numero)', ');', ';}', '}BigInt', 'BigInt(', '(BigInt', 'BigInt&&', '&&b', 'b)', '){', '{this', 'this->', '->_npartes', '_npartes=', '=std', 'std::', '::move', 'move(', '(b', 'b.', '._npartes', '_npartes)', ');', ';this', 'this->', '->_positivo', '_positivo=', '=std', 'std::', '::move', 'move(', '(b', 'b.', '._positivo', '_positivo)', ');', ';this', 'this->', '->_partes', '_partes=', '=b', 'b.', '._partes', '_partes;', ';b', 'b.', '._partes', '_partes=', '=nullptr', 'nullptr;', ';}', '}~', '~BigInt', 'BigInt(', '()', '){', '{delete', 'deletethis', 'this->', '->_partes', '_partes;', ';}', '}bool', 'boolpositivo', 'positivo(', '()', '){', '{return', 'returnthis', 'this->', '->_positivo', '_positivo;', ';}', '}BigInt', 'BigInt&', '&operator', 'operator=', '=(', '(const', 'constBigInt', 'BigInt&', '&b', 'b)', '){', '{if', 'if(', '(this', 'this==', '==&', '&b', 'b)', ')return', 'return*', '*this', 'this;', ';this', 'this->', '->_positivo', '_positivo=', '=b', 'b.', '._positivo', '_positivo;', ';this', 'this->', '->_npartes', '_npartes=', '=b', 'b.', '._npartes', '_npartes;', ';if', 'if(', '(this', 'this->', '->_partes', '_partes!=', '!=nullptr', 'nullptr)', ')delete', 'deletethis', 'this->', '->_partes', '_partes;', ';this', 'this->', '->_partes', '_partes=', '=(', '(int', 'int*', '*)', ')malloc', 'malloc(', '(this', 'this->', '->_npartes', '_npartes*', '*sizeof', 'sizeof(', '(int', 'int)', '))', ');', ';std', 'std::', '::copy', 'copy(', '(b', 'b.', '._partes', '_partes,', ',b', 'b.', '._partes', '_partes+', '+this', 'this->', '->_npartes', '_npartes,', ',this', 'this->', '->_partes', '_partes)', ');', ';return', 'return*', '*this', 'this;', ';}', '}BigInt', 'BigIntabs', 'abs(', '()', '){', '{BigInt', 'BigIntaux', 'aux;', ';aux', 'aux=', '=*', '*this', 'this;', ';aux', 'aux.', '._positivo', '_positivo=', '=true', 'true;', ';return', 'returnaux', 'aux;', ';}', '}friend', 'friendbool', 'booloperator', 'operator==', '==(', '(const', 'constBigInt', 'BigInt&', '&a', 'a,', ',const', 'constBigInt', 'BigInt&', '&b', 'b)', '){', '{if', 'if(', '(&', '&a', 'a==', '==&', '&b', 'b)', ')return', 'returntrue', 'true;', ';if', 'if(', '(a', 'a.', '._positivo', '_positivo!=', '!=b', 'b.', '._positivo', '_positivo)', ')return', 'returnfalse', 'false;', ';if', 'if(', '(a', 'a.', '._npartes', '_npartes!=', '!=b', 'b.', '._npartes', '_npartes)', ')return', 'returnfalse', 'false;', ';if', 'if(', '(a', 'a.', '._partes', '_partes==', '==b', 'b.', '._partes', '_partes)', ')return', 'returntrue', 'true;', ';if', 'if(', '(a', 'a.', '._partes', '_partes==', '==nullptr', 'nullptr||', '||b', 'b.', '._partes', '_partes==', '==nullptr', 'nullptr)', ')return', 'returnfalse', 'false;', ';for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<a', 'a.', '._npartes', '_npartes;', ';i', 'i++', '++)', '){', '{if', 'if(', '(a', 'a.', '._partes', '_partes[', '[i', 'i]', ']!=', '!=b', 'b.', '._partes', '_partes[', '[i', 'i]', '])', ')return', 'returnfalse', 'false;', ';}', '}return', 'returntrue', 'true;', ';}', '}friend', 'friendbool', 'booloperator', 'operator>', '>(', '(const', 'constBigInt', 'BigInt&', '&a', 'a,', ',const', 'constBigInt', 'BigInt&', '&b', 'b)', '){', '{if', 'if(', '(a', 'a.', '._positivo', '_positivo&&', '&&!', '!b', 'b.', '._positivo', '_positivo)', ')return', 'returntrue', 'true;', ';if', 'if(', '(!', '!a', 'a.', '._positivo', '_positivo&&', '&&b', 'b.', '._positivo', '_positivo)', ')return', 'returnfalse', 'false;', ';bool', 'boolsaoNegativos', 'saoNegativos=', '=(', '(!', '!a', 'a.', '._positivo', '_positivo&&', '&&!', '!b', 'b.', '._positivo', '_positivo)', ');', ';int', 'intdiff1', 'diff1=', '=0', '0,', ',diff2', 'diff2=', '=0', '0,', ',menorTam', 'menorTam=', '=a', 'a.', '._npartes', '_npartes;', ';if', 'if(', '(a', 'a.', '._npartes', '_npartes<', '<b', 'b.', '._npartes', '_npartes)', '){', '{diff2', 'diff2=', '=b', 'b.', '._npartes', '_npartes-', '-a', 'a.', '._npartes', '_npartes;', ';for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<diff2', 'diff2;', ';i', 'i++', '++)', '){', '{if', 'if(', '(b', 'b.', '._partes', '_partes[', '[i', 'i]', ']>', '>0', '0)', ')return', 'returnsaoNegativos', 'saoNegativos;', ';}', '}}', '}else', 'else{', '{diff1', 'diff1=', '=a', 'a.', '._npartes', '_npartes-', '-b', 'b.', '._npartes', '_npartes;', ';for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<diff1', 'diff1;', ';i', 'i++', '++)', '){', '{if', 'if(', '(a', 'a.', '._partes', '_partes[', '[i', 'i]', ']>', '>0', '0)', ')return', 'return!', '!saoNegativos', 'saoNegativos;', ';}', '}}', '}for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<menorTam', 'menorTam;', ';i', 'i++', '++)', '){', '{if', 'if(', '(a', 'a.', '._partes', '_partes[', '[i', 'i+', '+diff1', 'diff1]', ']<', '<b', 'b.', '._partes', '_partes[', '[i', 'i+', '+diff2', 'diff2]', '])', ')return', 'returnsaoNegativos', 'saoNegativos;', ';if', 'if(', '(a', 'a.', '._partes', '_partes[', '[i', 'i+', '+diff1', 'diff1]', ']>', '>b', 'b.', '._partes', '_partes[', '[i', 'i+', '+diff2', 'diff2]', '])', ')return', 'return!', '!saoNegativos', 'saoNegativos;', ';}', '}return', 'returnfalse', 'false;', ';}', '}friend', 'friendBigInt', 'BigIntoperator', 'operator+', '+(', '(const', 'constBigInt', 'BigInt&', '&a', 'a,', ',const', 'constBigInt', 'BigInt&', '&b', 'b)', '){', '{int', 'intmaior', 'maior,', ',menor', 'menor,', ',diff1', 'diff1=', '=0', '0,', ',diff2', 'diff2=', '=0', '0,', ',neg1', 'neg1=', '=1', '1,', ',neg2', 'neg2=', '=2', '2;', ';BigInt', 'BigIntaux', 'aux,', ',A', 'A,', ',B', 'B;', ';A', 'A=', '=a', 'a;', ';B', 'B=', '=b', 'b;', ';if', 'if(', '(!', '!a', 'a.', '._positivo', '_positivo)', ')neg1', 'neg1=', '=-', '-1', '1;', ';if', 'if(', '(!', '!b', 'b.', '._positivo', '_positivo)', ')neg2', 'neg2=', '=-', '-1', '1;', ';if', 'if(', '(A', 'A.', '.abs', 'abs(', '()', ')==', '==B', 'B.', '.abs', 'abs(', '()', '))', '){', '{if', 'if(', '(neg1', 'neg1!=', '!=neg2', 'neg2)', ')aux', 'aux.', '._positivo', '_positivo=', '=true', 'true;', ';else', 'elseaux', 'aux.', '._positivo', '_positivo=', '=a', 'a.', '._positivo', '_positivo;', ';}', '}if', 'if(', '(A', 'A.', '.abs', 'abs(', '()', ')>', '>B', 'B.', '.abs', 'abs(', '()', '))', ')aux', 'aux.', '._positivo', '_positivo=', '=a', 'a.', '._positivo', '_positivo;', ';else', 'elseaux', 'aux.', '._positivo', '_positivo=', '=b', 'b.', '._positivo', '_positivo;', ';if', 'if(', '(a', 'a.', '._npartes', '_npartes>', '>b', 'b.', '._npartes', '_npartes)', '){', '{maior', 'maior=', '=a', 'a.', '._npartes', '_npartes;', ';menor', 'menor=', '=b', 'b.', '._npartes', '_npartes;', ';diff1', 'diff1=', '=maior', 'maior-', '-menor', 'menor;', ';aux', 'aux=', '=BigInt', 'BigInt(', '(maior', 'maior+', '+1', '1)', ');', ';for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<diff1', 'diff1;', ';i', 'i++', '++)', '){', '{aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']=', '=neg1', 'neg1*', '*a', 'a.', '._partes', '_partes[', '[i', 'i]', '];', ';}', '}}', '}else', 'else{', '{maior', 'maior=', '=b', 'b.', '._npartes', '_npartes;', ';menor', 'menor=', '=a', 'a.', '._npartes', '_npartes;', ';diff2', 'diff2=', '=maior', 'maior-', '-menor', 'menor;', ';aux', 'aux=', '=BigInt', 'BigInt(', '(maior', 'maior+', '+1', '1)', ');', ';for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<diff2', 'diff2;', ';i', 'i++', '++)', '){', '{aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']=', '=neg2', 'neg2*', '*b', 'b.', '._partes', '_partes[', '[i', 'i]', '];', ';}', '}}', '}for', 'for(', '(int', 'inti', 'i=', '=0', '0;', ';i', 'i<', '<menor', 'menor;', ';i', 'i++', '++)', '){', '{aux', 'aux.', '._partes', '_partes[', '[i', 'i+', '+diff1', 'diff1+', '+diff2', 'diff2]', ']=', '=neg1', 'neg1*', '*a', 'a.', '._partes', '_partes[', '[i', 'i+', '+diff1', 'diff1]', ']+', '+neg2', 'neg2*', '*b', 'b.', '._partes', '_partes[', '[i', 'i+', '+diff2', 'diff2]', '];', ';}', '}for', 'for(', '(int', 'inti', 'i=', '=maior', 'maior-', '-1', '1;', ';i', 'i>', '>0', '0;', ';i', 'i--', '--)', '){', '{std', 'std::', '::cout', 'cout<<', '<<aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']<<', '<<":"', '":";', ';aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']*=', '*=aux', 'aux.', '._positivo', '_positivo;', ';while', 'while(', '(aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']<', '<0', '0)', '){', '{aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']+=', '+=10', '10;', ';aux', 'aux.', '._partes', '_partes[', '[i', 'i-', '-1', '1]', ']--', '--;', ';}', '}while', 'while(', '(aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']>', '>9', '9)', '){', '{aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']-=', '-=10', '10;', ';aux', 'aux.', '._partes', '_partes[', '[i', 'i-', '-1', '1]', ']++', '++;', ';}', '}std', 'std::', '::cout', 'cout<<', '<<aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']<<', '<<std', 'std::', '::endl', 'endl;', ';}', '}maior', 'maior++', '++;', ';menor', 'menor=', '=maior', 'maior;', ';int', 'inti', 'i=', '=0', '0;', ';while', 'while(', '(aux', 'aux.', '._partes', '_partes[', '[i', 'i]', ']==', '==0', '0&&', '&&i', 'i<', '<maior', 'maior-', '-1', '1)', '){', '{i', 'i++', '++;', ';menor', 'menor--', '--;', ';}', '}BigInt', 'BigIntres', 'res(', '(menor', 'menor)', ');', ';res', 'res.', '._positivo', '_positivo=', '=aux', 'aux.', '._positivo', '_positivo;', ';for', 'for(', '(int', 'intj', 'j=', '=0', '0;', ';j', 'j<', '<maior', 'maior;', ';j', 'j++', '++)', '){', '{res', 'res.', '._partes', '_partes[', '[j', 'j]', ']=', '=aux', 'aux.', '._partes', '_partes[', '[j', 'j+', '+i', 'i]', '];', ';}', '}return', 'returnres', 'res;', ';}', '}friend', 'friendstd', 'std::', '::ostream', 'ostream&', '&operator', 'operator<<', '<<(', '(std', 'std::', '::ostream', 'ostream&', '&out', 'out,', ',const', 'constBigInt', 'BigInt&', '&a', 'a)', '){', '{if', 'if(', '(a', 'a.', '._partes', '_partes==', '==nullptr', 'nullptr)', ')return', 'returnout', 'out;', ';if', 'if(', '(!', '!a', 'a.', '._positivo', '_positivo)', ')out', 'out<<', '<<"-"', '"-";', ';int', 'inti', 'i;', ';while', 'while(', '(a', 'a.', '._partes', '_partes[', '[i', 'i]', ']==', '==0', '0&&', '&&i', 'i<', '<a', 'a.', '._npartes', '_npartes-', '-1', '1)', ')i', 'i++', '++;', ';for', 'for(', '(;', ';i', 'i<', '<a', 'a.', '._npartes', '_npartes;', ';i', 'i++', '++)', '){', '{out', 'out<<', '<<a', 'a.', '._partes', '_partes[', '[i', 'i]', '];', ';}', '}return', 'returnout', 'out;', ';}', '}}']
+ERRO: A classe "BigInt" deve ter todos os seguintes membros amigos: operator-, operator+, operator<<, operator^, operator>, operator==, operator*
+Nota exercicio 6: 0.0
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 5.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
