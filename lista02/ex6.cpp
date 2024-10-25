@@ -165,7 +165,7 @@ public:
 
     friend BigInt operator+(const BigInt& a, const BigInt& b)
     {
-        int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 2;
+        int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 1;
         BigInt aux, A, B;
         A = a;
         B = b;
@@ -174,6 +174,38 @@ public:
             neg1 = -1;
         if(!b._positivo)
             neg2 = -1;
+
+        if(a._npartes > b._npartes)
+        {
+            maior = a._npartes;
+            menor = b._npartes;
+            diff1 = maior - menor;
+
+            aux = BigInt(maior + 1);
+
+            for(int i = 0; i < diff1; i++)
+            {
+                aux._partes[i + 1] = neg1 * a._partes[i];
+            }
+        }
+        else
+        {
+            maior = b._npartes;
+            menor = a._npartes;
+            diff2 = maior - menor;
+
+            aux = BigInt(maior + 1);
+
+            for(int i = 0; i < diff2; i++)
+            {
+                aux._partes[i + 1] = neg2 * b._partes[i];
+            }
+        }
+
+        for(int i = 0; i < menor; i++)
+        {
+            aux._partes[i + diff1 + diff2 + 1] = neg1 * a._partes[i + diff1] + neg2 * b._partes[i + diff2];
+        }
 
         if(A.abs() == B.abs())
         {
@@ -187,71 +219,168 @@ public:
         else
             aux._positivo = b._positivo;
 
-        if(a._npartes > b._npartes)
+        //========================= Organizar vetor =========================//
+        int negAux = 1;
+        if(!aux._positivo)
+            negAux = -1;
+
+        for(int i = aux._npartes - 1; i > 0; i--)
         {
-            maior = a._npartes;
-            menor = b._npartes;
-            diff1 = maior - menor;
-
-            aux = BigInt(maior + 1);
-
-            for(int i = 0; i < diff1; i++)
-            {
-                aux._partes[i] = neg1 * a._partes[i];
-            }
-        }
-        else
-        {
-            maior = b._npartes;
-            menor = a._npartes;
-            diff2 = maior - menor;
-
-            aux = BigInt(maior + 1);
-
-            for(int i = 0; i < diff2; i++)
-            {
-                aux._partes[i] = neg2 * b._partes[i];
-            }
-        }
-        for(int i = 0; i < menor; i++)
-        {
-            aux._partes[i + diff1 + diff2] = neg1 * a._partes[i + diff1] + neg2 * b._partes[i + diff2];
-        }
-
-        //Organizar vetor
-
-        for(int i = maior-1; i > 0; i--)
-        {
-            std::cout << aux._partes[i] << ":";
-            aux._partes[i] *= aux._positivo;
+            aux._partes[i] *= negAux;
             while(aux._partes[i] < 0)
             {
                 aux._partes[i] += 10;
-                aux._partes[i - 1]--;
+                aux._partes[i - 1] -= negAux;
             }
             while(aux._partes[i] > 9)
             {
                 aux._partes[i] -= 10;
-                aux._partes[i - 1]++;
+                aux._partes[i - 1] += negAux;
             }
-            std::cout << aux._partes[i] << std::endl;
         }
+        aux._partes[0] *= negAux;
 
-        maior++;
-        menor = maior;
         int i = 0;
-        while(aux._partes[i] == 0 && i < maior-1)
+        int tam = aux._npartes;
+        while(aux._partes[i] == 0 && i < aux._npartes-1)
         {
             i++;
-            menor--;
+            tam--;
         }
 
-        BigInt res(menor);
+        BigInt res(tam);
         res._positivo = aux._positivo;
-        for(int j = 0; j < maior; j++)
-        {
+        for(int j = 0; j < tam; j++)
             res._partes[j] = aux._partes[j + i];
+
+        return res;
+    }
+
+    friend BigInt operator-(const BigInt& a, const BigInt& b)
+    {
+        BigInt A, B;
+        A = a;
+        B = b;
+        return A + (-B);
+    }
+
+    BigInt operator-()
+    {
+        BigInt aux;
+        aux = *this;
+        aux._positivo = !aux._positivo;
+        return aux;
+    }
+
+    friend BigInt operator*(const BigInt& a, const BigInt& b)
+    {
+        int neg1 = 1, neg2 = 1;
+        BigInt aux;
+
+        if(!a._positivo)
+            neg1 = -1;
+        if(!b._positivo)
+            neg2 = -1;
+
+        aux = BigInt(a._npartes + b._npartes + 1);
+
+        for(int i = b._npartes-1; i >= 0; i--)
+        {
+            if(b._partes[i] == 0)
+                continue;
+
+            for(int j = a._npartes-1; j >= 0; j--)
+                aux._partes[i + j + 2] += neg1 * a._partes[j] * neg2 * b._partes[i];
         }
+
+        aux._positivo = a._positivo == b._positivo;
+
+        //========================= Organizar vetor =========================//
+        int negAux = 1;
+        if(!aux._positivo)
+            negAux = -1;
+
+        for(int i = aux._npartes - 1; i > 0; i--)
+        {
+            aux._partes[i] *= negAux;
+            while(aux._partes[i] < 0)
+            {
+                aux._partes[i] += 10;
+                aux._partes[i - 1] -= negAux;
+            }
+            while(aux._partes[i] > 9)
+            {
+                aux._partes[i] -= 10;
+                aux._partes[i - 1] += negAux;
+            }
+        }
+        aux._partes[0] *= negAux;
+
+        int i = 0;
+        int tam = aux._npartes;
+        while(aux._partes[i] == 0 && i < aux._npartes-1)
+        {
+            i++;
+            tam--;
+        }
+
+        BigInt res(tam);
+        res._positivo = aux._positivo;
+        for(int j = 0; j < tam; j++)
+            res._partes[j] = aux._partes[j + i];
+
+        return res;
+    }
+
+    friend BigInt operator/(const BigInt& a, int b)
+    {
+        BigInt aux;
+        aux = a;
+
+        if(!aux._positivo)
+            b *= -1;
+
+        for(int i = 0; i < aux._npartes-1; i++)
+        {
+            aux._partes[i+1] += 10 * (aux._partes[i] % b);
+            aux._partes[i] /= b;
+        }
+        aux._partes[aux._npartes-1] /= b;
+        aux._positivo = b >= 0;
+
+        //========================= Organizar vetor =========================//
+        int negAux = 1;
+        if(!aux._positivo)
+            negAux = -1;
+
+        for(int i = aux._npartes - 1; i > 0; i--)
+        {
+            aux._partes[i] *= negAux;
+            while(aux._partes[i] < 0)
+            {
+                aux._partes[i] += 10;
+                aux._partes[i - 1] -= negAux;
+            }
+            while(aux._partes[i] > 9)
+            {
+                aux._partes[i] -= 10;
+                aux._partes[i - 1] += negAux;
+            }
+        }
+        aux._partes[0] *= negAux;
+
+        int i = 0;
+        int tam = aux._npartes;
+        while(aux._partes[i] == 0 && i < aux._npartes-1)
+        {
+            i++;
+            tam--;
+        }
+
+        BigInt res(tam);
+        res._positivo = aux._positivo;
+        for(int j = 0; j < tam; j++)
+            res._partes[j] = aux._partes[j + i];
 
         return res;
     }
@@ -274,6 +403,32 @@ public:
 
         return out;
     }
+
+    std::string teste()
+    {
+        std::string teste;
+
+        if(this->_partes == nullptr)
+            return teste;
+
+        if(!this->_positivo)
+            teste += "-";
+
+        int i = 0;
+        while(this->_partes[i] == 0 && i < this->_npartes-1)
+        {
+            std::cout << this->_partes[i] << "-";
+            i++;
+        }
+        for(; i < this->_npartes; i++)
+        {
+            std::cout << this->_partes[i] << ":";
+            teste += std::to_string(this->_partes[i]);
+        }
+        std::cout << std::endl;
+
+        return teste;
+    }
 };
 
 int main()
@@ -283,9 +438,9 @@ int main()
     BigInt teste3("-0100");
     BigInt teste4("1000");
     BigInt teste5("-1");
-    BigInt teste6;
+    BigInt teste6("9999");
     std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << " " << teste6 << std::endl;
     std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
-    std::cout << (teste1 + teste2) << std::endl;
+    std::cout << (teste1 + teste6) << std::endl << (teste6 - teste4 + teste1) << std::endl << (teste1 * teste6) << std::endl << (-teste3/9) << std::endl;
     return 0;
 }
