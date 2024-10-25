@@ -39,7 +39,7 @@ public:
         }
     }
 
-    BigInt(int num = 9, bool eh_num = false)
+    BigInt(int num = 0, bool eh_num = true)
     {
         std::string numero;
         if(eh_num)
@@ -179,7 +179,7 @@ public:
             menor = b._npartes;
             diff1 = maior - menor;
 
-            aux = BigInt(maior + 1);
+            aux = BigInt(maior + 1, false);
 
             for(int i = 0; i < diff1; i++)
             {
@@ -192,7 +192,7 @@ public:
             menor = a._npartes;
             diff2 = maior - menor;
 
-            aux = BigInt(maior + 1);
+            aux = BigInt(maior + 1, false);
 
             for(int i = 0; i < diff2; i++)
             {
@@ -246,7 +246,7 @@ public:
             tam--;
         }
 
-        BigInt res(tam);
+        BigInt res(tam, false);
         res._positivo = aux._positivo;
         for(int j = 0; j < tam; j++)
             res._partes[j] = aux._partes[j + i];
@@ -277,7 +277,7 @@ public:
         if(!b._positivo)
             neg2 = -1;
 
-        aux = BigInt(a._npartes + b._npartes + 1);
+        aux = BigInt(a._npartes + b._npartes + 1, false);
 
         for(int i = b._npartes-1; i >= 0; i--)
         {
@@ -319,7 +319,7 @@ public:
             tam--;
         }
 
-        BigInt res(tam);
+        BigInt res(tam, false);
         res._positivo = aux._positivo;
         for(int j = 0; j < tam; j++)
             res._partes[j] = aux._partes[j + i];
@@ -372,7 +372,7 @@ public:
             tam--;
         }
 
-        BigInt res(tam);
+        BigInt res(tam, false);
         res._positivo = aux._positivo;
         for(int j = 0; j < tam; j++)
             res._partes[j] = aux._partes[j + i];
@@ -420,17 +420,17 @@ public:
     }
 };
 
-int main()
-{
-    BigInt teste1("00001");
-    BigInt teste2("0010");
-    BigInt teste3("-0100");
-    BigInt teste4("1000");
-    BigInt teste5("-1");
-    BigInt teste6("9999");
-    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << " " << teste6 << std::endl;
-    std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
-    std::cout << (teste1 + teste6) << std::endl << (teste6 - teste4 + teste1) << std::endl << (teste1 * teste6) << std::endl << (-teste3/10) << std::endl;
-    std::cout << (teste2 ^ teste3) << std::endl;
+int main() {
+    BigInt a(7281985);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(1979889369);
+    a = a * BigInt(557032318);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(247710881);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(1527395487);
+    a = a / (-266808453);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(-289271644);
     return 0;
 }
