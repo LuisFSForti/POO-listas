@@ -385,6 +385,26 @@ public:
         return res;
     }
 
+    friend BigInt operator^(const BigInt& a, const BigInt& b)
+    {
+        BigInt aux("1");
+
+        int multi = 1;
+        for(int i = b._npartes-1; i >=0; i--)
+        {
+            if(b._partes[i] != 0)
+            {
+                for(int j = 0; j < b._partes[i] * multi; j++)
+                {
+                    aux = aux * a;
+                }
+            }
+            multi *= 10;
+        }
+
+        return aux;
+    }
+
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
     {
         if(a._partes == nullptr)
@@ -403,32 +423,6 @@ public:
 
         return out;
     }
-
-    std::string teste()
-    {
-        std::string teste;
-
-        if(this->_partes == nullptr)
-            return teste;
-
-        if(!this->_positivo)
-            teste += "-";
-
-        int i = 0;
-        while(this->_partes[i] == 0 && i < this->_npartes-1)
-        {
-            std::cout << this->_partes[i] << "-";
-            i++;
-        }
-        for(; i < this->_npartes; i++)
-        {
-            std::cout << this->_partes[i] << ":";
-            teste += std::to_string(this->_partes[i]);
-        }
-        std::cout << std::endl;
-
-        return teste;
-    }
 };
 
 int main()
@@ -441,6 +435,7 @@ int main()
     BigInt teste6("9999");
     std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << " " << teste6 << std::endl;
     std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
-    std::cout << (teste1 + teste6) << std::endl << (teste6 - teste4 + teste1) << std::endl << (teste1 * teste6) << std::endl << (-teste3/9) << std::endl;
+    std::cout << (teste1 + teste6) << std::endl << (teste6 - teste4 + teste1) << std::endl << (teste1 * teste6) << std::endl << (-teste3/10) << std::endl;
+    std::cout << (teste6 ^ teste3) << std::endl;
     return 0;
 }
