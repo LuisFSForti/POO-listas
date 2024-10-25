@@ -89,7 +89,7 @@ public:
         return *this;
     }
 
-    BigInt abs()
+    BigInt abs() const
     {
         BigInt aux;
         aux = *this;
@@ -166,9 +166,7 @@ public:
     friend BigInt operator+(const BigInt& a, const BigInt& b)
     {
         int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 1;
-        BigInt aux, A, B;
-        A = a;
-        B = b;
+        BigInt aux;
 
         if(!a._positivo)
             neg1 = -1;
@@ -207,14 +205,14 @@ public:
             aux._partes[i + diff1 + diff2 + 1] = neg1 * a._partes[i + diff1] + neg2 * b._partes[i + diff2];
         }
 
-        if(A.abs() == B.abs())
+        if(a.abs() == b.abs())
         {
             if(neg1 != neg2)
                 aux._positivo = true;
             else
                 aux._positivo = a._positivo;
         }
-        if(A.abs() > B.abs())
+        if(a.abs() > b.abs())
             aux._positivo = a._positivo;
         else
             aux._positivo = b._positivo;
@@ -258,13 +256,10 @@ public:
 
     friend BigInt operator-(const BigInt& a, const BigInt& b)
     {
-        BigInt A, B;
-        A = a;
-        B = b;
-        return A + (-B);
+        return a + (-b);
     }
 
-    BigInt operator-()
+    BigInt operator-() const
     {
         BigInt aux;
         aux = *this;
@@ -332,10 +327,10 @@ public:
         return res;
     }
 
-    friend BigInt operator/(const BigInt& a, int b)
+    BigInt operator/(int b)
     {
         BigInt aux;
-        aux = a;
+        aux = *this;
 
         if(!aux._positivo)
             b *= -1;
@@ -436,6 +431,6 @@ int main()
     std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << " " << teste6 << std::endl;
     std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
     std::cout << (teste1 + teste6) << std::endl << (teste6 - teste4 + teste1) << std::endl << (teste1 * teste6) << std::endl << (-teste3/10) << std::endl;
-    std::cout << (teste6 ^ teste3) << std::endl;
+    std::cout << (teste2 ^ teste3) << std::endl;
     return 0;
 }
