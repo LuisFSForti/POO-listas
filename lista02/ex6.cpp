@@ -166,12 +166,26 @@ public:
     friend BigInt operator+(const BigInt& a, const BigInt& b)
     {
         int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 2;
-        BigInt aux;
+        BigInt aux, A, B;
+        A = a;
+        B = b;
 
         if(!a._positivo)
             neg1 = -1;
         if(!b._positivo)
             neg2 = -1;
+
+        if(A.abs() == B.abs())
+        {
+            if(neg1 != neg2)
+                aux._positivo = true;
+            else
+                aux._positivo = a._positivo;
+        }
+        if(A.abs() > B.abs())
+            aux._positivo = a._positivo;
+        else
+            aux._positivo = b._positivo;
 
         if(a._npartes > b._npartes)
         {
@@ -206,6 +220,40 @@ public:
 
         //Organizar vetor
 
+        for(int i = maior-1; i > 0; i--)
+        {
+            std::cout << aux._partes[i] << ":";
+            aux._partes[i] *= aux._positivo;
+            while(aux._partes[i] < 0)
+            {
+                aux._partes[i] += 10;
+                aux._partes[i - 1]--;
+            }
+            while(aux._partes[i] > 9)
+            {
+                aux._partes[i] -= 10;
+                aux._partes[i - 1]++;
+            }
+            std::cout << aux._partes[i] << std::endl;
+        }
+
+        maior++;
+        menor = maior;
+        int i = 0;
+        while(aux._partes[i] == 0 && i < maior-1)
+        {
+            i++;
+            menor--;
+        }
+
+        BigInt res(menor);
+        res._positivo = aux._positivo;
+        for(int j = 0; j < maior; j++)
+        {
+            res._partes[j] = aux._partes[j + i];
+        }
+
+        return res;
     }
 
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
@@ -216,7 +264,10 @@ public:
         if(!a._positivo)
             out << "-";
 
-        for(int i = 0; i < a._npartes; i++)
+        int i;
+        while(a._partes[i] == 0 && i < a._npartes-1)
+            i++;
+        for(; i < a._npartes; i++)
         {
             out << a._partes[i];
         }
@@ -232,7 +283,9 @@ int main()
     BigInt teste3("-0100");
     BigInt teste4("1000");
     BigInt teste5("-1");
-    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << std::endl;
+    BigInt teste6;
+    std::cout << teste1 << " " << teste2 << " " << teste3 << " " << teste4 << " " << teste5 << " " << teste6 << std::endl;
     std::cout << (teste1 > teste2) << " " << (teste4 > teste1) << " " << (BigInt() > teste5) << " " << (teste3 > teste5) << std::endl;
+    std::cout << (teste1 + teste2) << std::endl;
     return 0;
 }
