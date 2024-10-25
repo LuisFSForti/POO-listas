@@ -1,0 +1,361 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-25 18:03:33.473402-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8 deu errado! +0.040
+O resultado para
+#include<iostream>
+int main() {
+    Fracao f(-81LL, 74LL);
+    f = f * Fracao(19LL, 33LL);
+    f = f - Fracao(-69LL, 97LL);
+    f = f / Fracao(4LL, 12LL);
+    f = f + Fracao(-98LL, 42LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-44LL, 16LL);
+    f = f * Fracao(-43LL, 93LL);
+    f = f + Fracao(29LL, 24LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(53LL, 94LL);
+    f = f * Fracao(-10LL, 20LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(97LL, 97LL);
+    f = f + Fracao(-10LL, 19LL);
+    f = f - Fracao(68LL, 85LL);
+    f = f + Fracao(32LL, 62LL);
+    f = f - Fracao(70LL, 25LL);
+    f = f * Fracao(-72LL, 34LL);
+    f = f + Fracao(-22LL, 53LL);
+    f = f * Fracao(-76LL, 25LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(87LL, 15LL);
+    f = f / Fracao(-96LL, 45LL);
+    f = f - Fracao(90LL, 23LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(100LL, 27LL);
+    return 0;
+}
+deveria ser
+-495061/236874 -2.089976105440023
+303666757/88117128 3.4461717476765696
+-16607441471/8283010032 -2.0050007674553063
+-226006275168637/6478291700375 -34.88670866048753
+3613887326427507/238401134573800 15.15885120634266
+
+mas deu
+-495061/236874 -2.08998
+303666757/88117128 3.44617
+-16607441471/8283010032 -2.005
+-17176476912816412/492350169228500 -34.8867
+-73655816145078515/14155067365319375 -5.20349
+
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.051
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1 deu errado! +0.017
+O resultado para
+#include<iostream>
+int main() {
+    BigInt a("999999999999999999999999999");
+    std::cout << a << std::endl;
+    BigInt b(1);
+    std::cout << b << std::endl;
+    BigInt c = a+b;
+    std::cout << c << std::endl;
+    std::cout << a*2 << std::endl;
+    std::cout << c*2 << std::endl;
+    std::cout << a*2-c*2 << std::endl;
+    return 0;
+}
+deveria ser
+999999999999999999999999999
+1
+1000000000000000000000000000
+1999999999999999999999999998
+2000000000000000000000000000
+-2
+mas deu
+999999999999999999999999999
+0
+999999999999999999999999999
+0
+0
+-0
+
+Teste 2 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 3 deu errado!
+
+Tempo limite (30 s) excedido
+Teste 4 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 5 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 6 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    BigInt a(3851440);
+    a = a + BigInt(1190490348);
+    a = a * BigInt(-1986029547);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(882073851);
+    a = a + BigInt(242277249);
+    a = a * BigInt(652903444);
+    a = a - BigInt(409810910);
+    a = a + BigInt(532130799);
+    a = a * BigInt(1442608798);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(815868731);
+    std::cout << a.abs() << std::endl;
+    a = a ^ BigInt(19);
+    std::cout << a.abs() << std::endl;
+    a = a / (1083794811);
+    a = a * BigInt(-1414986819);
+    std::cout << a << std::endl;
+    a = a + BigInt(-403360902);
+    return 0;
+}
+deveria ser
+2371998080184810036
+-1970683211481821307326810401091077825848229322
+1970683211481821307326810401091077825848229322
+1607818810954678179577485804215778681197033855537130382
+8289054664665683985916737134902016048203444943852633017495608840745694850414816848418470159842257182001852233006116155290609034803217590106446920113961398499189360893179175166843481018544208306673769520221096541564602963731311500318866799114126638163796474957475740406728705420431719938836932812535714412528047481730697420285117543128438657828271779356719505392909691179452541599083870746147293195303462890789412785641724606555889945419923937286188224046088026991399615698249094620108212329535699292183254156433577309427761538449837888200751457842847160900405768166734342531765849514494290083626904952930350783157980002044890263945615682137701499368295730309245853328714263736430020765323606141788393321335439205170141165551756085807959620339483901438353573756702695990312465508891795559747354547918192181023758837614343472907391934080809352713710078991314295795447801476322638857718637239593389102733894353673009627137327174401277299269161361962625561144658893244035459277479906850716174290246345573860057240788376680211525664768
+10822069799033580980755927126665471334070027417711700778940602346208343623757341022009429303607929002845820917377847739224107522257610392627693803273248331460372094223730879134441299218692005089082949672986398503840408985541951289647123820528432175431917965755504764257250920791541543007953879306889054537534149214943122806094284340869025183842715162565429923627090173507285697826387599839964647057055150170416026836313310947107445838826609579737634458722494664819489233165084742471734285503924874289130485940184553939387487074416046733121754112866538633119222724999279304500268331564605516384128986406599673029081211293563863325956150128739213316424224220502898935073917748628470015343918448563395107117630661873404731037806225226263143483591207215881351408248510822338727999673430820674306802577433585651719346238002109625806875351787656893424470955840513379277312077194956485702319060194012305987970537879781224435535171292371431731490160880979899007518103799254523580890484012227948549691667843988165184107253547434548044657855
+
+mas deu
+
+Teste 7 deu errado!
+
+Tempo limite (30 s) excedido
+Teste 8 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 9 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 10 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 11 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 12 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 13 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 14 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 15 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 16 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 17 deu errado!
+
+Tempo limite (30 s) excedido
+Teste 18 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 19 deu errado!
+
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_replace_aux
+
+Teste 20 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    BigInt a(7281985);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(1979889369);
+    a = a * BigInt(557032318);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(247710881);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(1527395487);
+    a = a / (-266808453);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(-289271644);
+    return 0;
+}
+deveria ser
+7281985
+1098806063613436112
+272186218065826302740734672
+1020155902128881592
+
+mas deu
+0
+
+Nota exercicio 6: 0.0
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 5.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
