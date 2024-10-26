@@ -337,8 +337,10 @@ public:
 
         for(int i = 0; i < aux._npartes-1; i++)
         {
+            std::cout << i << " 1: " << aux._partes[i] << " - " << aux._partes[i+1] << " - " << b << std::endl;
             aux._partes[i+1] += 10 * (aux._partes[i] % b);
             aux._partes[i] /= b;
+            std::cout << i << " 2: " << aux._partes[i] << " - " << aux._partes[i+1] << std::endl;
         }
         aux._partes[aux._npartes-1] /= b;
         aux._positivo = b >= 0;
@@ -420,17 +422,19 @@ public:
     }
 };
 
+#include<iostream>
 int main() {
-    BigInt a(7281985);
+    BigInt a(15755761);
+    a = a * BigInt(-518847623);
+    std::cout << a << std::endl;
+    a = a * BigInt(777677996);
+    a = a + BigInt(1023447776);
     std::cout << a.abs() << std::endl;
-    a = a - BigInt(1979889369);
-    a = a * BigInt(557032318);
+    a = a / (1532168455);
+    std::cout << a << std::endl;
+    a = a + BigInt(-58930897);
     std::cout << a.abs() << std::endl;
-    a = a * BigInt(247710881);
-    std::cout << a.abs() << std::endl;
-    a = a - BigInt(1527395487);
-    a = a / (-266808453);
-    std::cout << a.abs() << std::endl;
-    a = a - BigInt(-289271644);
+    std::cout << a << std::endl;
+    a = a / (-700707580);
     return 0;
 }
