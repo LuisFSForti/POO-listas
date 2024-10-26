@@ -329,57 +329,37 @@ public:
 
     BigInt operator/(int b)
     {
-        BigInt aux;
-        aux = *this;
+        BigInt dividendo, aux(0), divisor(b);
+        dividendo = *this;
 
-        if(!aux._positivo)
-            b *= -1;
+        //std::cout << std::endl;
+        //std::cout << dividendo << " - " << aux << " - " << divisor << std::endl;
+        std::string mult;
+        mult.insert(0, dividendo._npartes, '0');
+        mult.insert(0, 1, '1');
+        if(divisor._positivo != dividendo._positivo)
+            mult.insert(0, 1, '-');
 
-        for(int i = 0; i < aux._npartes-1; i++)
+        //std::cout << mult << " - " << mult.find("1") << std::endl;
+        BigInt aumento, decremento;
+        while(dividendo.abs() > divisor.abs())
         {
-            std::cout << i << " 1: " << aux._partes[i] << " - " << aux._partes[i+1] << " - " << b << std::endl;
-            aux._partes[i+1] += 10 * (aux._partes[i] % b);
-            aux._partes[i] /= b;
-            std::cout << i << " 2: " << aux._partes[i] << " - " << aux._partes[i+1] << std::endl;
-        }
-        aux._partes[aux._npartes-1] /= b;
-        aux._positivo = b >= 0;
-
-        //========================= Organizar vetor =========================//
-        int negAux = 1;
-        if(!aux._positivo)
-            negAux = -1;
-
-        for(int i = aux._npartes - 1; i > 0; i--)
-        {
-            aux._partes[i] *= negAux;
-            while(aux._partes[i] < 0)
+            int pos = mult.find("1");
+            mult[pos] = '0';
+            mult[pos+1] = '1';
+            aumento = BigInt(mult);
+            decremento = divisor * BigInt(mult);
+            while(dividendo.abs() > decremento.abs())
             {
-                aux._partes[i] += 10;
-                aux._partes[i - 1] -= negAux;
-            }
-            while(aux._partes[i] > 9)
-            {
-                aux._partes[i] -= 10;
-                aux._partes[i - 1] += negAux;
+                //std::cout << dividendo << " - " << aux << " - " << decremento << " - " << mult << std::endl;
+                aux = aux + aumento;
+                dividendo = dividendo - decremento;
             }
         }
-        aux._partes[0] *= negAux;
 
-        int i = 0;
-        int tam = aux._npartes;
-        while(aux._partes[i] == 0 && i < aux._npartes-1)
-        {
-            i++;
-            tam--;
-        }
+        aux._positivo = divisor._positivo == dividendo._positivo;
 
-        BigInt res(tam, false);
-        res._positivo = aux._positivo;
-        for(int j = 0; j < tam; j++)
-            res._partes[j] = aux._partes[j + i];
-
-        return res;
+        return aux;
     }
 
     friend BigInt operator^(const BigInt& a, const BigInt& b)
@@ -422,7 +402,6 @@ public:
     }
 };
 
-#include<iostream>
 int main() {
     BigInt a(15755761);
     a = a * BigInt(-518847623);
@@ -431,7 +410,6 @@ int main() {
     a = a + BigInt(1023447776);
     std::cout << a.abs() << std::endl;
     a = a / (1532168455);
-    std::cout << a << std::endl;
     a = a + BigInt(-58930897);
     std::cout << a.abs() << std::endl;
     std::cout << a << std::endl;
