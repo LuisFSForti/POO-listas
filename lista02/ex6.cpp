@@ -269,6 +269,9 @@ public:
 
     friend BigInt operator*(const BigInt& a, const BigInt& b)
     {
+        if(a == BigInt("0") || b == BigInt("0"))
+            return BigInt("0");
+
         int neg1 = 1, neg2 = 1;
         BigInt aux;
 
@@ -329,6 +332,9 @@ public:
 
     BigInt operator/(int b)
     {
+        if(BigInt(b).abs() > (*this).abs())
+            return BigInt("0");
+
         BigInt dividendo, aux(0), divisor(b);
         dividendo = *this;
 
@@ -401,18 +407,3 @@ public:
         return out;
     }
 };
-
-int main() {
-    BigInt a(15755761);
-    a = a * BigInt(-518847623);
-    std::cout << a << std::endl;
-    a = a * BigInt(777677996);
-    a = a + BigInt(1023447776);
-    std::cout << a.abs() << std::endl;
-    a = a / (1532168455);
-    a = a + BigInt(-58930897);
-    std::cout << a.abs() << std::endl;
-    std::cout << a << std::endl;
-    a = a / (-700707580);
-    return 0;
-}
