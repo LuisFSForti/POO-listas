@@ -337,15 +337,12 @@ public:
         BigInt dividendo, aux(0), divisor(b);
         dividendo = *this;
 
-        //std::cout << std::endl;
-        //std::cout << dividendo << " - " << aux << " - " << divisor << std::endl;
         std::string mult;
         mult.insert(0, dividendo._npartes, '0');
         mult.insert(0, 1, '1');
         if(divisor._positivo != dividendo._positivo)
             mult.insert(0, 1, '-');
 
-        //std::cout << mult << " - " << mult.find("1") << std::endl;
         BigInt aumento, decremento;
         while(dividendo.abs() > divisor.abs())
         {
@@ -356,7 +353,6 @@ public:
             decremento = divisor * BigInt(mult);
             while(dividendo.abs() > decremento.abs())
             {
-                //std::cout << dividendo << " - " << aux << " - " << decremento << " - " << mult << std::endl;
                 aux = aux + aumento;
                 dividendo = dividendo - decremento;
             }
