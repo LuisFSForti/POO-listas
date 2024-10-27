@@ -1,6 +1,6 @@
 //Luis Filipe Silva Forti - 14592348
 
-#include "ex6.cpp"
+#include "ex6.h"
 
 class Fracao
 {
