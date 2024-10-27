@@ -1,0 +1,400 @@
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `Fracao::operator=(Fracao&&) [clone .isra.0]':
+ex7.cpp:(.text+0xd): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text+0x20): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `Fracao::Fracao(BigInt, BigInt)':
+ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x1f): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x2e): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x39): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x44): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x5f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZN6FracaoC2E6BigIntS0_[_ZN6FracaoC5E6BigIntS0_]+0x67): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `operator+(Fracao const&, Fracao const&)':
+ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x38): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x48): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x5b): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x6e): undefined reference to `operator+(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x7d): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x90): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0x9b): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xa6): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xae): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xb6): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xbe): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xc6): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xea): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text._ZplRK6FracaoS1_[_ZplRK6FracaoS1_]+0xfa): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `operator-(Fracao const&, Fracao const&)':
+ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x38): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x48): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x5b): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x6e): undefined reference to `operator-(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x7d): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x90): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0x9b): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xa6): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xae): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xb6): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xbe): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xc6): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xea): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text._ZmiRK6FracaoS1_[_ZmiRK6FracaoS1_]+0xfa): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `operator*(Fracao const&, Fracao const&)':
+ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x29): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x37): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x46): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x59): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x64): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x6f): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x77): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x7f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0x9f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0xaa): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0xb2): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text._ZmlRK6FracaoS1_[_ZmlRK6FracaoS1_]+0xba): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `operator/(Fracao const&, Fracao const&)':
+ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x25): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x34): undefined reference to `operator*(BigInt const&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x43): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x56): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x61): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x6c): undefined reference to `BigInt::operator=(BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x74): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x7c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0x9c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0xa7): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0xaf): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text._ZdvRK6FracaoS1_[_ZdvRK6FracaoS1_]+0xb7): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `operator<<(std::ostream&, Fracao const&)':
+ex7.cpp:(.text._ZlsRSoRK6Fracao[_ZlsRSoRK6Fracao]+0xb): undefined reference to `operator<<(std::ostream&, BigInt const&)'
+/usr/bin/ld: ex7.cpp:(.text._ZlsRSoRK6Fracao[_ZlsRSoRK6Fracao]+0x2e): undefined reference to `operator<<(std::ostream&, BigInt const&)'
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main.cold':
+ex7.cpp:(.text.unlikely+0x4): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.unlikely+0xc): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.unlikely+0x1c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.unlikely+0x24): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.unlikely+0x32): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.unlikely+0x3d): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x29): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3b): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x5b): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x63): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x75): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x8c): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0xc3): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0xcb): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0xdc): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0xe4): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0xec): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0xf4): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x106): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x118): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x147): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x14f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x158): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x160): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x168): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x170): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x182): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x194): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x1c3): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x1cb): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x1d4): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x1dc): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x1e4): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x1ec): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x1fe): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x210): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x23f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x247): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x250): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x258): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x260): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x268): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x27a): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x28c): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x2bb): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x2c3): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x2cc): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x2d4): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x2dc): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x2e4): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x2f6): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x308): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x337): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x33f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x348): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x350): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x358): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x360): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x389): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x39b): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3ca): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3d2): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3db): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3e3): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x3eb): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x3f3): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x405): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x417): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x446): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x44e): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x457): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x45f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x467): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x46f): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x498): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4aa): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4d9): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4e1): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4ea): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4f2): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x4fa): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x502): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x52b): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x53d): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x56c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x574): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x57d): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x585): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x58d): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x595): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x5a7): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x5b9): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x5e8): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x5f0): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x5f9): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x601): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x609): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x611): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x623): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x635): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x664): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x66c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x675): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x67d): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x685): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x68d): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x69f): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x6b1): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x6e0): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x6e8): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x6f1): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x6f9): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x701): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x709): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x732): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x744): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x773): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x77b): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x784): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x78c): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x794): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x79c): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x7c5): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x7d7): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x806): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x80e): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x817): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x81f): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x827): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x82f): more undefined references to `BigInt::~BigInt()' follow
+/usr/bin/ld: /tmp/ccYZhBoZ.o: in function `main':
+ex7.cpp:(.text.startup+0x841): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x853): undefined reference to `BigInt::BigInt(int, bool)'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x882): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x88a): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x893): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x89b): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: ex7.cpp:(.text.startup+0x8a3): undefined reference to `BigInt::~BigInt()'
+/usr/bin/ld: /tmp/ccYZhBoZ.o:ex7.cpp:(.text.startup+0x8ab): more undefined references to `BigInt::~BigInt()' follow
+collect2: error: ld returned 1 exit status
+Versão do G++:
+Varificando data de envio...
+AGORA: 2024-10-27 16:59:48.045614-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.051
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+ERRO: Proibido o uso de bibliotecas (ex6.h), exceto ['iostream', 'iomanip', 'string', 'stdio.h']
+Nota exercicio 6: 0.0
+Procurando exercício 7...
+Exercício 7...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+#include<iostream>
+int main() {
+    Fracao f(BigInt(-1462540799), BigInt(1670574588));
+    f = f + Fracao(BigInt(-252806650), BigInt(753803056));
+    f = f - Fracao(BigInt(-1527750022), BigInt(1321321527));
+    f = f / Fracao(BigInt(-1336804559), BigInt(1140826473));
+    f = f + Fracao(BigInt(999426884), BigInt(1084473988));
+    f = f * Fracao(BigInt(2042240895), BigInt(1292564631));
+    f = f / Fracao(BigInt(-332380293), BigInt(1864255336));
+    std::cout << f << std::endl;
+    f = f - Fracao(BigInt(1522329622), BigInt(1527835271));
+    f = f + Fracao(BigInt(-490582081), BigInt(554259051));
+    std::cout << f << std::endl;
+    f = f + Fracao(BigInt(-1854353133), BigInt(865408694));
+    std::cout << f << std::endl;
+    f = f * Fracao(BigInt(778912144), BigInt(2137233678));
+    f = f / Fracao(BigInt(-947186181), BigInt(741666386));
+    f = f + Fracao(BigInt(1221207823), BigInt(1929443616));
+    f = f / Fracao(BigInt(-1297796785), BigInt(1646429153));
+    std::cout << f << std::endl;
+    f = f * Fracao(BigInt(-1425676547), BigInt(814917774));
+    std::cout << f << std::endl;
+    f = f - Fracao(BigInt(1092439770), BigInt(1309157305));
+    f = f / Fracao(BigInt(1445878951), BigInt(24169004));
+    return 0;
+}
+ERRO: Erro de Compilação
+Nota exercicio 7: 0.0
+Nota exercicio 7: 0.0
+Procurando exercício 8...
+Nota total: 5.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
