@@ -210,7 +210,7 @@ public:
         }
 
         if(a.abs() == b.abs())
-            //Sabe-se que os sinais são diferentes, senão teria saído no começo do código
+            //Sabe-se que os sinais sao diferentes, senao teria saído no começo do código
             aux._positivo = a._positivo;
         if(a.abs() > b.abs())
             aux._positivo = a._positivo;
