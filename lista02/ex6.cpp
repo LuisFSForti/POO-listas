@@ -163,6 +163,12 @@ public:
 
     friend BigInt operator+(const BigInt& a, const BigInt& b)
     {
+        if(a.abs() == b.abs())
+        {
+            if(a._positivo != b._positivo)
+                return BigInt();
+        }
+
         int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 1;
         BigInt aux;
 
@@ -204,12 +210,8 @@ public:
         }
 
         if(a.abs() == b.abs())
-        {
-            if(neg1 != neg2)
-                aux._positivo = true;
-            else
-                aux._positivo = a._positivo;
-        }
+            //Sabe-se que os sinais são diferentes, senão teria saído no começo do código
+            aux._positivo = a._positivo;
         if(a.abs() > b.abs())
             aux._positivo = a._positivo;
         else
@@ -267,8 +269,8 @@ public:
 
     friend BigInt operator*(const BigInt& a, const BigInt& b)
     {
-        if(a == BigInt("0") || b == BigInt("0"))
-            return BigInt("0");
+        if(a == BigInt() || b == BigInt())
+            return BigInt();
 
         int neg1 = 1, neg2 = 1;
         BigInt aux;
@@ -278,7 +280,7 @@ public:
         if(!b._positivo)
             neg2 = -1;
 
-        aux = BigInt(a._npartes + b._npartes + 1, false);
+        aux = BigInt(a._npartes + b._npartes, false);
 
         for(int i = b._npartes-1; i >= 0; i--)
         {
@@ -286,7 +288,7 @@ public:
                 continue;
 
             for(int j = a._npartes-1; j >= 0; j--)
-                aux._partes[i + j + 2] += neg1 * a._partes[j] * neg2 * b._partes[i];
+                aux._partes[i + j + 1] += neg1 * a._partes[j] * neg2 * b._partes[i];
         }
 
         aux._positivo = a._positivo == b._positivo;
