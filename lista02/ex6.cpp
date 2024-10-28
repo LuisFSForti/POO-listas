@@ -330,7 +330,7 @@ public:
         return res;
     }
 
-    BigInt operator/(int b)
+    BigInt operator/(int b) const
     {
         if(BigInt(b).abs() > (*this).abs())
             return BigInt("0");
@@ -364,7 +364,7 @@ public:
         return aux;
     }
 
-    friend BigInt operator^(const BigInt& a, const BigInt& b)
+    /*friend BigInt operator^(const BigInt& a, const BigInt& b)
     {
         BigInt aux("1");
 
@@ -382,6 +382,21 @@ public:
         }
 
         return aux;
+    }*/
+
+    friend BigInt operator^(const BigInt& a, const BigInt& b)
+    {
+        //https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
+
+        if(b == BigInt())
+            return BigInt(1);
+
+        BigInt temp;
+        temp = a ^ (b/2);
+        if(b._partes[b._npartes - 1] % 2 == 0)
+            return temp * temp;
+        else
+            return a * temp * temp;
     }
 
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
@@ -403,4 +418,3 @@ public:
         return out;
     }
 };
-
