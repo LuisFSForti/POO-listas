@@ -1,0 +1,282 @@
+Versão do G++:
+g++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-10-28 01:06:56.119021-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 286: ZeroDivisionError - float division by zero
+Traceback completo:
+  File "tester.py", line 286, in <module>
+  File "gen.py", line 283, in score
+Teste 15 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 44);
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+
+mas deu
+
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.051
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto! +0.100
+Teste 2: correto! +0.100
+Teste 3: correto! +0.100
+Teste 4: correto! +0.100
+Teste 5: correto! +0.100
+Teste 6: correto! +0.100
+Teste 7: correto! +0.100
+Teste 8: correto! +0.100
+#include<iostream>
+int main() {
+    BigInt a(-5586851);
+    a = a ^ BigInt(10);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(-216856617);
+    a = a ^ BigInt(26);
+    a = a / (-1828374747);
+    a = a + BigInt(-1056828882);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(1170325252);
+    a = a ^ BigInt(18);
+    a = a + BigInt(1956411673);
+    a = a ^ BigInt(10);
+    a = a + BigInt(2133216649);
+    return 0;
+}
+
+b''
+Teste 9 deu errado!
+
+Tempo limite (30 s) excedido
+Teste 10: correto! +0.100
+Teste 11: correto! +0.100
+Teste 12: correto! +0.100
+Teste 13: correto! +0.100
+Teste 14: correto! +0.100
+Teste 15: correto! +0.100
+Teste 16: correto! +0.100
+Teste 17: correto! +0.100
+Teste 18: correto! +0.100
+Teste 19: correto! +0.100
+Teste 20: correto! +0.100
+Nota exercicio 6: 1.9
+Procurando exercício 7...
+Exercício 7...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+#include<iostream>
+int main() {
+    Fracao f(BigInt(-1006954344), BigInt(664180110));
+    f = f / Fracao(BigInt(-2101632663), BigInt(954453645));
+    f = f - Fracao(BigInt(-1934646926), BigInt(885197300));
+    std::cout << f << std::endl;
+    f = f - Fracao(BigInt(-881457483), BigInt(646267304));
+    f = f + Fracao(BigInt(1539194505), BigInt(1518041069));
+    f = f - Fracao(BigInt(1282459857), BigInt(1007235696));
+    f = f / Fracao(BigInt(-1424512369), BigInt(339521424));
+    f = f - Fracao(BigInt(-1105702162), BigInt(1575387448));
+    std::cout << f << std::endl;
+    f = f * Fracao(BigInt(851349378), BigInt(1263344863));
+    std::cout << f << std::endl;
+    f = f + Fracao(BigInt(-1035268342), BigInt(668111485));
+    f = f * Fracao(BigInt(354549342), BigInt(1227257063));
+    f = f / Fracao(BigInt(445266317), BigInt(1504978699));
+    std::cout << f << std::endl;
+    f = f / Fracao(BigInt(1578429732), BigInt(593508583));
+    f = f + Fracao(BigInt(1686215367), BigInt(685007115));
+    f = f * Fracao(BigInt(-1251060989), BigInt(1818849840));
+    f = f + Fracao(BigInt(1369081785), BigInt(724391258));
+    std::cout << f << std::endl;
+    f = f - Fracao(BigInt(-2108952118), BigInt(726616618));
+    std::cout << f << std::endl;
+    f = f / Fracao(BigInt(475526301), BigInt(1219276733));
+    f = f + Fracao(BigInt(647746992), BigInt(1766430825));
+    f = f - Fracao(BigInt(1057741982), BigInt(189916089));
+    f = f * Fracao(BigInt(306550230), BigInt(1654401475));
+    f = f - Fracao(BigInt(1895151630), BigInt(1836228335));
+    f = f * Fracao(BigInt(-1872608186), BigInt(1296627555));
+    f = f - Fracao(BigInt(-1249768046), BigInt(101236233));
+    f = f * Fracao(BigInt(-1277808271), BigInt(232918344));
+    f = f + Fracao(BigInt(-1573856403), BigInt(1402467467));
+    std::cout << f << std::endl;
+    f = f + Fracao(BigInt(1556324591), BigInt(988277474));
+    f = f - Fracao(BigInt(-931653424), BigInt(462611299));
+    std::cout << f << std::endl;
+    f = f - Fracao(BigInt(-545928255), BigInt(141810085));
+    std::cout << f << std::endl;
+    f = f / Fracao(BigInt(-1886006722), BigInt(1342599138));
+    f = f * Fracao(BigInt(-1847120105), BigInt(1925383405));
+    std::cout << f << std::endl;
+    f = f + Fracao(BigInt(-1500626619), BigInt(1842665418));
+    f = f - Fracao(BigInt(393044974), BigInt(1925542903));
+    std::cout << f << std::endl;
+    f = f * Fracao(BigInt(-1023736113), BigInt(1103696312));
+    f = f - Fracao(BigInt(1232149965), BigInt(1639971326));
+    f = f * Fracao(BigInt(1416601481), BigInt(967910887));
+    f = f + Fracao(BigInt(1355031167), BigInt(1245845302));
+    f = f * Fracao(BigInt(2085060563), BigInt(417186014));
+    f = f / Fracao(BigInt(220484597), BigInt(1549808782));
+    f = f - Fracao(BigInt(-2079180925), BigInt(1747668788));
+    std::cout << f << std::endl;
+    f = f * Fracao(BigInt(-537305562), BigInt(1028705832));
+    f = f - Fracao(BigInt(1473475450), BigInt(1905820053));
+    f = f / Fracao(BigInt(-135593983), BigInt(1299193579));
+    return 0;
+}
+ERRO: Erro de Compilação
+Erro de compilação
+Nota exercicio 7: 0.0
+Nota exercicio 7: 0.0
+Procurando exercício 8...
+Exercício 8...
+ERRO: Somente os seguintes membros devem ser protegidos 
+Sua implementação tem: _imag
+Nota exercicio 8: 0.0
+Nota total: 6.90
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 1.9, "ex7": 0.0, "ex8": 0.0}}
