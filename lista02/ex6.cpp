@@ -345,14 +345,14 @@ public:
             mult.insert(0, 1, '-');
 
         BigInt aumento, decremento;
-        while(dividendo.abs() > divisor.abs())
+        while(!(divisor.abs() > dividendo.abs()))
         {
             int pos = mult.find("1");
             mult[pos] = '0';
             mult[pos+1] = '1';
             aumento = BigInt(mult);
             decremento = divisor * BigInt(mult);
-            while(dividendo.abs() > decremento.abs())
+            while(!(decremento.abs() > dividendo.abs()))
             {
                 aux = aux + aumento;
                 dividendo = dividendo - decremento;
@@ -388,11 +388,15 @@ public:
     {
         //https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
 
+        if(a == BigInt())
+            return BigInt();
+
         if(b == BigInt())
             return BigInt(1);
 
         BigInt temp;
         temp = a ^ (b/2);
+
         if(b._partes[b._npartes - 1] % 2 == 0)
             return temp * temp;
         else
@@ -418,3 +422,26 @@ public:
         return out;
     }
 };
+
+int main() {
+    BigInt a(10927647);
+    a = a / (74403871);
+    a = a - BigInt(1071950341);
+    a = a * BigInt(2032516893);
+    a = a / (2118241200);
+    std::cout << a << std::endl;
+    a = a * BigInt(681791538);
+    std::cout << a.abs() << std::endl;
+    a = a / (1731899975);
+    a = a ^ BigInt(28);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(141627893);
+    std::cout << a << std::endl;
+    a = a - BigInt(1944156550);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(345007797);
+    a = a - BigInt(173305395);
+    std::cout << a << std::endl;
+    return 0;
+}
