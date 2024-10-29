@@ -282,6 +282,7 @@ public:
             neg2 = -1;
 
         aux = BigInt(a._npartes + b._npartes, false);
+        aux._positivo = a._positivo == b._positivo;
 
         for(int i = b._npartes-1; i >= 0; i--)
         {
@@ -291,8 +292,6 @@ public:
             for(int j = a._npartes-1; j >= 0; j--)
                 aux._partes[i + j + 1] += neg1 * a._partes[j] * neg2 * b._partes[i];
         }
-
-        aux._positivo = a._positivo == b._positivo;
 
         //========================= Organizar vetor =========================//
         int negAux = 1;
@@ -334,36 +333,40 @@ public:
 
     BigInt operator/(int b) const
     {
-        if(BigInt(b).abs() > (*this).abs())
-            return BigInt("0");
+        long long int resto = this->_partes[0];
+        BigInt aux(this->_npartes, false);
 
-        BigInt dividendo, aux(0), divisor(b);
-        dividendo = *this;
-
-        std::string mult;
-        mult.insert(0, dividendo._npartes, '0');
-        mult.insert(0, 1, '1');
-        if(divisor._positivo != dividendo._positivo)
-            mult.insert(0, 1, '-');
-
-        BigInt aumento, decremento;
-        while(!(divisor.abs() > dividendo.abs()))
+        if(!this->_positivo)
+            b *= -1;
+        if(b < 0)
         {
-            int pos = mult.find("1");
-            mult[pos] = '0';
-            mult[pos+1] = '1';
-            aumento = BigInt(mult);
-            decremento = divisor * BigInt(mult);
-            while(!(decremento.abs() > dividendo.abs()))
-            {
-                aux = aux + aumento;
-                dividendo = dividendo - decremento;
-            }
+            aux._positivo = false;
+            b *= -1;
         }
 
-        aux._positivo = divisor._positivo == dividendo._positivo;
+        for(int i = 0; i < this->_npartes - 1; i++)
+        {
+            aux._partes[i] = resto / b;
+            resto = (resto % b) * 10 + this->_partes[i+1];
+        }
+        aux._partes[aux._npartes-1] = resto / b;
 
-        return aux;
+        //========================= Organizar vetor =========================//
+
+        int i = 0;
+        int tam = aux._npartes;
+        while(aux._partes[i] == 0 && i < aux._npartes-1)
+        {
+            i++;
+            tam--;
+        }
+
+        BigInt res(tam, false);
+        res._positivo = aux._positivo;
+        for(int j = 0; j < tam; j++)
+            res._partes[j] = aux._partes[j + i];
+
+        return res;
     }
 
     friend BigInt operator^(const BigInt& a, const BigInt& b)
@@ -404,29 +407,3 @@ public:
         return out;
     }
 };
-
-int main() {
-
-    BigInt a(-13973276);
-    a = a - BigInt(-322360790);
-    a = a + BigInt(-419971830);
-    a = a * BigInt(1598748149);
-    a = a / (929397300);
-    std::cout << a.abs() << std::endl;
-    a = a ^ BigInt(25);
-    std::cout << a << std::endl;
-    a = a - BigInt(88740836);
-    a = a ^ BigInt(15);
-    a = a / (-1851088590);
-    a = a * BigInt(1328098732);
-    a = a / (1164768614);
-    std::cout << a.abs() << std::endl;
-    a = a - BigInt(-393556632);
-    a = a ^ BigInt(13);
-    a = a / (-1519651500);
-    a = a * BigInt(-884308865);
-    a = a / (-2009687471);
-    a = a ^ BigInt(19);
-    std::cout << a << std::endl;
-    return 0;
-}
