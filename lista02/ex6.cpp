@@ -225,15 +225,16 @@ public:
         for(int i = aux._npartes - 1; i > 0; i--)
         {
             aux._partes[i] *= negAux;
-            while(aux._partes[i] < 0)
+            if(aux._partes[i] < 0)
             {
+                aux._partes[i - 1] -= negAux * (aux._partes[i] / -10 + 1);
+                aux._partes[i] %= 10;
                 aux._partes[i] += 10;
-                aux._partes[i - 1] -= negAux;
             }
-            while(aux._partes[i] > 9)
+            if(aux._partes[i] > 9)
             {
-                aux._partes[i] -= 10;
-                aux._partes[i - 1] += negAux;
+                aux._partes[i - 1] += negAux * aux._partes[i] / 10;
+                aux._partes[i] = aux._partes[i] % 10;
             }
         }
         aux._partes[0] *= negAux;
@@ -301,15 +302,16 @@ public:
         for(int i = aux._npartes - 1; i > 0; i--)
         {
             aux._partes[i] *= negAux;
-            while(aux._partes[i] < 0)
+            if(aux._partes[i] < 0)
             {
+                aux._partes[i - 1] -= negAux * (aux._partes[i] / -10 + 1);
+                aux._partes[i] %= 10;
                 aux._partes[i] += 10;
-                aux._partes[i - 1] -= negAux;
             }
-            while(aux._partes[i] > 9)
+            if(aux._partes[i] > 9)
             {
-                aux._partes[i] -= 10;
-                aux._partes[i - 1] += negAux;
+                aux._partes[i - 1] += negAux * aux._partes[i] / 10;
+                aux._partes[i] = aux._partes[i] % 10;
             }
         }
         aux._partes[0] *= negAux;
@@ -364,26 +366,6 @@ public:
         return aux;
     }
 
-    /*friend BigInt operator^(const BigInt& a, const BigInt& b)
-    {
-        BigInt aux("1");
-
-        int multi = 1;
-        for(int i = b._npartes-1; i >=0; i--)
-        {
-            if(b._partes[i] != 0)
-            {
-                for(int j = 0; j < b._partes[i] * multi; j++)
-                {
-                    aux = aux * a;
-                }
-            }
-            multi *= 10;
-        }
-
-        return aux;
-    }*/
-
     friend BigInt operator^(const BigInt& a, const BigInt& b)
     {
         //https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
@@ -424,24 +406,27 @@ public:
 };
 
 int main() {
-    BigInt a(10927647);
-    a = a / (74403871);
-    a = a - BigInt(1071950341);
-    a = a * BigInt(2032516893);
-    a = a / (2118241200);
-    std::cout << a << std::endl;
-    a = a * BigInt(681791538);
+
+    BigInt a(-13973276);
+    a = a - BigInt(-322360790);
+    a = a + BigInt(-419971830);
+    a = a * BigInt(1598748149);
+    a = a / (929397300);
     std::cout << a.abs() << std::endl;
-    a = a / (1731899975);
-    a = a ^ BigInt(28);
+    a = a ^ BigInt(25);
     std::cout << a << std::endl;
+    a = a - BigInt(88740836);
+    a = a ^ BigInt(15);
+    a = a / (-1851088590);
+    a = a * BigInt(1328098732);
+    a = a / (1164768614);
     std::cout << a.abs() << std::endl;
-    a = a * BigInt(141627893);
-    std::cout << a << std::endl;
-    a = a - BigInt(1944156550);
-    std::cout << a.abs() << std::endl;
-    a = a * BigInt(345007797);
-    a = a - BigInt(173305395);
+    a = a - BigInt(-393556632);
+    a = a ^ BigInt(13);
+    a = a / (-1519651500);
+    a = a * BigInt(-884308865);
+    a = a / (-2009687471);
+    a = a ^ BigInt(19);
     std::cout << a << std::endl;
     return 0;
 }
