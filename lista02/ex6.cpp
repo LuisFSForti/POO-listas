@@ -335,11 +335,10 @@ public:
     {
         if(b == 0)
             return BigInt();
-        if(BigInt(b) > *this)
+        if(BigInt(b).abs() > this->abs())
             return BigInt();
         if(*this == BigInt())
             return BigInt();
-
 
         long long int resto = this->_partes[0];
         BigInt aux(this->_npartes, false);
