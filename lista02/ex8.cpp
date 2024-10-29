@@ -107,7 +107,7 @@ public:
 int main()
 {
     C teste(-12.3, 15.3), teste2(-12.3, 15.3);
-    R teste3(-12.3), teste4(-12.3);
+    R *teste3 = new R(-12.3), *teste4 = new R(-12.3);
 
-    std::cout << teste * -teste2 << " " << teste3 * teste4;
+    std::cout << teste * -teste2 << " " << (*teste3 * *teste4);
 }
