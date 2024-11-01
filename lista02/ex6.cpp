@@ -255,7 +255,7 @@ public:
                 aux._partes[i] += 1000000000;
                 aux._partes[i-1] -= negAux;
             }
-            if(aux._partes[i] > 1000000000)
+            if(aux._partes[i] >= 1000000000)
             {
                 aux._partes[i] -= 1000000000;
                 aux._partes[i-1] += negAux;
@@ -321,7 +321,7 @@ public:
                     soma %= 1000000000;
                     soma += 1000000000;
                 }
-                if(soma > 1000000000)
+                if(soma >= 1000000000)
                 {
                     aux._partes[i + j] += negAux * soma / 1000000000;
                     soma %= 1000000000;
@@ -444,4 +444,3 @@ public:
         return out;
     }
 };
-
