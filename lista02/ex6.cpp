@@ -13,51 +13,65 @@ private:
 public:
     BigInt(std::string numero)
     {
-        _npartes = numero.size();
-
+        int tam = numero.length();
+        this->_positivo = true;
         if(numero[0] == '-')
         {
             this->_positivo = false;
-            this->_npartes--;
+            tam--;
+            numero[0] = ' ';
+        }
+
+        this->_npartes = tam / 9;
+        int deslc = tam % 9;
+        bool aux = deslc > 0;
+        if(!aux)
+        {
+            this->_partes = (int*)calloc(this->_npartes, sizeof(int));
         }
         else
-            this->_positivo = true;
-
-        this->_partes = (int*) (calloc(this->_npartes, sizeof(int)));
-
-        if(this->_positivo)
         {
-            for(int i = 0; i < this->_npartes; i++)
-                this->_partes[i] = numero[i] - '0';
+            this->_npartes++;
+            this->_partes = (int*)calloc(this->_npartes, sizeof(int));
+
+            this->_partes[0] = std::stoi(numero.substr(1 - this->_positivo, deslc));
         }
-        else
+
+        for(int i = aux; i < this->_npartes; i++)
+            this->_partes[i] = std::stoi(numero.substr(1 - this->_positivo + deslc + (i - aux) * 9, 9));
+
+
+        for(int i = 0; i < this->_npartes; i++)
         {
-            for(int i = 0; i < this->_npartes; i++)
-                this->_partes[i] = numero[i + 1] - '0';
+            if(this->_partes[i] != 0)
+                return;
         }
+        this->_positivo = true;
     }
 
     BigInt(int num = 0, bool eh_num = true)
     {
-        std::string numero;
         if(eh_num)
         {
-            numero = std::to_string(num);
+            new (this) BigInt(std::to_string(num));
         }
         else
         {
+            this->_positivo = true;
             this->_npartes = num;
-            numero.insert(0, _npartes, '0');
+            this->_partes = (int*)calloc(this->_npartes, sizeof(int));
         }
-        new (this) BigInt(numero);
     }
 
     BigInt(BigInt&& b)
     {
-        this->_npartes = std::move(b._npartes);
         this->_positivo = std::move(b._positivo);
-        this->_partes = b._partes;
-        b._partes = nullptr;
+        this->_npartes = std::move(b._npartes);
+
+        if(b._partes != nullptr)
+            this->_partes = b._partes;
+
+            b._partes = nullptr;
     }
 
     ~BigInt()
@@ -65,16 +79,13 @@ public:
         delete this->_partes;
     }
 
-    bool positivo()
+    bool positivo() const
     {
         return this->_positivo;
     }
 
     BigInt& operator=(const BigInt& b)
     {
-        if(this == &b)
-            return *this;
-
         this->_positivo = b._positivo;
         this->_npartes = b._npartes;
 
@@ -103,23 +114,43 @@ public:
         if(a._positivo != b._positivo)
             return false;
 
-        if(a._npartes != b._npartes)
-            return false;
-
         if(a._partes == b._partes)
             return true;
 
         if(a._partes == nullptr || b._partes == nullptr)
             return false;
 
-        for(int i = 0; i < a._npartes; i++)
+        int menor = 0, diff1 = 0, diff2 = 0;
+        if(a._npartes > b._npartes)
         {
-            if(a._partes[i] != b._partes[i])
+            menor = b._npartes;
+            diff1 = a._npartes - b._npartes;
+            for(int i = 0; i < diff1; i++)
+            {
+                if(a._partes[i] != 0)
+                    return false;
+            }
+        }
+        else
+        {
+            menor = a._npartes;
+            diff2 = b._npartes - a._npartes;
+            for(int i = 0; i < diff2; i++)
+            {
+                if(b._partes[i] != 0)
+                    return false;
+            }
+        }
+
+        for(int i = 0; i < menor; i++)
+        {
+            if(a._partes[i + diff1] != b._partes[i + diff2])
                 return false;
         }
 
         return true;
     }
+
     friend bool operator>(const BigInt& a, const BigInt& b)
     {
         if(a._positivo && !b._positivo)
@@ -128,35 +159,38 @@ public:
         if(!a._positivo && b._positivo)
             return false;
 
-        bool saoNegativos = (!a._positivo && !b._positivo);
+        bool saoPositivos = (a._positivo && b._positivo);
 
-        int diff1 = 0, diff2 = 0, menorTam = a._npartes;
+        int diff1 = 0, diff2 = 0, menorTam = 0;
 
         if(a._npartes < b._npartes)
         {
+            menorTam = a._npartes;
             diff2 = b._npartes - a._npartes;
+
             for(int i = 0; i < diff2; i++)
             {
                 if(b._partes[i] > 0)
-                    return saoNegativos;
+                    return !saoPositivos;
             }
         }
         else
         {
+            menorTam = b._npartes;
             diff1 = a._npartes - b._npartes;
             for(int i = 0; i < diff1; i++)
             {
                 if(a._partes[i] > 0)
-                    return !saoNegativos;
+                    return saoPositivos;
             }
         }
 
         for(int i = 0; i < menorTam; i++)
         {
             if(a._partes[i + diff1] < b._partes[i + diff2])
-                return saoNegativos;
+                return !saoPositivos;
             if(a._partes[i + diff1] > b._partes[i + diff2])
-                return !saoNegativos;
+                return saoPositivos;
         }
         return false;
     }
@@ -169,7 +203,7 @@ public:
                 return BigInt();
         }
 
-        int maior, menor, diff1 = 0, diff2 = 0, neg1 = 1, neg2 = 1;
+        int neg1 = 1, neg2 = 1, menor = 0, diff1 = 0, diff2 = 0;
         BigInt aux;
 
         if(!a._positivo)
@@ -179,29 +213,23 @@ public:
 
         if(a._npartes > b._npartes)
         {
-            maior = a._npartes;
-            menor = b._npartes;
-            diff1 = maior - menor;
+            aux = BigInt(a._npartes + 1, false);
 
-            aux = BigInt(maior + 1, false);
+            menor = b._npartes;
+            diff1 = a._npartes - b._npartes;
 
             for(int i = 0; i < diff1; i++)
-            {
                 aux._partes[i + 1] = neg1 * a._partes[i];
-            }
         }
         else
         {
-            maior = b._npartes;
-            menor = a._npartes;
-            diff2 = maior - menor;
+            aux = BigInt(b._npartes + 1, false);
 
-            aux = BigInt(maior + 1, false);
+            menor = a._npartes;
+            diff2 = b._npartes - a._npartes;
 
             for(int i = 0; i < diff2; i++)
-            {
                 aux._partes[i + 1] = neg2 * b._partes[i];
-            }
         }
 
         for(int i = 0; i < menor; i++)
@@ -209,15 +237,12 @@ public:
             aux._partes[i + diff1 + diff2 + 1] = neg1 * a._partes[i + diff1] + neg2 * b._partes[i + diff2];
         }
 
-        if(a.abs() == b.abs())
-            //Sabe-se que os sinais sao diferentes, senao teria saido no comeco do codigo
-            aux._positivo = a._positivo;
+        //===================================Organizar=============================
         if(a.abs() > b.abs())
             aux._positivo = a._positivo;
         else
             aux._positivo = b._positivo;
 
-        //========================= Organizar vetor =========================//
         int negAux = 1;
         if(!aux._positivo)
             negAux = -1;
@@ -227,32 +252,27 @@ public:
             aux._partes[i] *= negAux;
             if(aux._partes[i] < 0)
             {
-                aux._partes[i - 1] -= negAux * (aux._partes[i] / -10 + 1);
-                aux._partes[i] %= 10;
-                aux._partes[i] += 10;
+                aux._partes[i] += 1000000000;
+                aux._partes[i-1] -= negAux;
             }
-            if(aux._partes[i] > 9)
+            if(aux._partes[i] > 1000000000)
             {
-                aux._partes[i - 1] += negAux * aux._partes[i] / 10;
-                aux._partes[i] = aux._partes[i] % 10;
+                aux._partes[i] -= 1000000000;
+                aux._partes[i-1] += negAux;
             }
         }
-        aux._partes[0] *= negAux;
 
-        int i = 0;
-        int tam = aux._npartes;
-        while(aux._partes[i] == 0 && i < aux._npartes-1)
-        {
-            i++;
-            tam--;
-        }
+        int diff = 0;
+        for(int i = 0; i < aux._npartes-1 && aux._partes[i] == 0; i++)
+            diff++;
 
-        BigInt res(tam, false);
-        res._positivo = aux._positivo;
-        for(int j = 0; j < tam; j++)
-            res._partes[j] = aux._partes[j + i];
+        BigInt ret(aux._npartes - diff, false);
+        ret._positivo = aux._positivo;
 
-        return res;
+        for(int i = 0; i < ret._npartes; i++)
+            ret._partes[i] = aux._partes[i + diff];
+
+        return ret;
     }
 
     friend BigInt operator-(const BigInt& a, const BigInt& b)
@@ -262,10 +282,10 @@ public:
 
     BigInt operator-() const
     {
-        BigInt aux;
-        aux = *this;
-        aux._positivo = !aux._positivo;
-        return aux;
+        BigInt ret;
+        ret = *this;
+        ret._positivo = !ret._positivo;
+        return ret;
     }
 
     friend BigInt operator*(const BigInt& a, const BigInt& b)
@@ -273,7 +293,7 @@ public:
         if(a == BigInt() || b == BigInt())
             return BigInt();
 
-        int neg1 = 1, neg2 = 1;
+        int neg1 = 1, neg2 = 1, negAux = 1;
         BigInt aux;
 
         if(!a._positivo)
@@ -283,6 +303,8 @@ public:
 
         aux = BigInt(a._npartes + b._npartes, false);
         aux._positivo = a._positivo == b._positivo;
+        if(!aux._positivo)
+            negAux = -1;
 
         for(int i = b._npartes-1; i >= 0; i--)
         {
@@ -290,30 +312,27 @@ public:
                 continue;
 
             for(int j = a._npartes-1; j >= 0; j--)
-                aux._partes[i + j + 1] += neg1 * a._partes[j] * neg2 * b._partes[i];
+            {
+                long long int soma = (long long int)(aux._partes[i + j + 1]) + (long long int)(neg1 * a._partes[j]) * (long long int)(neg2 * b._partes[i]);
+                soma *= negAux;
+                if(soma < 0)
+                {
+                    aux._partes[i + j] -= negAux * (soma / -1000000000 + 1);
+                    soma %= 1000000000;
+                    soma += 1000000000;
+                }
+                if(soma > 1000000000)
+                {
+                    aux._partes[i + j] += negAux * soma / 1000000000;
+                    soma %= 1000000000;
+                }
+                aux._partes[i + j + 1] = negAux * soma;
+            }
         }
 
         //========================= Organizar vetor =========================//
-        int negAux = 1;
-        if(!aux._positivo)
-            negAux = -1;
-
-        for(int i = aux._npartes - 1; i > 0; i--)
-        {
+        for(int i = aux._npartes - 1; i >= 0; i--)
             aux._partes[i] *= negAux;
-            if(aux._partes[i] < 0)
-            {
-                aux._partes[i - 1] -= negAux * (aux._partes[i] / -10 + 1);
-                aux._partes[i] %= 10;
-                aux._partes[i] += 10;
-            }
-            if(aux._partes[i] > 9)
-            {
-                aux._partes[i - 1] += negAux * aux._partes[i] / 10;
-                aux._partes[i] = aux._partes[i] % 10;
-            }
-        }
-        aux._partes[0] *= negAux;
 
         int i = 0;
         int tam = aux._npartes;
@@ -354,7 +373,7 @@ public:
         for(int i = 0; i < this->_npartes - 1; i++)
         {
             aux._partes[i] = resto / b;
-            resto = (resto % b) * 10 + this->_partes[i+1];
+            resto = (resto % b) * 1000000000 + this->_partes[i+1];
         }
         aux._partes[aux._npartes-1] = resto / b;
 
@@ -395,6 +414,7 @@ public:
             return a * temp * temp;
     }
 
+
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
     {
         if(a._partes == nullptr)
@@ -403,15 +423,34 @@ public:
         if(!a._positivo)
             out << "-";
 
-        int i;
-        while(a._partes[i] == 0 && i < a._npartes-1)
+        int i = 0;
+        while(a._partes[i] == 0 && i < a._npartes - 1)
             i++;
+
+        std::string aux;
+        bool primeiro = true;
         for(; i < a._npartes; i++)
         {
-            out << a._partes[i];
+            aux = std::to_string(a._partes[i]);
+
+            if(!primeiro)
+                aux.insert(0, 9 - aux.length(), '0');
+            else
+                primeiro = false;
+
+            out << aux;
         }
 
         return out;
     }
-};
 
+    std::string teste()
+    {
+        std::string aux;
+        for(int i = 0; i < this->_npartes; i++)
+        {
+            aux += std::to_string(this->_partes[i]) + " - ";
+        }
+        return aux;
+    }
+};

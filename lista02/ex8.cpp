@@ -5,7 +5,7 @@
 
 class C
 {
-protected:
+private:
     double _real, _imag;
 
 public:
@@ -24,6 +24,16 @@ public:
         this->_imag = b._imag;
 
         return *this;
+    }
+
+    double real() const
+    {
+        return this->_real;
+    }
+
+    double iamg() const
+    {
+        return this->_imag;
     }
 
     friend bool operator==(const C& a, const C& b)
@@ -98,9 +108,11 @@ class R : public C
 public:
     R(double real = 0) : C(real, 0) {};
 
+    R(const C& val) : C(val.real(), 0) {};
+
     virtual std::string Print() const
     {
-        return std::to_string(this->_real);
+        return std::to_string(this->real());
     }
 };
 
@@ -108,6 +120,7 @@ int main()
 {
     C teste(-12.3, 15.3), teste2(-12.3, 15.3);
     R *teste3 = new R(-12.3), *teste4 = new R(-12.3);
-
-    std::cout << teste * -teste2 << " " << (*teste3 * *teste4);
+    std::cout << teste * -teste2 << " " << *teste3 << std::endl;
+    *teste3 = (*teste3 * *teste4);
+    std::cout << teste * -teste2 << " " << *teste3;
 }
