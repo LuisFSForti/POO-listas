@@ -443,14 +443,4 @@ public:
 
         return out;
     }
-
-    std::string teste()
-    {
-        std::string aux;
-        for(int i = 0; i < this->_npartes; i++)
-        {
-            aux += std::to_string(this->_partes[i]) + " - ";
-        }
-        return aux;
-    }
 };
