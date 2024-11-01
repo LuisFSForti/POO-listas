@@ -261,6 +261,7 @@ public:
                 aux._partes[i-1] += negAux;
             }
         }
+        aux._partes[0] *= negAux;
 
         int diff = 0;
         for(int i = 0; i < aux._npartes-1 && aux._partes[i] == 0; i++)
@@ -444,4 +445,3 @@ public:
         return out;
     }
 };
-
