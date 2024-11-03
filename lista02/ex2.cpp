@@ -84,6 +84,10 @@ public:
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
+        //f1 = a/b
+        //f2 = c/d
+        //f1 + f2 = (a*d + c*b) / b*d
+
         long long int numerador, denominador;
         numerador = a._numerador * b._denominador + b._numerador * a._denominador;
         denominador = a._denominador * b._denominador;
@@ -94,6 +98,10 @@ public:
 
     friend Fracao operator-(const Fracao& a, const Fracao& b)
     {
+        //f1 = a/b
+        //f2 = c/d
+        //f1 - f2 = (a*d - c*b) / b*d
+
         long long int numerador, denominador;
         numerador = a._numerador * b._denominador - b._numerador * a._denominador;
         denominador = a._denominador * b._denominador;
@@ -104,6 +112,10 @@ public:
 
     friend Fracao operator*(const Fracao& a, const Fracao& b)
     {
+        //f1 = a/b
+        //f2 = c/d
+        //f1 * f2 = a*c / b*d
+
         long long int numerador, denominador;
         numerador = a._numerador * b._numerador;
         denominador = a._denominador * b._denominador;
@@ -114,6 +126,10 @@ public:
 
     friend Fracao operator/(const Fracao& a, const Fracao& b)
     {
+        //f1 = a/b
+        //f2 = c/d
+        //f1 / f2 = a*d / b*c
+
         long long int numerador, denominador;
         numerador = a._numerador * b._denominador;
         denominador = a._denominador * b._numerador;

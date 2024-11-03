@@ -513,95 +513,131 @@ public:
 
     BigInt operator/(int b) const
     {
+        //Se b == 0, divisao impossivel, retorna 0 por padrao
         if(b == 0)
             return BigInt();
+        //Se b > *this, retorna 0
         if(BigInt(b).abs() > this->abs())
             return BigInt();
+        //Se *this == 0, retorna 0
         if(*this == BigInt())
             return BigInt();
 
-        long long int resto = this->_partes[0];
+        //Cria um BigInt para salvar o resultado
         BigInt aux(this->_npartes, false);
 
+        //Se o dividendo for negativo
         if(!this->_positivo)
+            //Multiplica o divisor por -1
             b *= -1;
+        //Se o diviisor for negativo
         if(b < 0)
         {
+            //O quociente sera negativo
             aux._positivo = false;
+            //Deixa o divisor positivo para nao afetar as operacoes
             b *= -1;
         }
 
+        //Pega o valor da primeira parte
+        long long int resto = this->_partes[0];
+        //Para cada parte
         for(int i = 0; i < this->_npartes - 1; i++)
         {
+            //Salva o quociente do resto sobre o divisor
             aux._partes[i] = resto / b;
+            //Recalcula o resto, levando em conta que o antigo resto eh 1000000000 vezes maior que o novo
             resto = (resto % b) * 1000000000 + this->_partes[i+1];
         }
+        //Calcula o quociente da ultima parte, pois nao coube no loop
         aux._partes[aux._npartes-1] = resto / b;
 
         //========================= Organizar vetor =========================//
+        //Calcula quantas partes na esquerda sao 0
+        int diff = 0;
+        for(int i = 0; aux._partes[i] == 0; i++)
+            diff++;
 
-        int i = 0;
-        int tam = aux._npartes;
-        while(aux._partes[i] == 0 && i < aux._npartes-1)
-        {
-            i++;
-            tam--;
-        }
+        //Cria um novo BigInt com a quantidade de espacos realmente necessaria
+        BigInt ret(aux._npartes - diff, false);
 
-        BigInt res(tam, false);
-        res._positivo = aux._positivo;
-        for(int j = 0; j < tam; j++)
-            res._partes[j] = aux._partes[j + i];
+        //Define o sinal
+        ret._positivo = aux._positivo;
+        //Copia todas as casas diferente de 0, reduzindo o tamanho do BigInt
+        for(int i = 0; i < ret._npartes; i++)
+            ret._partes[i] = aux._partes[i + diff];
 
-        return res;
+        //Retorna o resultado reduzido
+        return ret;
     }
 
     friend BigInt operator^(const BigInt& a, const BigInt& b)
     {
         //https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
 
+        //Verifica se a base eh 0
         if(a == BigInt())
+            //Se sim, retorna 0
             return BigInt();
 
+        //Verifica se o expoente eh 0
         if(b == BigInt())
+            //Se sim, retorna 1
             return BigInt(1);
 
+        //Temporario que salva o valor da base elevado ao expoente/2
+            //Assim inicia-se uma recursao, diminuindo a complexidade para O(log(x)), x sendo o comprimento de a._partes
         BigInt temp;
         temp = a ^ (b/2);
 
+        //Se o expoente for par
         if(b._partes[b._npartes - 1] % 2 == 0)
+            //Retorna o quadrado de temp
             return temp * temp;
+        //Se o expoente for impar
         else
+            //Retorna o quadrado de temp * a, pois a divisao de um inteiro impar por 2 perde 1 em c++
             return a * temp * temp;
     }
 
-
     friend std::ostream& operator<<(std::ostream &out, const BigInt &a)
     {
+        //Se nao tiver ponteiro, retorna
         if(a._partes == nullptr)
             return out;
 
+        //Se for negativo, adiciona o sinal de '-'
         if(!a._positivo)
             out << "-";
 
+        //Para pular todas as partes na esquerda igual a 0, exceto a ultima
         int i = 0;
         while(a._partes[i] == 0 && i < a._npartes - 1)
             i++;
 
+        //Para manipular os numeros
         std::string aux;
         bool primeiro = true;
+        //Para cada aprte
         for(; i < a._npartes; i++)
         {
+            //Salva o valor da parte
             aux = std::to_string(a._partes[i]);
 
+            //Se nao for o primeiro numero escrito
             if(!primeiro)
+                //Adiciona zeros o suficiente para terem 9 caracteres
                 aux.insert(0, 9 - aux.length(), '0');
+            //Se for o primeiro numero escrito
             else
+                //Salva que ele ja foi escrito
                 primeiro = false;
 
+            //Adiciona o numero manipulado
             out << aux;
         }
 
+        //Retorna a saida
         return out;
     }
 };
