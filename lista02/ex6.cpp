@@ -11,15 +11,22 @@ private:
     bool _positivo;
 
 public:
+    //Construtor dado uma string
     BigInt(std::string numero)
     {
+        //Pega o tamanho da string
         int tam = numero.length();
+
+        //Define que o numero eh positivo
         this->_positivo = true;
+
+        //Se o primeiro caractere da string for um '-'
         if(numero[0] == '-')
         {
+            //Define que o numero eh negativo
             this->_positivo = false;
+            //Define que o tamanho eh 1 menor
             tam--;
-            numero[0] = ' ';
         }
 
         this->_npartes = tam / 9;

@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 
+//Para calcular o maior divisor comum entre dois numeros
 static long long int mdc(long long int a, long long int b)
 {
     //https://www.geeksforgeeks.org/gcd-in-cpp/
