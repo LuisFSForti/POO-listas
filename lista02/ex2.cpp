@@ -7,14 +7,14 @@ static long long int mdc(long long int a, long long int b)
 {
     //https://www.geeksforgeeks.org/gcd-in-cpp/
 
-    //Se a = 0, então o maior divisor comum é o valor de b
+    //Se a = 0, entao o maior divisor comum eh o valor de b
     if (a == 0)
         return b;
-    //Se b = 0, então o maior divisor comum é o valor de a
+    //Se b = 0, entao o maior divisor comum eh o valor de a
     if (b == 0)
         return a;
 
-    //Se a é menor do que b
+    //Se a eh menor do que b
     if (a < b)
         //Calcula novamente utilizando o valor de a e o resto de b/a
         return mdc(a, b % a);
@@ -48,29 +48,16 @@ private:
             this->_numerador *= -1;
         }
 
-        /*//Pega o resultado da fração em forma de double
-        double valor = double(*this);
-
-        double parteFracionada = valor - (long long int)(valor);
-
-        long long int a;
-
-        if(valor < 0)
-            a = -parteFracionada * this->_denominador + 0.5;
-        else
-            a = parteFracionada * this->_denominador + 0.5;
-
-        long long int aux = mdc(a, this->_denominador);
-
-        this->_denominador = this->_denominador / aux;
-        this->_numerador = this->_numerador / aux;*/
-
+        //Calcula o maior divisor comum entre o numerador e o denominador
         long long int aux;
+
+        //Para o algoritmo funcionar, ambos os valores devem ser positivos
         if(this->_numerador < 0)
             aux = mdc(-this->_numerador, this->_denominador);
         else
             aux = mdc(this->_numerador, this->_denominador);
 
+        //Reduz a fracao
         this->_denominador = this->_denominador / aux;
         this->_numerador = this->_numerador / aux;
     }
@@ -81,6 +68,7 @@ public:
         this->_numerador = numerador;
         this->_denominador = denominador;
 
+        //Garante que a fracao estara reduzida
         this->reduz();
     }
 
@@ -89,6 +77,7 @@ public:
         this->_numerador = (long long int) (x / eps);
         this->_denominador = (long long int) (1/eps);
 
+        //Calcula um novo numerador e denominador
         this->reduz();
     }
 
@@ -98,6 +87,7 @@ public:
         numerador = a._numerador * b._denominador + b._numerador * a._denominador;
         denominador = a._denominador * b._denominador;
 
+        //Retorna a nova fracao, ja reduizda
         return Fracao(numerador, denominador);
     }
 
@@ -107,6 +97,7 @@ public:
         numerador = a._numerador * b._denominador - b._numerador * a._denominador;
         denominador = a._denominador * b._denominador;
 
+        //Retorna a nova fracao, ja reduizda
         return Fracao(numerador, denominador);
     }
 
@@ -116,6 +107,7 @@ public:
         numerador = a._numerador * b._numerador;
         denominador = a._denominador * b._denominador;
 
+        //Retorna a nova fracao, ja reduizda
         return Fracao(numerador, denominador);
     }
 
@@ -125,19 +117,25 @@ public:
         numerador = a._numerador * b._denominador;
         denominador = a._denominador * b._numerador;
 
+        //Retorna a nova fracao, ja reduizda
         return Fracao(numerador, denominador);
     }
 
     operator double()
     {
+        //Retorna o valor da fracao
         return double(this->_numerador) / double(this->_denominador);
     }
 
     friend std::ostream& operator<<(std::ostream &out, const Fracao &a)
     {
+        //Se a fracao der um numero inteiro
         if(a._numerador % a._denominador == 0)
+            //Retorna o valor
             out << a._numerador / a._denominador;
+        //Se nao eh um numero inteiro
         else
+            //Retorna a fracao
             out << a._numerador << "/" << a._denominador;
 
         return out;
