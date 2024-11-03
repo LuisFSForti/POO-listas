@@ -171,8 +171,6 @@ public:
     {
         this->_numerador = numerador;
         this->_denominador = denominador;
-
-        this->reduz();
     }
 
     Q(const R& val) : R(val.real())
