@@ -121,6 +121,8 @@ public:
 class Q : public R
 {
 private:
+    long long int _numerador, _denominador;
+
     static long long int mdc(long long int a, long long int b)
     {
         if (a == 0)
@@ -134,33 +136,56 @@ private:
             return mdc(b, a % b);
     }
 
-public:
-    Q(int numerador = 0, int denominador = 1) : R((double)(numerador) / (double)(denominador)) {};
-
-    Q(const R& val) : R(val.real()) {};
-
-    virtual std::string Print() const
+    void reduz()
     {
-        if(this->real() == 0)
+        if(this->_numerador == 0)
         {
-            return "0/1";
+            this->_numerador = 0;
+            this->_denominador = 1;
+            return;
+        }
+
+        if(this->_denominador < 0)
+        {
+            this->_denominador *= -1;
+            this->_numerador *= -1;
         }
 
         double parteFracionada = this->real() - (long long int)(this->real());
 
-        long long int a, b;
+        long long int a;
 
         if(this->real() < 0)
-            a = -parteFracionada * 1e10 + 0.5;
+            a = -parteFracionada * this->_denominador + 0.5;
         else
-            a = parteFracionada * 1e10 + 0.5;
+            a = parteFracionada * this->_denominador + 0.5;
 
-        long long int aux = mdc(a, 1e10);
+        long long int aux = mdc(a, this->_denominador);
 
-        b = 1e10 / aux;
-        a = this->real() * 1e10 / aux;
+        this->_denominador = this->_denominador / aux;
+        this->_numerador = this->_numerador / aux;
+    }
 
-        return std::to_string(a) + "/" + std::to_string(b);
+public:
+    Q(int numerador = 0, int denominador = 1) : R((double)(numerador) / (double)(denominador))
+    {
+        this->_numerador = numerador;
+        this->_denominador = denominador;
+
+        this->reduz();
+    }
+
+    Q(const R& val) : R(val.real())
+    {
+        this->_numerador = val.real() * 1e10;
+        this->_denominador = 1e10;
+
+        this->reduz();
+    };
+
+    virtual std::string Print() const
+    {
+        return std::to_string(this->_numerador) + "/" + std::to_string(this->_denominador);
     }
 };
 
