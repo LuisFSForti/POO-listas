@@ -11,8 +11,8 @@ private:
 public:
     C(double real = 0, double imag = 0)
     {
-        _real = real;
-        _imag = imag;
+        this->_real = real;
+        this->_imag = imag;
     }
 
     C& operator=(const C& b)
@@ -46,6 +46,8 @@ public:
 
         if(a._imag != b._imag)
             return false;
+
+        return true;
     }
 
     C operator-() const
@@ -116,11 +118,85 @@ public:
     }
 };
 
-int main()
+class Q : public R
 {
-    C teste(-12.3, 15.3), teste2(-12.3, 15.3);
-    R *teste3 = new R(-12.3), *teste4 = new R(-12.3);
-    std::cout << teste * -teste2 << " " << *teste3 << std::endl;
-    *teste3 = (*teste3 * *teste4);
-    std::cout << teste * -teste2 << " " << *teste3;
-}
+private:
+    static long long int mdc(long long int a, long long int b)
+    {
+        if (a == 0)
+            return b;
+        if (b == 0)
+            return a;
+
+        if (a < b)
+            return mdc(a, b % a);
+        else
+            return mdc(b, a % b);
+    }
+
+public:
+    Q(int numerador = 0, int denominador = 1) : R((double)(numerador) / (double)(denominador)) {};
+
+    Q(const R& val) : R(val.real()) {};
+
+    virtual std::string Print() const
+    {
+        if(this->real() == 0)
+        {
+            return "0/1";
+        }
+
+        double parteFracionada = this->real() - (long long int)(this->real());
+
+        long long int a, b;
+
+        if(this->real() < 0)
+            a = -parteFracionada * 1e10 + 0.5;
+        else
+            a = parteFracionada * 1e10 + 0.5;
+
+        long long int aux = mdc(a, 1e10);
+
+        b = 1e10 / aux;
+        a = this->real() * 1e10 / aux;
+
+        return std::to_string(a) + "/" + std::to_string(b);
+    }
+};
+
+class Z : public Q
+{
+public:
+    Z(int real = 0) : Q(real, 1) {};
+
+    Z(const C& val) : Q((int)val.real(), 1) {};
+
+    virtual std::string Print() const
+    {
+        if(this->real() < 0)
+            return std::to_string((int)this->real());
+        else
+            return "+" + std::to_string((int)this->real());
+    }
+};
+
+class N : public Z
+{
+public:
+    N(int real = 0) : Z(real)
+    {
+        if(this->real() < 0)
+            new (this) N(0);
+    }
+
+    N(const C& val) : Z((int)val.real())
+    {
+        if(this->real() < 0)
+            new (this) N(0);
+    }
+
+    std::string Print() const
+    {
+        return std::to_string((int)this->real());
+    }
+};

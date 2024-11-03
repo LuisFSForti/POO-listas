@@ -42,7 +42,6 @@ private:
         double parteFracionada = valor - (long long int)(valor);
 
         long long int a;
-        long long int b = this->_denominador;
 
         if(valor < 0)
             a = -parteFracionada * this->_denominador + 0.5;
