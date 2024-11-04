@@ -28,26 +28,23 @@ public:
 
     void canal_cima()
     {
-        this->_canal -= (this->_canal == 99) * 99 * this->_ligada;
         this->_canal += this->_ligada;
+        this->_canal -= (this->_canal == 101) * 100;
     }
 
     void canal_baixo()
     {
-        this->_canal += (this->_canal == 1) * 99 * this->_ligada;
         this->_canal -= this->_ligada;
+        this->_canal += (this->_canal == 0) * 100;
     }
 
     friend std::ostream& operator<<(std::ostream& out, const Televisao& tv)
     {
         out << "(";
 
-        if(tv._ligada)
-            out << "ligada";
-        else
-            out << "desligada";
+        std::string res[] = {"desligada", "ligada"};
 
-        out << ", " << tv._canal << ")\r";
+        out << res[tv._ligada] << ", " << tv._canal << ")\r";
         return out;
     }
 };
