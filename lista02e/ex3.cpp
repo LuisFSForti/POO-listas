@@ -9,14 +9,15 @@
 
 class Arquivo
 {
+protected:
+    struct End_iterator {};
+    std::string linha;
+
 private:
     //Guarda o conteudo do arquivo
     std::ifstream _conteudo;
 
 public:
-    std::string linha;
-    struct End_iterator {};
-
     //Abre o arquivo, salvando seu conteudo em _conteudo
     Arquivo(std::string arquivo)
     {
