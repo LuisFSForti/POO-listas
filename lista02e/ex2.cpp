@@ -91,30 +91,10 @@ public:
 Trio coeficientes(const Polinomio2& p)
 {
     int a = 0, b = 0, c = 0;
-    double *raizes = p.raizes();
 
-    c = p(0);
-    if(raizes[0] == 2)
-    {
-        a = c/(raizes[1] * raizes[2]);
-        b = -(raizes[1] + raizes[2]) * a;
-    }
-
+    c = (int)p(0);
+    a = 1.0/2.0 * ((double)(c) - 2 * p(1) + p(2));
+    b = 1.0/2.0 * (-3.0*(double)(c) + 4 * p(1) - p(2));
 
     return Trio(a, b, c);
-}
-
-int main()
-{
-    Polinomio2 p1(1, 1, 1);
-    Trio t = coeficientes(p1);
-    std::cout << t.a << " " << t.b << " " << t.c << '\n' ;
-    Polinomio2 p2(1, 2, 1);
-    t = coeficientes(p2);
-    std::cout << t.a << " " << t.b << " " << t.c << '\n' ;
-    Polinomio2 p3(1, -3, 2);
-    t = coeficientes(p3);
-    std::cout << t.a << " " << t.b << " " << t.c << '\n' ;
-
-    return 0;
 }
