@@ -6,9 +6,9 @@
 #include <string>
 
 //https://stackoverflow.com/questions/62716242/implement-iterator-over-file
-class End_iterator {};
+struct End_iterator {};
 
-class Iterator {
+struct Iterator {
 private:
     void proximaLinha() {
         std::getline(_arquivo, _linha);
