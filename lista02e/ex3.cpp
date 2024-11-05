@@ -14,11 +14,11 @@ private:
         std::getline(_arquivo, _linha);
     }
 
-    std::fstream& _arquivo;
+    std::ifstream& _arquivo;
     std::string _linha;
 
 public:
-    Iterator(std::fstream& arquivo) : _arquivo{arquivo} {
+    Iterator(std::ifstream& arquivo) : _arquivo{arquivo} {
         proximaLinha();
     }
 
@@ -40,13 +40,13 @@ class Arquivo
 {
 private:
     //Guarda o conteudo do arquivo
-    std::fstream _conteudo;
+    std::ifstream _conteudo;
 
 public:
     //Abre o arquivo, salvando seu conteudo em _conteudo
     Arquivo(std::string arquivo)
     {
-        this->_conteudo.open(arquivo, std::fstream::in);
+        this->_conteudo.open(arquivo, std::ifstream::in);
     }
 
     //Para pegar a proxima linha
