@@ -16,15 +16,6 @@ public:
         this->b = b;
         this->c = c;
     }
-
-    Trio& operator=(const Trio& t)
-    {
-        this->a = t.a;
-        this->b = t.b;
-        this->c = t.c;
-
-        return *this;
-    }
 };
 
 
