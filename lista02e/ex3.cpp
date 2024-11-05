@@ -9,13 +9,13 @@
 
 class Arquivo
 {
-protected:
-    struct End_iterator {};
-    std::string linha;
-
 private:
+    //Para marcar o fim da iteracao
+    struct End_iterator {};
+
     //Guarda o conteudo do arquivo
     std::ifstream _conteudo;
+    std::string linha;
 
 public:
     //Abre o arquivo, salvando seu conteudo em _conteudo
@@ -47,7 +47,7 @@ public:
     }
 
     const std::string& operator*() const {
-        return linha;
+        return this->linha;
     }
 
     Arquivo& operator++() {
