@@ -6,15 +6,41 @@
 #include <string>
 
 //https://stackoverflow.com/questions/62716242/implement-iterator-over-file
+class End_iterator {};
+
+class Iterator {
+private:
+    void proximaLinha() {
+        std::getline(_arquivo, _linha);
+    }
+
+    std::fstream& _arquivo;
+    std::string _linha;
+
+public:
+    Iterator(std::fstream& arquivo) : _arquivo{arquivo} {
+        proximaLinha();
+    }
+
+    const std::string& operator*() const {
+        return _linha;
+    }
+
+    Iterator& operator++() {
+        proximaLinha();
+        return *this;
+    }
+
+    bool operator!=(End_iterator) const {
+        return !!_arquivo;
+    }
+};
 
 class Arquivo
 {
 private:
-    struct FimIterador {};
-
     //Guarda o conteudo do arquivo
     std::fstream _conteudo;
-    std::string _linha;
 
 public:
     //Abre o arquivo, salvando seu conteudo em _conteudo
@@ -26,8 +52,11 @@ public:
     //Para pegar a proxima linha
     std::string proxima_linha()
     {
-        std::getline(this->_conteudo, this->_linha);
-        return this->_linha;
+        std::string aux;
+
+        //Salva em aux a proxima linha em _conteudo
+        std::getline(this->_conteudo, aux);
+        return aux;
     }
 
     //Ao deletar a instancia
@@ -38,23 +67,10 @@ public:
     }
 
     auto begin() {
-        return ;
+        return Iterator(_conteudo);
     }
 
     auto end() {
-        return FimIterador();
-    }
-
-    const std::string& operator*() const {
-        return this->_linha;
-    }
-
-    Arquivo& operator++() {
-        proxima_linha();
-        return *this;
-    }
-
-    bool operator!=(FimIterador) const {
-        return !!_conteudo;
+        return End_iterator();
     }
 };
