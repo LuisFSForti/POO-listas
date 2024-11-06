@@ -12,13 +12,21 @@ class Arquivo
 private:
     //Guarda o conteudo do arquivo
     std::ifstream _conteudo;
-    std::string _linha;
+    std::string _linha, _endereco;
 
 public:
     //Abre o arquivo, salvando seu conteudo em _conteudo
     Arquivo(std::string arquivo)
     {
+        this->_endereco = arquivo;
         this->_conteudo.open(arquivo, std::ifstream::in);
+    }
+
+    Arquivo(const Arquivo& b)
+    {
+        this->_endereco = b._endereco;
+        this->_linha = b._linha;
+        this->_conteudo.open(this->_endereco, std::ifstream::in);
     }
 
     //Para pegar a proxima linha
@@ -36,11 +44,11 @@ public:
     }
 
     auto begin() {
-        return ;
+        return *this;
     }
 
     auto end() {
-        return this->_linha;
+        return Arquivo("");
     }
 
     const std::string& operator*() const {
@@ -52,7 +60,23 @@ public:
         return *this;
     }
 
-    bool operator!=(std::string) const {
+    Arquivo& operator++(int) {
+        proxima_linha();
+        return *this;
+    }
+
+    bool operator==(Arquivo) const {
         return !!this->_conteudo;
+    }
+
+    bool operator!=(Arquivo) const {
+        return !!this->_conteudo;
+    }
+
+    friend std::ostream& operator<<(std::ostream &out, const Arquivo &a)
+    {
+        out << a._linha;
+
+        return out;
     }
 };
