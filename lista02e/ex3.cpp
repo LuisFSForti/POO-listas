@@ -72,11 +72,19 @@ public:
     bool operator!=(Arquivo) const {
         return !!this->_conteudo;
     }
-
-    friend std::ostream& operator<<(std::ostream &out, const Arquivo &a)
-    {
-        out << a._linha;
-
-        return out;
-    }
 };
+
+int main() {
+    for(const auto& linha : Arquivo("teste.txt"))
+        std::cout << linha << std::endl;
+
+    /*Arquivo t("teste.txt");
+    std::cout << t++ << std::endl;
+    std::cout << ++t << std::endl;
+    std::cout << ++t << std::endl;
+    std::cout << ++t << std::endl;
+    std::cout << ++t << std::endl;
+    std::cout << ++t << std::endl;*/
+
+    return 0;
+}
