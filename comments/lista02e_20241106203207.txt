@@ -1,0 +1,210 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-11-06 17:33:05.315561-03:00
+PRAZO MÁXIMO: 2024-11-13 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +1.000
+Teste 2: correto! +1.000
+Teste 3: correto! +1.000
+Nota exercicio 1: 3.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.100
+Teste 2: correto! +0.100
+Teste 3: correto! +0.100
+Teste 4: correto! +0.100
+Teste 5: correto! +0.100
+Teste 6: correto! +0.100
+Teste 7: correto! +0.100
+Teste 8: correto! +0.100
+Teste 9: correto! +0.100
+Teste 10: correto! +0.100
+Teste 11: correto! +0.100
+Teste 12: correto! +0.100
+Teste 13: correto! +0.100
+Teste 14: correto! +0.100
+Teste 15: correto! +0.100
+Teste 16: correto! +0.100
+Teste 17: correto! +0.100
+Teste 18: correto! +0.100
+Teste 19: correto! +0.100
+Teste 20: correto! +0.100
+Nota exercicio 2: 2.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("ex3.cpp"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> qui
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoilu83les"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> voluptatibus
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivou7loxdy8"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> consequuntur
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoee2p87ib"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> sapiente
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoau97fu7m"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> in
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivov2p0ct1z"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> hic
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivor_nqqw59"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> iure
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivocq8gme_x"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> iste
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivob4lxmp4j"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> officia
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoj1cpy21t"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> corporis
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivow7xgdqpx"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> reiciendis
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivorl2j9vsd"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> ex
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivokwzuw5uh"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> temporibus
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivo_xdedtpf"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> eligendi
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoilpmp0h_"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> hic
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivor4qtgpq_"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> impedit
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivoiwxbx638"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> mollitia
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivohx7hcxhd"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> officiis
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivorvcbylqr"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> eligendi
+ERRO: Erro de Compilação
+#include<iostream>
+int main() {
+    for(const auto& linha : Arquivo("/tmp/Arquivod06fve3i"))
+        std::cout << linha << std::endl;
+    return 0;
+}
+main -> aspernatur
+ERRO: Erro de Compilação
+Nota exercicio 3: 0.0
+Nota total: 5.00
+{"scores": {"ex1": 3.0, "ex2": 2.0, "ex3": 0.0}}
