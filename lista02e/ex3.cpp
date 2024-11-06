@@ -10,12 +10,9 @@
 class Arquivo
 {
 private:
-    //Para marcar o fim da iteracao
-    struct End_iterator {};
-
     //Guarda o conteudo do arquivo
     std::ifstream _conteudo;
-    std::string linha;
+    std::string _linha;
 
 public:
     //Abre o arquivo, salvando seu conteudo em _conteudo
@@ -27,8 +24,8 @@ public:
     //Para pegar a proxima linha
     std::string proxima_linha()
     {
-        std::getline(this->_conteudo, this->linha);
-        return this->linha;
+        std::getline(this->_conteudo, this->_linha);
+        return this->_linha;
     }
 
     //Ao deletar a instancia
@@ -43,11 +40,11 @@ public:
     }
 
     auto end() {
-        return End_iterator();
+        return this->_linha;
     }
 
     const std::string& operator*() const {
-        return this->linha;
+        return this->_linha;
     }
 
     Arquivo& operator++() {
@@ -55,7 +52,7 @@ public:
         return *this;
     }
 
-    bool operator!=(End_iterator) const {
+    bool operator!=(std::string) const {
         return !!this->_conteudo;
     }
 };
