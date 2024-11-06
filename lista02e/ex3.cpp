@@ -73,18 +73,3 @@ public:
         return !!this->_conteudo;
     }
 };
-
-int main() {
-    for(const auto& linha : Arquivo("teste.txt"))
-        std::cout << linha << std::endl;
-
-    /*Arquivo t("teste.txt");
-    std::cout << t++ << std::endl;
-    std::cout << ++t << std::endl;
-    std::cout << ++t << std::endl;
-    std::cout << ++t << std::endl;
-    std::cout << ++t << std::endl;
-    std::cout << ++t << std::endl;*/
-
-    return 0;
-}
