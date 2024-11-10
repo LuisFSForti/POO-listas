@@ -81,11 +81,23 @@ public:
 
 Trio coeficientes(const Polinomio2& p)
 {
-    int a = 0, b = 0, c = 0;
+    //Variáveis auxiliares
+    int a, b, c;
 
+    //ax^2 + bx + c -> x = 0 -> a*0 + b*0 + c = c
     c = (int)p(0);
-    a = 1.0/2.0 * ((double)(c) - 2 * p(1) + p(2));
-    b = 1.0/2.0 * (-3.0*(double)(c) + 4 * p(1) - p(2));
+
+    //x = 1
+    //a*1^2 + b*1 + c = d
+    //b = d - c - a
+
+    //x = 2
+    //a*2^2 + b*2 + c = D
+    //4*a + 2*(d - c - a) + c = D
+    //2*a + 2*d - c = D
+    //a = (D + c)/2 - d
+    a = (p(2) + c)/2 - p(1);
+    b = p(1) - c - a;
 
     return Trio(a, b, c);
 }
