@@ -22,7 +22,7 @@ public:
         this->_conteudo.open(arquivo, std::ifstream::in);
     }
 
-    //Construtor de cópia para o for
+    //Construtor de copia para o for
     Arquivo(const Arquivo& b)
     {
         this->_endereco = b._endereco;
@@ -44,30 +44,30 @@ public:
         this->_conteudo.close();
     }
 
-    //Quando começar o loop, essa função é chamada
-    //Deve retornar a instância "inicial"
+    //Quando comecar o loop, essa funcao é chamada
+    //Deve retornar a instancia "inicial"
     auto begin() {
-        //Retorna a instância atual
+        //Retorna a instancia atual
         return *this;
     }
 
-    //Quando começar o loop, essa função é chamada
-    //Deve retornar a instância "final"
-    //Como o loop não pode ser definido por um objeto final, esta função é irrelevante
+    //Quando comecar o loop, essa funcao é chamada
+    //Deve retornar a instancia "final"
+    //Como o loop nao pode ser definido por um objeto final, esta funcao eh irrelevante
     auto end() {
         return Arquivo("");
     }
 
-    //Para pegar o valor de cada iteração do loop, essa função é chamada
+    //Para pegar o valor de cada iteracao do loop, essa funcao eh chamada
     const std::string& operator*() const {
         return this->_linha;
     }
 
     //Para o loop, isto representa ++i
     Arquivo& operator++() {
-        //Avança pra próxima linha
+        //Avança pra proxima linha
         proxima_linha();
-        //Retorna a instância atual, a qual possui a nova linha
+        //Retorna a instancia atual, a qual possui a nova linha
         return *this;
     }
 
@@ -75,13 +75,17 @@ public:
     Arquivo& operator++(int) {
         proxima_linha();
         return *this;
-    }*/
+    }
 
     bool operator==(Arquivo) const {
         return !!this->_conteudo;
-    }
+    }*/
 
+    //Para terminar o loop, o for verifica se instancia atual != instancia retornada na funcao end()
+    //Como nao tem uma instancia final, ela eh desconsiderada
     bool operator!=(Arquivo) const {
+        //Retorna se foi tentada ler uma linha apos o fim do arquivo
+        //Se usasse o EOF, nao imprimiria a ultima linha
         return !!this->_conteudo;
     }
 };
