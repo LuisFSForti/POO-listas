@@ -44,14 +44,14 @@ public:
         this->_conteudo.close();
     }
 
-    //Quando comecar o loop, essa funcao é chamada
+    //Quando comecar o loop, essa funcao eh chamada
     //Deve retornar a instancia "inicial"
     auto begin() {
         //Retorna a instancia atual
         return *this;
     }
 
-    //Quando comecar o loop, essa funcao é chamada
+    //Quando comecar o loop, essa funcao eh chamada
     //Deve retornar a instancia "final"
     //Como o loop nao pode ser definido por um objeto final, esta funcao eh irrelevante
     auto end() {
