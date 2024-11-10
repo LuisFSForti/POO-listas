@@ -71,16 +71,6 @@ public:
         return *this;
     }
 
-    /*//Para o loop, isto repr
-    Arquivo& operator++(int) {
-        proxima_linha();
-        return *this;
-    }
-
-    bool operator==(Arquivo) const {
-        return !!this->_conteudo;
-    }*/
-
     //Para terminar o loop, o for verifica se instancia atual != instancia retornada na funcao end()
     //Como nao tem uma instancia final, ela eh desconsiderada
     bool operator!=(Arquivo) const {
