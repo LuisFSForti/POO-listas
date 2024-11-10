@@ -65,7 +65,7 @@ public:
 
     //Para o loop, isto representa ++i
     Arquivo& operator++() {
-        //Avança pra proxima linha
+        //Avanca pra proxima linha
         proxima_linha();
         //Retorna a instancia atual, a qual possui a nova linha
         return *this;
