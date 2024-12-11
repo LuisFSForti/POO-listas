@@ -7,7 +7,7 @@
 std::vector<int> retira(std::vector<int> v, int n)
 {
     std::set<int> ret(v.begin(), v.end());
-    ret.erase(ret.find(n));
+    ret.erase(n);
 
     return std::vector<int>(ret.begin(), ret.end());
 }
