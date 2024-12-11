@@ -9,6 +9,7 @@ void ordena_strings(std::vector<std::string>& vetor)
 {
     struct comparar
     {
+        //https://stackoverflow.com/questions/18831470/sorting-a-string-vector-based-on-the-string-size
         inline bool operator()(const std::string& first, const std::string& second) const
         {
             if(first.size() < second.size())
