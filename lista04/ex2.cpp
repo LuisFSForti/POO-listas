@@ -21,19 +21,24 @@ std::string jogo(std::stack<int>& cartas, std::queue<std::string> jogadores)
     }
 
     int menor = somas[0];
-    std::string menorS = jogadores.front();
     std::queue<std::string> atualJ = jogadores;
+    std::string menorS = atualJ.front();
     atualJ.pop();
 
     for(int i = 1; atualJ.size() > 0; i++, atualJ.pop())
     {
-        if(somas[i] <= menor)
+        if(somas[i] < menor)
+        {
+            menor = somas[i];
+            menorS = atualJ.front();
+        }
+
+        if(somas[i] == menor)
         {
             if(somas[i] == menor && menorS.compare(atualJ.front()) > 0)
             {
                 menorS = atualJ.front();
             }
-            menor = somas[i];
         }
     }
 
