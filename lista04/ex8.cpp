@@ -28,18 +28,19 @@ void ordena_par(Matriz& M)
             }
             if(valores.at(k) == qtdPares)
             {
+                bool achou = false;
                 for(int l = 0; l < M.at(i).size(); l++)
                 {
                     if(M.at(i).at(l) > ret.at(k).at(l))
+                        break;
+                    else if(M.at(i).at(l) < ret.at(k).at(l))
                     {
-                        k++;
+                        achou = true;
                         break;
                     }
-                    else if(M.at(i).at(l) < ret.at(k).at(l))
-                        break;
                 }
-
-                break;
+                if(achou)
+                    break;
             }
         }
         valores.insert(valores.begin() + k, qtdPares);
