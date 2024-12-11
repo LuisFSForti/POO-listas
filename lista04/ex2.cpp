@@ -30,7 +30,7 @@ std::string jogo(std::stack<int>& cartas, std::queue<std::string> jogadores)
         if(somas[i] <= menor)
         {
             menor = somas[i];
-            if(menorS.compare(atualJ.front()) < 0)
+            if(menorS.compare(atualJ.front()) > 0)
             {
                 menorS = atualJ.front();
             }
