@@ -12,7 +12,7 @@ std::vector<double> notas(std::string s)
     while(aux.find(",") != -1)
     {
         aux = aux.substr(aux.find(",") + 1);
-        ret.insert(ret.end(), stod(aux.substr(0, aux.find(","))));
+        ret.push_back(stod(aux.substr(0, aux.find(","))));
         aux = aux.substr(aux.find(",") + 1);
     }
 
