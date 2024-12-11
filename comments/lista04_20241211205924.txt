@@ -1,0 +1,329 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-11 18:00:25.395034-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto! +0.050
+Teste 2 deu errado!
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+O resultado para
+5 1 8 4 3 5 0
+deveria ser
+1
+3
+4
+5
+8
+
+mas deu
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 3 deu errado!
+0
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 4 deu errado!
+1 1 1 1 1 1 1 1 1 1 0
+free(): invalid pointer
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8 deu errado!
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+O resultado para
+45 35 19 33 38 43 17 33 22 0 3 26 40 21 24 24 9 50 45 13 44
+deveria ser
+0
+3
+9
+13
+17
+19
+21
+22
+24
+26
+33
+35
+38
+40
+43
+45
+50
+
+mas deu
+
+Teste 9: correto! +0.050
+Teste 10 deu errado!
+34 36 15 4 6 15 39 49 49 34 21 30 18 39 45 41 7 26 49 19 29 23 0 26 42 6 36 22 22 39 42 20 41 35 43 14 17 21 25 15 42 45 44 28 32 47 17 3 17 1 39 48 42 42 14 39 32 3 6 8 0 1 18 3 8 8 14 23 19 36 12 42 22 50 5 31 39 4 44 9 18 37 17 12 48 8 18 34 30 4 37 3 19 9 24 11 8 18 10
+munmap_chunk(): invalid pointer
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 11 deu errado!
+4 43 33 28 11 43 42 16 22 21 28 10 50 23 27 27 27 12 50 0 27 7 41 36 20 33 35 22 27 8 28 17 50 23 30 23 3 31 47 6 13 22 8 39
+munmap_chunk(): invalid pointer
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15 deu errado!
+14 9 44 14 8 46 38 23 42 1 32 47 48 9 40 36 34 18 35 38 7 44 0 1 47 10 40 33 44 33 41 26 43
+free(): invalid pointer
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 16: correto! +0.050
+Teste 17 deu errado!
+28 50 21 21 19 47 18 1 1 39 21 43 7 11 29
+munmap_chunk(): invalid pointer
+
+#include<iostream>
+int main() {
+    std::vector<int> v;
+    int n;
+    while(std::cin >> n)
+        v.push_back(n);
+    v.pop_back(); 
+    for(auto e : retira(v, n) )
+        std::cout << e << std::endl;
+    return 0;
+}
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 6: 0.6
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 5.60
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 0.6, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
