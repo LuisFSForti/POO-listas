@@ -2,34 +2,28 @@
 
 #include <stdio.h>
 #include <vector>
+#include <algorithm>
 #include <iostream>
 
 void ordena_strings(std::vector<std::string>& vetor)
 {
-    for(int i = 0; i < vetor.size() - 1; i++)
+    struct comparar
     {
-        int menor = i;
-        for(int j = i + 1; j < vetor.size(); j++)
+        inline bool operator()(const std::string& first, const std::string& second) const
         {
-            if(vetor.at(j).length() < vetor.at(menor).length())
+            if(first.size() < second.size())
+                return true;
+
+            if(first.size() == second.size())
             {
-                menor = j;
+                if(first.compare(second) > 0)
+                    return true;
             }
-            else if(vetor.at(j).length() == vetor.at(menor).length())
-            {
-                if(vetor.at(j).compare(vetor.at(menor)) > 0)
-                {
-                    menor = j;
-                }
-            }
+
+            return false;
         }
+    };
 
-        if(i == menor)
-            continue;
-
-        vetor.insert(vetor.end(), vetor.at(i)); //Insere no fim pois não importa
-        vetor.erase(vetor.begin() + i);
-        vetor.insert(vetor.begin() + i, vetor.at(menor - 1));
-        vetor.erase(vetor.begin() + menor);
-    }
+    comparar c;
+    std::sort(vetor.begin(), vetor.end(), c);
 }

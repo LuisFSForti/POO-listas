@@ -15,6 +15,9 @@ Matriz soma(const Matriz& A, const Matriz& B)
 
     for(const auto& [k, v] : B)
     {
+        if(k.first == -1) //Para pular a posição [-1, -1]
+            continue;
+
         C.find(k)->second += B.find(k)->second; //A soma só funciona se já havia um valor na posição
         C.insert({k, v}); //Insert só funciona se a posição estava vazia
     }
