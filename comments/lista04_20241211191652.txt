@@ -1,0 +1,848 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-11 16:18:09.293829-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+#include<iostream>
+int main() {
+    std::vector<std::string> v;
+    int n;
+    std::string aux;
+    while(std::cin >> aux)
+        v.push_back(aux);
+    ordena_strings(v);
+    for(auto s : v)
+        std::cout << s << " ";
+    std::cout << std::endl;
+    return 0;
+}
+
+Teste 4 deu errado!
+
+Tempo limite (10 s) excedido
+#include<iostream>
+int main() {
+    std::vector<std::string> v;
+    int n;
+    std::string aux;
+    while(std::cin >> aux)
+        v.push_back(aux);
+    ordena_strings(v);
+    for(auto s : v)
+        std::cout << s << " ";
+    std::cout << std::endl;
+    return 0;
+}
+
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A = { {{-1, -1}, 2}, {{0,0}, 1}};
+    Matriz B = { {{-1, -1}, 2}, {{1,0}, 5}};
+    Matriz C = soma(A, B);
+    
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " " 
+                    << v << std::endl; 
+    return 0;
+}
+
+deveria ser
+-1 -1 2
+0 0 1
+1 0 5
+mas deu
+-1 -1 4
+0 0 1
+1 0 5
+
+Teste 2 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A = { {{-1, -1}, 2}, {{1,0}, 1}};
+    Matriz B = { {{-1, -1}, 2}, {{1,0}, 5}};
+    Matriz C = soma(A, B);
+    
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " " 
+                    << v << std::endl; 
+    return 0;
+}
+
+deveria ser
+-1 -1 2
+1 0 6
+mas deu
+-1 -1 4
+1 0 6
+
+Teste 3 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 6;
+   B[{-1,-1}] = 6;
+   A[{5,1}] = -7;
+   B[{5,1}] = 6;
+   A[{2,5}] = -2;
+   A[{2,1}] = 4;
+   A[{4,3}] = 3;
+   A[{4,5}] = -2;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 6
+5 1 -1
+2 5 -2
+2 1 4
+4 3 3
+4 5 -2
+
+mas deu
+-1 -1 12
+2 1 4
+2 5 -2
+4 3 3
+4 5 -2
+5 1 -1
+
+Teste 4 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 5;
+   B[{-1,-1}] = 5;
+   B[{0,4}] = 7;
+   A[{2,0}] = 7;
+   B[{2,0}] = -10;
+   A[{2,3}] = 8;
+   A[{0,2}] = 9;
+   A[{1,2}] = -6;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 5
+0 4 7
+2 0 -3
+2 3 8
+0 2 9
+1 2 -6
+
+mas deu
+-1 -1 10
+0 2 9
+0 4 7
+1 2 -6
+2 0 -3
+2 3 8
+
+Teste 5 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 6;
+   B[{-1,-1}] = 6;
+   A[{5,4}] = -1;
+   B[{2,1}] = 7;
+   A[{4,4}] = -2;
+   B[{4,4}] = -5;
+   A[{4,3}] = 8;
+   B[{4,3}] = 9;
+   A[{1,1}] = 2;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 6
+5 4 -1
+2 1 7
+4 4 -7
+4 3 17
+1 1 2
+
+mas deu
+-1 -1 12
+1 1 2
+2 1 7
+4 3 17
+4 4 -7
+5 4 -1
+
+Teste 6 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 43313284;
+   B[{-1,-1}] = 43313284;
+   A[{13687679,20185046}] = -697;
+   B[{13687679,20185046}] = 181;
+   A[{25136236,13900782}] = 482;
+   B[{25136236,13900782}] = -664;
+   A[{41804357,40692531}] = 98;
+   B[{41804357,40692531}] = -259;
+   A[{40251134,6773765}] = 207;
+   B[{40251134,6773765}] = -985;
+   A[{36201619,8181953}] = 353;
+   B[{36201619,8181953}] = 773;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 43313284
+13687679 20185046 -516
+25136236 13900782 -182
+41804357 40692531 -161
+40251134 6773765 -778
+36201619 8181953 1126
+
+mas deu
+-1 -1 86626568
+13687679 20185046 -516
+25136236 13900782 -182
+36201619 8181953 1126
+40251134 6773765 -778
+41804357 40692531 -161
+
+Teste 7 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 19967093;
+   B[{-1,-1}] = 19967093;
+   A[{5761405,1245626}] = -441;
+   A[{6835171,15519450}] = 992;
+   B[{6835171,15519450}] = 826;
+   A[{15852956,4166730}] = -581;
+   B[{15852956,4166730}] = -871;
+   A[{1712281,5538608}] = -674;
+   B[{1712281,5538608}] = -625;
+   B[{11406845,13483654}] = -218;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 19967093
+5761405 1245626 -441
+6835171 15519450 1818
+15852956 4166730 -1452
+1712281 5538608 -1299
+11406845 13483654 -218
+
+mas deu
+-1 -1 39934186
+1712281 5538608 -1299
+5761405 1245626 -441
+6835171 15519450 1818
+11406845 13483654 -218
+15852956 4166730 -1452
+
+Teste 8 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 46448809;
+   B[{-1,-1}] = 46448809;
+   B[{37029126,7950488}] = 165;
+   A[{33579062,39010460}] = 899;
+   B[{33579062,39010460}] = 158;
+   B[{42339471,17812854}] = 330;
+   A[{28852056,22901997}] = 92;
+   B[{28852056,22901997}] = -878;
+   A[{14870383,38141371}] = -461;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 46448809
+37029126 7950488 165
+33579062 39010460 1057
+42339471 17812854 330
+28852056 22901997 -786
+14870383 38141371 -461
+
+mas deu
+-1 -1 92897618
+14870383 38141371 -461
+28852056 22901997 -786
+33579062 39010460 1057
+37029126 7950488 165
+42339471 17812854 330
+
+Teste 9 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 34078079;
+   B[{-1,-1}] = 34078079;
+   A[{25682508,8751300}] = 908;
+   B[{25682508,8751300}] = -26;
+   A[{10891912,7498001}] = 507;
+   A[{23927851,7960284}] = -110;
+   B[{23927851,7960284}] = 766;
+   B[{32899883,29869543}] = -826;
+   A[{30680028,13211803}] = -429;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 34078079
+25682508 8751300 882
+10891912 7498001 507
+23927851 7960284 656
+32899883 29869543 -826
+30680028 13211803 -429
+
+mas deu
+-1 -1 68156158
+10891912 7498001 507
+23927851 7960284 656
+25682508 8751300 882
+30680028 13211803 -429
+32899883 29869543 -826
+
+Teste 10 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 38044779;
+   B[{-1,-1}] = 38044779;
+   A[{12800583,31602644}] = -458;
+   A[{24032784,18934349}] = 990;
+   A[{30762859,31085921}] = -776;
+   B[{30762859,31085921}] = 899;
+   A[{5179552,3981968}] = 663;
+   B[{5179552,3981968}] = -866;
+   A[{20490397,14542336}] = -45;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 38044779
+12800583 31602644 -458
+24032784 18934349 990
+30762859 31085921 123
+5179552 3981968 -203
+20490397 14542336 -45
+
+mas deu
+-1 -1 76089558
+5179552 3981968 -203
+12800583 31602644 -458
+20490397 14542336 -45
+24032784 18934349 990
+30762859 31085921 123
+
+Teste 11 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 21845103;
+   B[{-1,-1}] = 21845103;
+   B[{13842315,17001736}] = 668;
+   B[{17167120,3717625}] = 685;
+   A[{21037627,18229875}] = -172;
+   A[{15222484,13109902}] = -687;
+   B[{17621521,8481364}] = -797;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 21845103
+13842315 17001736 668
+17167120 3717625 685
+21037627 18229875 -172
+15222484 13109902 -687
+17621521 8481364 -797
+
+mas deu
+-1 -1 43690206
+13842315 17001736 668
+15222484 13109902 -687
+17167120 3717625 685
+17621521 8481364 -797
+21037627 18229875 -172
+
+Teste 12 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 32620036;
+   B[{-1,-1}] = 32620036;
+   B[{1467641,24044165}] = 46;
+   B[{12820065,10732735}] = 749;
+   A[{20046436,24836609}] = 382;
+   B[{20046436,24836609}] = 298;
+   B[{18088488,4107728}] = -593;
+   A[{20725157,19992557}] = 960;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 32620036
+1467641 24044165 46
+12820065 10732735 749
+20046436 24836609 680
+18088488 4107728 -593
+20725157 19992557 960
+
+mas deu
+-1 -1 65240072
+1467641 24044165 46
+12820065 10732735 749
+18088488 4107728 -593
+20046436 24836609 680
+20725157 19992557 960
+
+Teste 13 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 36758645;
+   B[{-1,-1}] = 36758645;
+   A[{20383113,26157961}] = -997;
+   A[{18852387,2228068}] = -804;
+   B[{18852387,2228068}] = -389;
+   A[{11389401,22402409}] = -448;
+   B[{11389401,22402409}] = 865;
+   A[{4458787,31857294}] = 563;
+   B[{4458787,31857294}] = 247;
+   B[{4422248,7753410}] = -249;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 36758645
+20383113 26157961 -997
+18852387 2228068 -1193
+11389401 22402409 417
+4458787 31857294 810
+4422248 7753410 -249
+
+mas deu
+-1 -1 73517290
+4422248 7753410 -249
+4458787 31857294 810
+11389401 22402409 417
+18852387 2228068 -1193
+20383113 26157961 -997
+
+Teste 14 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 47598406;
+   B[{-1,-1}] = 47598406;
+   A[{22065437,21080052}] = -948;
+   A[{18965171,39230886}] = 234;
+   B[{18965171,39230886}] = 666;
+   A[{34309168,11516283}] = -953;
+   A[{16971945,20598970}] = -579;
+   B[{16971945,20598970}] = 576;
+   A[{43957344,29883613}] = -543;
+   B[{43957344,29883613}] = 802;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 47598406
+22065437 21080052 -948
+18965171 39230886 900
+34309168 11516283 -953
+16971945 20598970 -3
+43957344 29883613 259
+
+mas deu
+-1 -1 95196812
+16971945 20598970 -3
+18965171 39230886 900
+22065437 21080052 -948
+34309168 11516283 -953
+43957344 29883613 259
+
+Teste 15 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 23938529;
+   B[{-1,-1}] = 23938529;
+   A[{15195736,22296108}] = -154;
+   B[{15195736,22296108}] = 219;
+   B[{14847176,4999239}] = -535;
+   A[{17858752,22930020}] = 28;
+   A[{17239070,22738729}] = -462;
+   B[{17239070,22738729}] = -831;
+   B[{8091992,4464911}] = 444;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 23938529
+15195736 22296108 65
+14847176 4999239 -535
+17858752 22930020 28
+17239070 22738729 -1293
+8091992 4464911 444
+
+mas deu
+-1 -1 47877058
+8091992 4464911 444
+14847176 4999239 -535
+15195736 22296108 65
+17239070 22738729 -1293
+17858752 22930020 28
+
+Teste 16 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 43333013;
+   B[{-1,-1}] = 43333013;
+   A[{8759246,6822982}] = -871;
+   B[{8759246,6822982}] = -799;
+   A[{30765600,38563824}] = -986;
+   B[{30765600,38563824}] = -473;
+   A[{2677561,22612093}] = -707;
+   A[{11845688,2864353}] = 677;
+   B[{11845688,2864353}] = 43;
+   A[{24396450,27099796}] = 701;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 43333013
+8759246 6822982 -1670
+30765600 38563824 -1459
+2677561 22612093 -707
+11845688 2864353 720
+24396450 27099796 701
+
+mas deu
+-1 -1 86666026
+2677561 22612093 -707
+8759246 6822982 -1670
+11845688 2864353 720
+24396450 27099796 701
+30765600 38563824 -1459
+
+Teste 17 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 26973009;
+   B[{-1,-1}] = 26973009;
+   A[{9565118,10490887}] = -274;
+   B[{9565118,10490887}] = 462;
+   B[{25178669,11149150}] = -110;
+   B[{5205779,2626412}] = -156;
+   A[{13931800,1054662}] = -666;
+   B[{13931800,1054662}] = -386;
+   B[{26251327,13955198}] = 420;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 26973009
+9565118 10490887 188
+25178669 11149150 -110
+5205779 2626412 -156
+13931800 1054662 -1052
+26251327 13955198 420
+
+mas deu
+-1 -1 53946018
+5205779 2626412 -156
+9565118 10490887 188
+13931800 1054662 -1052
+25178669 11149150 -110
+26251327 13955198 420
+
+Teste 18 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 18305828;
+   B[{-1,-1}] = 18305828;
+   A[{3092880,9737111}] = 356;
+   B[{12142136,6099718}] = 520;
+   A[{7568297,5470606}] = 569;
+   B[{7568297,5470606}] = -928;
+   A[{17863123,11521973}] = 647;
+   B[{17863123,11521973}] = 69;
+   B[{11638532,16734772}] = 574;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 18305828
+3092880 9737111 356
+12142136 6099718 520
+7568297 5470606 -359
+17863123 11521973 716
+11638532 16734772 574
+
+mas deu
+-1 -1 36611656
+3092880 9737111 356
+7568297 5470606 -359
+11638532 16734772 574
+12142136 6099718 520
+17863123 11521973 716
+
+Teste 19 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 23530072;
+   B[{-1,-1}] = 23530072;
+   A[{19356761,223720}] = 972;
+   B[{19356761,223720}] = 192;
+   B[{10518875,5618109}] = -351;
+   A[{7993363,16763614}] = -701;
+   B[{7993363,16763614}] = 455;
+   B[{15422894,7067547}] = -721;
+   B[{10109646,21571029}] = 446;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 23530072
+19356761 223720 1164
+10518875 5618109 -351
+7993363 16763614 -246
+15422894 7067547 -721
+10109646 21571029 446
+
+mas deu
+-1 -1 47060144
+7993363 16763614 -246
+10109646 21571029 446
+10518875 5618109 -351
+15422894 7067547 -721
+19356761 223720 1164
+
+Teste 20 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 45799375;
+   B[{-1,-1}] = 45799375;
+   B[{35665617,2723220}] = 638;
+   A[{14126647,16123250}] = -958;
+   A[{29475717,3372463}] = 493;
+   A[{42047588,17503280}] = -5;
+   B[{42047588,17503280}] = 320;
+   B[{821135,14884130}] = -781;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 45799375
+35665617 2723220 638
+14126647 16123250 -958
+29475717 3372463 493
+42047588 17503280 315
+821135 14884130 -781
+
+mas deu
+-1 -1 91598750
+821135 14884130 -781
+14126647 16123250 -958
+29475717 3372463 493
+35665617 2723220 638
+42047588 17503280 315
+
+Nota exercicio 5: 0.0
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 3.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.0, "ex4": 1.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
