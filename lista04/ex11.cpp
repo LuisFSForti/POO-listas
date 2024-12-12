@@ -1,6 +1,5 @@
 //Luis Filipe Silva Forti - 14592348
 
-#include <stdio.h>
 #include <iostream>
 
 class Pessoa
