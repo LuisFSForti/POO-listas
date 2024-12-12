@@ -1,0 +1,655 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-11 22:04:53.183912-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Matriz A, B;
+   A[{-1,-1}] = 6;
+   B[{-1,-1}] = 6;
+   A[{5,2}] = -7;
+   B[{5,2}] = -1;
+   A[{5,3}] = 7;
+   A[{1,4}] = 9;
+   B[{4,5}] = 4;
+   A[{2,5}] = 1;
+   B[{2,5}] = -1;
+
+    Matriz C = soma(A, B);
+    for(const auto& [k, v] : C)
+        std::cout << k.first << " " << k.second << " "
+                    << v << std::endl;
+    return 0;
+}
+deveria ser
+-1 -1 6
+5 2 -8
+5 3 7
+1 4 9
+4 5 4
+
+mas deu
+-1 -1 6
+1 4 9
+2 5 0
+4 5 4
+5 2 -8
+5 3 7
+
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 6: 1.0
+Procurando exercício 7...
+Exercício 7...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 7: 1.0
+Procurando exercício 8...
+Exercício 8...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex8.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 8: 1.0
+Procurando exercício 9...
+Exercício 9...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex9.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 9: 1.0
+Procurando exercício 10...
+Exercício 10...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex10.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 10: 1.0
+Procurando exercício 11...
+Exercício 11...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex11.cpp" 
+Teste 1 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Andre Smaira tem 33 anos e mora em São Carlos-SP, Brasil
+deveria ser
+Andre Smaira
+33
+São Carlos
+SP
+Brasil
+mas deu
+Andre Smaira
+33
+ São Carlos
+SP
+Brasil
+
+Teste 2 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Bernardo da Costa tem 45 anos e mora em Sousa-PE, Honduras
+
+deveria ser
+Bernardo da Costa
+45
+Sousa
+PE
+Honduras
+mas deu
+Bernardo da Costa
+45
+a
+PE
+Honduras
+
+Teste 3 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Sr. Benicio Novaes tem 130 anos e mora em da Mata de Marques-MG, Libéria
+
+deveria ser
+Sr. Benicio Novaes
+130
+da Mata de Marques
+MG
+Libéria
+mas deu
+Sr. Benicio Novaes
+130
+ata de Marques
+MG
+Libéria
+
+Teste 4 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Gael Henrique Garcia tem 67 anos e mora em Fogaça-PB, Azerbaijão
+
+deveria ser
+Gael Henrique Garcia
+67
+Fogaça
+PB
+Azerbaijão
+mas deu
+Gael Henrique Garcia
+67
+
+PB
+Azerbaijão
+
+Teste 5 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Antonella Campos tem 56 anos e mora em da Paz-DF, Ilhas Virgens Americanas
+
+deveria ser
+Antonella Campos
+56
+da Paz
+DF
+Ilhas Virgens Americanas
+mas deu
+Antonella Campos
+56
+Paz
+DF
+Ilhas Virgens Americanas
+
+Teste 6 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+João Guilherme Rezende tem 88 anos e mora em Lima do Sul-TO, Peru
+
+deveria ser
+João Guilherme Rezende
+88
+Lima do Sul
+TO
+Peru
+mas deu
+João Guilherme Rezende
+88
+l
+TO
+Peru
+
+Teste 7 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Paulo Vargas tem 86 anos e mora em Pacheco da Praia-RO, Jordânia
+
+deveria ser
+Paulo Vargas
+86
+Pacheco da Praia
+RO
+Jordânia
+mas deu
+Paulo Vargas
+86
+ Pacheco da Praia
+RO
+Jordânia
+
+Teste 8 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Yasmin da Mata tem 82 anos e mora em Jesus Paulista-PI, Mali
+
+deveria ser
+Yasmin da Mata
+82
+Jesus Paulista
+PI
+Mali
+mas deu
+Yasmin da Mata
+82
+esus Paulista
+PI
+Mali
+
+Teste 9 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+Sr. Rafael Montenegro tem 129 anos e mora em Marques Verde-MS, França
+
+deveria ser
+Sr. Rafael Montenegro
+129
+Marques Verde
+MS
+França
+mas deu
+Sr. Rafael Montenegro
+129
+ Verde
+MS
+França
+
+Teste 10 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+O resultado para
+João Pedro Azevedo tem 81 anos e mora em Ribeiro-PE, Suíça
+
+deveria ser
+João Pedro Azevedo
+81
+Ribeiro
+PE
+Suíça
+mas deu
+João Pedro Azevedo
+81
+o
+PE
+Suíça
+
+Teste 11 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 12 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 13 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 14 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 15 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 16 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 17 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 18: correto! +0.050
+Teste 19 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 20 deu errado!
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Nota exercicio 11: 0.0
+Nota total: 10.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 1.0, "ex7": 1.0, "ex8": 1.0, "ex9": 1.0, "ex10": 1.0, "ex11": 0.0}}
