@@ -28,26 +28,27 @@ void ordena_versoes(std::vector<std::string>& versoes)
 
         for(int j = i+1; j < versoes.size(); j++)
         {
-            if(valores.at(menor) == valores.at(j) && valores.at(menor).size() > valores.at(j).size())
-            {
-                menor = j;
-                continue;
-            }
-
             int menorTamanho = valores.at(j).size();
             if(valores.at(menor).size() < valores.at(j).size())
                 menorTamanho = valores.at(menor).size();
 
+            bool iguais = true;
             for(int k = 0; k < menorTamanho; k++)
             {
                 if(valores.at(menor).at(k) > valores.at(j).at(k))
                 {
                     menor = j;
+                    iguais = false;
                     break;
                 }
                 if(valores.at(menor).at(k) < valores.at(j).at(k))
+                {
+                    iguais = false;
                     break;
+                }
             }
+            if(iguais && valores.at(menor).size() > valores.at(j).size())
+                menor = j;
         }
 
         if(menor == i)
