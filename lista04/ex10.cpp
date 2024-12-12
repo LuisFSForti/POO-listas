@@ -7,7 +7,7 @@
 
 void ordena_versoes(std::vector<std::string>& versoes)
 {
-    std::vector<std::vector<std::string>> valores;
+    std::vector<std::vector<int>> valores;
 
     for(const auto& versao : versoes)
     {
@@ -15,9 +15,9 @@ void ordena_versoes(std::vector<std::string>& versoes)
         std::sregex_iterator currentMatch(versao.begin(), versao.end(), reg);
         std::sregex_iterator endMatch;
 
-        std::vector<std::string> dadosVersao;
+        std::vector<int> dadosVersao;
         for(; currentMatch != endMatch; ++currentMatch)
-            dadosVersao.push_back(currentMatch->str());
+            dadosVersao.push_back(stoi(currentMatch->str()));
 
         valores.push_back(dadosVersao);
     }
@@ -28,10 +28,25 @@ void ordena_versoes(std::vector<std::string>& versoes)
 
         for(int j = i+1; j < versoes.size(); j++)
         {
-            //std::cout << versoes.at(menor) << " > " << versoes.at(j) << " = " << (valores.at(menor) > valores.at(j)) << std::endl;
-            if(valores.at(menor) > valores.at(j))
+            if(valores.at(menor) == valores.at(j) && valores.at(menor).size() > valores.at(j).size())
             {
                 menor = j;
+                continue;
+            }
+
+            int menorTamanho = valores.at(j).size();
+            if(valores.at(menor).size() < valores.at(j).size())
+                menorTamanho = valores.at(menor).size();
+
+            for(int k = 0; k < menorTamanho; k++)
+            {
+                if(valores.at(menor).at(k) > valores.at(j).at(k))
+                {
+                    menor = j;
+                    break;
+                }
+                if(valores.at(menor).at(k) < valores.at(j).at(k))
+                    break;
             }
         }
 
