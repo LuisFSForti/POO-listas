@@ -12,11 +12,11 @@ public:
     Pessoa(std::string dados)
     {
         std::string aux = dados;
-        this->_nome = aux.substr(0, dados.find(" tem"));
-        aux = aux.substr(dados.find("tem") + 4); //Remove tudo antes da idade
+        this->_nome = aux.substr(0, aux.find(" tem"));
+        aux = aux.substr(aux.find("tem") + 4); //Remove tudo antes da idade
 
-        this->_idade = stoi(aux.substr(0, dados.find(" ")));
-        aux = aux.substr(dados.find("em") + 3); //Remove tudo antes da cidade
+        this->_idade = stoi(aux.substr(0, aux.find(" ")));
+        aux = aux.substr(aux.find("em ") + 3); //Remove tudo antes da cidade
 
         this->_cidade = aux.substr(0, aux.find("-"));
         aux = aux.substr(aux.find("-") + 1); //Remove tudo antes da UF
